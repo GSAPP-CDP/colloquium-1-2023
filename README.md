@@ -1,8 +1,8 @@
 # GSAPP CDP Colloquium 1 Course Site
 
-This respository hosts the source code and site content for the 2023
+This repository hosts the source code and site content for the 2023
 [Computational Design Practices](https://www.arch.columbia.edu/programs/15-m-s-computational-design-practices) 
-Colloquium I course site.
+Colloquium I course website.
 
 ## Site Structure
 
@@ -30,9 +30,9 @@ work/
 
 ## Adding Work
 
-Work is submitted by modifying the `index.html` file in the folder assigned to you. Copy the template
-file to your local hard drive and manage it in a single folder. This will be the folder you update
-and re-submit, along with `index.html` and all your images, with each assignment.
+To submit work, first duplicate the `index.html` file in the folder assigned to you. Plan manage and
+modify it in a single folder with all your images, videos, and files. This will be the folder you
+update, bundle, and re-submit with each assignment.
 
 ### index.html
 
