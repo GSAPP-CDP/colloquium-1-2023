@@ -9,7 +9,7 @@ title: GSAPP CDP 2023-4 Colloquium I
       <div class="stack">
         <div class="project-card-thumb">
           {% if student.data.image %}
-            <img src="{{ student.data.image }}" />
+            <img src="{{ student.url }}/{{ student.data.image }}" />
           {% endif %}
         </div>
         <div>
