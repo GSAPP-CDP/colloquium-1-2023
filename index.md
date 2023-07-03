@@ -19,3 +19,5 @@ title: GSAPP CDP 2023-4 Colloquium I
 - **Schedule** [Coming Soon]
 - **[All Student Work](work)**
 - **[This Site's Code](https://github.com/GSAPP-CDP/colloquium-1-2023)**
+- **[Assignment Submission Guide](https://docs.google.com/document/d/1mFBtcA1yuhnZpul9Dq_K_4vlwR9f11dKCqUAcbcvVsE/edit)**
+- **[Assignment Submission Form](https://forms.gle/24msnncpirDQuw7B9)**
