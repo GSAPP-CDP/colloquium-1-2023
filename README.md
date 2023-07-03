@@ -156,13 +156,13 @@ For more information, see the [markdown-it-implicit-figures](https://github.com/
 
 ## Development
 
-This site is built with [Eleventy](https://www.11ty.dev/docs/). Dependencies are managed with `yarn`.
+This site is built with [Eleventy](https://www.11ty.dev/docs/).
 
 After cloning the repo:
 
 ```
-yarn install
-yarn start
+npm install
+npx @11ty/eleventy --serve
 ```
 
 Browse to <http://localhost:8080/> or use the URL outputted by `yarn start`.
