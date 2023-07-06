@@ -47,6 +47,7 @@ module.exports = function (eleventyConfig) {
   // Copy media from their source folders to their respective published folders.
   eleventyConfig.addPassthroughCopy("**/*.png");
   eleventyConfig.addPassthroughCopy("**/*.jpg");
+  eleventyConfig.addPassthroughCopy("**/*.jpeg");
   eleventyConfig.addPassthroughCopy("**/*.gif");
   
   eleventyConfig.addPassthroughCopy("**/*.mov");
