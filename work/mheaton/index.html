@@ -18,6 +18,36 @@ image: 11110_dither.png
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/colloquium1.css" rel="stylesheet" />
 
   <title>MATTHEW HEATON</title>
+  <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .iframe-container {
+        width: 100%;
+        height: 100vh; /* height of viewport */
+        overflow: auto; /* allows page to be scrollable */
+        position: relative; /* allows the following z-index to be set */
+        z-index: 0;
+    }
+
+    .iframe-container iframe {
+        border: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .content-below {
+        position: relative;
+        z-index: 1;
+    }
+</style>
 </head>
 
 <body>
@@ -74,7 +104,7 @@ image: 11110_dither.png
           </div>
 
           <div class="half">
-            <img src="./assignment_1-01.png">
+            <img src="assets/index/assignment_1-01.png">
           </div>
 
           <div class="half">
@@ -108,7 +138,7 @@ image: 11110_dither.png
           </div>
 
           <div class="half">
-            <img src="assignment_1-02.png">
+            <img src="assets/index/assignment_1-02.png">
           </div>
 <!-- 
           <hr>
@@ -204,7 +234,7 @@ image: 11110_dither.png
           </div>
 
           <div class="half">
-            <img src="madeforTV_excerpt.gif">
+            <img src="assets/index/madeforTV_excerpt.gif">
           </div>
 
           <div class="half">
@@ -222,7 +252,7 @@ image: 11110_dither.png
             <p>
               In my case, sampling is often at the sub-second scale, in which a small component block of audio or video can be looped or composited to recontextualize it into something ... new. 
               I have very distractingly excerpted some of my video work. Both clips are almost exclusively comprised of samples, the top from the work of Aldo Tambellini, Peter Tscherkassky, and Frans Zwartjes. 
-              The clip to the right is broadcast television looped at extremely high frequencies. Both are reconfigured,  processed, and montaged into what I would describe as a novel form.
+              The clip to the right is processed and animated imagery from the University of California's public-domain Cell Image Library. Both are reconfigured,  processed, and montaged into what I would describe as a novel form.
             </p>
             <p>
               If one were to ignore the legal grounds of intellectual property disputes, which frankly do not interest me, where lies the line between inspiration and creative bankruptcy? 
@@ -233,8 +263,12 @@ image: 11110_dither.png
             </p>
             </div>
 
+          <!-- <div class="half">
+            <img src="assets/index/blueNudes_excerpt.gif">
+          </div> -->
+
           <div class="half">
-            <img src="./blueNudes_excerpt.gif">
+            <img src="assets/index/texture_sorting.gif">
           </div>
 
             <div class="full">
@@ -388,6 +422,14 @@ image: 11110_dither.png
 
         </div>
       </div> -->
+
+      <div class="full iframe-container">
+        <iframe src="zine_inline.html" title="My Zine Page"></iframe>
+    </div>
+
+    <!-- <div class="content-below">
+
+      <p>lorem gypsum blah blah blah</p> -->
 
       <footer></footer>
     </div>

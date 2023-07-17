@@ -1,7 +1,7 @@
 ---
 student: Kyungho Lee
 tags: students
-image: gsapp.png
+image: Diagram01.jpg
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +16,46 @@ image: gsapp.png
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/base.css" rel="stylesheet" />
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/main.css" rel="stylesheet" />
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/colloquium1.css" rel="stylesheet" />
+  <style>
+    .hover {
+      position: relative;
+    }
+
+    .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .hover:hover .image {
+      opacity: 0.3;
+    }
+
+    .hover:hover .middle {
+      opacity: 1;
+    }
+
+    .text {
+      background-color: #ED2939;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+  </style>
 
   <title>Klee</title>
 </head>
@@ -60,6 +100,10 @@ image: gsapp.png
             <h2>Table of Contents</h2>
             <ul>
               <li><a href="#assignment-1">1 &ndash; Systems</a></li>
+              <li><a href="#assignment-2">2 &ndash; Authorship</a></li>
+              <li><a href="#assignment-3">3 &ndash; Politics</a></li>
+              <li><a href="#assignment-4">4 &ndash; Governance</a></li>
+              <li><a href="#assignment-5">5 &ndash; Behavior</a></li>
             </ul>
           </div>
 
@@ -140,6 +184,23 @@ image: gsapp.png
           <div class="half">
             <img src="./Diagram10.jpg">
             <img src="./Diagram05.jpg">
+          </div>
+
+          <hr>
+
+          <div class="full assignment">
+            <h1 id="assignment-2">2 &ndash; Authorship</h1>
+            <h2>Collective Authorship in Design</h2>
+            <p>Strategies in authorship methods for effective workflows of architects</p>
+          </div>
+
+          <div class="full hover">
+            <a href="./Authorship_Assignment_Group_Zines.html" >
+              <img src="./Authorship_Assignment_Group_Zines.gif">
+              <div class="middle">
+                <div class="text">Click here for authorship user journey!</div>
+              </div>
+            </a>
           </div>
 
           <hr>
