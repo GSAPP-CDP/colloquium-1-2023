@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around; /* this will add some space around each sketch */
+    flex-wrap: wrap; /* if the browser width is too narrow, the sketches will wrap to a new line */
+    height: 100%;
+  }
+  
+  #one,
+  #two,
+  #three,
+  #four {
+    width: 50%; /* Each sketch takes 50% of the container width */
+    height: 50%; /* Each sketch takes 50% of the container height */
+    border: 1px solid black; /* Add a border around each sketch for clarity */
+  }
+  
