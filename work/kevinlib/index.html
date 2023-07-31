@@ -73,7 +73,7 @@ image: loft_apt.png
           </div>
 
           <div class="half">
-            <img src="./loft_apt.png">
+            <img src="./assets/loft_apt.png">
           </div>
 
           <div class="half">
@@ -105,13 +105,13 @@ image: loft_apt.png
           </div>
 
           <div class="full">
-            <img src="./stock_flow_diagram.jpg">
+            <img src="./assets/stock_flow_diagram.jpg">
             <p>1. High-level Stock and Flow diagram of the conversion process.
             </p>
           </div>
 
           <div class="full">
-            <img src="./stakeholder_diagram.jpg">
+            <img src="./assets/stakeholder_diagram.jpg">
             <p>2. Simplified stakeholder diagram of project involvement.
             </p>
           </div>
@@ -137,7 +137,7 @@ image: loft_apt.png
 
           <div class="full">
             <center>
-              <img src="./nassau.png">
+              <img src="./assets/nassau.png">
               <p>1. Nassau Brewing Company is a historical landmark in my Brooklyn neighborhood recently converted to
                 apartments
               </p>
@@ -159,7 +159,7 @@ image: loft_apt.png
           </div>
 
           <div class="half">
-            <img src="./2by2_pain_points.jpg">
+            <img src="./assets/2by2_pain_points.jpg">
             <p>3. Some example pain points for developers, the placements of the pain points are completely
               project-dependent.
             </p>
@@ -194,7 +194,7 @@ image: loft_apt.png
               Now that AI-generated content has become commonplace with the advent of services like chatGPT and
               Midjourney, we all have to think critically about how authorship should be defined with respect to these
               tools. Should content created by AI be copyrightable? Is AI-generated work original? Should credit carry
-              over if AI is trained on copyrighted works? These questions are most timely, even this week there was an
+              over if AI is trained on copyrighted works? <br><br>These questions are most timely, even this week there was an
               article in the New York Times about the comedian Sarah Silverman suing OpenAI and Meta over the fact that
               contents from her books and many others were scraped illegally and used in training the two companies’
               Large Language Models.
@@ -215,13 +215,13 @@ image: loft_apt.png
               there is a person involved, e.g. the end-user who has the decision power to curate and publish the
               finalized content, then they need to bear responsibility for their content. If the content is published
               automatically and without curation, then perhaps attributing ownership along the chain of creation may be
-              fair. (that is to both the user and system). In any case, US copyright law should be reassessed because I
+              fair. (that is to both the user and system). <br><br> In any case, US copyright law should be reassessed because I
               think there could be new definitions of ownership devised to fit more appropriately with AI generated
               content. Perhaps, introducing a concept of “limited authorship” could work whereby users are considered
               authors but hold limited liability. In parallel, the companies responsible for the AI (e.g. OpenAI/Meta)
               would also hold limited authorship and bear some responsibility for content, like how Meta already reviews
               content on its platforms for abuse and hate speech. Lastly, there could be a model where AI-generated
-              content would carry attributions in its metadata.
+              content would carry attributions in its metadata.<br><br>
               In the case of authors whose works are borrowed to train AI without their consent (e.g. Sarah Silverman
               case), I think that the companies responsible for the AI need to retrieve training data from legal
               sources, even if it hinders the scale or development of the training set. In the Sarah Silverman case, we
@@ -247,12 +247,45 @@ image: loft_apt.png
             </div>
             <div class="full">
               <p>
-              The most helpful datasets so far have been news articles that describe the complexities of converting commercial to residential real estate, namely in the US. They offer brief interview quotes with developers and case studies of successful and pending projects. The articles illuminate the myriad of policy, regulatory, and construction hurdles that come with a conversion project. While some of the articles go in depth into how older buildings are more suited architecturally for conversion, I haven’t found any literature so far on new design practices that emphasize use flexibility into the building design. In this sense, the reader is led to presume that most of the difficulty with conversion projects comes with getting legal approval and being in the right economic situation to incentivize these projects. Also interestingly, the news articles were often written from the perspective of the developer rather than policy makers, residents, or other stakeholders. They are framed as business ventures first, instead of design challenges or public interests. The politics underlying these news articles do focus on creating more housing while there are definitely others that believe that the main solution to vacant commercial spaces is to boost the economy and attract tenants or workers back to these places.
-              Other types of data that I’ve collected are zoning, land use, and tax lot data (PLUTO) from the NYC Department of City Planning. The news explained that one of the most complicated tasks in conversion projects is navigating the zoning and building code laws, especially in a city as large as New York. Architects and legal experts are often brought in at this stage for support. The land use and tax lot data collected corroborates this pain point as, from first glance, it is difficult to parse, but  contains a lot of information and is well geocoded or is accompanied by geographic files. That being said, this data was easy find as it was provided by the city, because presumably it is data that a lot of parties rely on early on for ground truth and consistency.
-              Another potentially useful dataset is the LIDAR model of the city which can be used to analyze useful characteristics that an architect or engineer might be interested in such as the floor plate, building depth, and window spacing and size. Of course this model doesn’t contain all the spatial details of each building, leaving out some necessary information such as column placement but could be useful to start to eliminate buildings that don’t meet building requirements. This sort of spatial reasoning can be supplemented by (google/apple) “Street View” images although there aren’t any publicly available street view datasets. 
+              The most helpful datasets so far have been news articles that describe the complexities of converting commercial to residential real estate, namely in the US. They offer brief interview quotes with developers and case studies of successful and pending projects. <br><br>The articles illuminate the myriad of policy, regulatory, and construction hurdles that come with a conversion project. While some of the articles go in depth into how older buildings are more suited architecturally for conversion, I haven’t found any literature so far on new design practices that emphasize use flexibility into the building design. In this sense, the reader is led to presume that most of the difficulty with conversion projects comes with getting legal approval and being in the right economic situation to incentivize these projects. Also interestingly, the news articles were often written from the perspective of the developer rather than policy makers, residents, or other stakeholders. They are framed as business ventures first, instead of design challenges or public interests. The politics underlying these news articles do focus on creating more housing while there are definitely others that believe that the main solution to vacant commercial spaces is to boost the economy and attract tenants or workers back to these places.
+              <br><br>Other types of data that I’ve collected are zoning, land use, and tax lot data (PLUTO) from the NYC Department of City Planning. The news explained that one of the most complicated tasks in conversion projects is navigating the zoning and building code laws, especially in a city as large as New York. Architects and legal experts are often brought in at this stage for support. The land use and tax lot data collected corroborates this pain point as, from first glance, it is difficult to parse, but  contains a lot of information and is well geocoded or is accompanied by geographic files. That being said, this data was easy find as it was provided by the city, because presumably it is data that a lot of parties rely on early on for ground truth and consistency.
+              <br><br>Another potentially useful dataset is the LIDAR model of the city which can be used to analyze useful characteristics that an architect or engineer might be interested in such as the floor plate, building depth, and window spacing and size. Of course this model doesn’t contain all the spatial details of each building, leaving out some necessary information such as column placement, but could be useful to start to eliminate buildings that don’t meet building requirements. This sort of spatial reasoning could potentially be supplemented by (google/apple) “Street View” images although there this would require some investigation to find street-view datasets that have coverage across the city. 
               I’m drawn to both quantitative spatial datasets such as zoning shapefiles and 3d models because they help to understand where potential projects might occur. At the same time, I’m also drawn to qualitative data such as interviews because these projects share many common issues, processes, and pain points.
               </p>
+
+          <div class="full">
+            <h2>Data Sketches</h2></div>
+            <p>Data Prototypes</p>
           </div>
+
+          <div class="half">
+            <img src="./assets/bldg_class.png">
+            <p>Map of building points in Manhattan colored by Building Class, derived from PLUTO data from NYC Dept. City Planning.
+            </p>
+          </div>
+
+          <div class="half">
+            <img src="./assets/res_bldgs.png">
+            <p>Map of residential building footprints in Manhattan derived from PLUTO data from NYC Dept. City Planning. and NYC Open Data
+            </p>
+          </div>
+        </div>
+
+      <div class="full assignment">
+            <h1 id="assignment-4">4 &ndash; Governance</h1>
+            <div class="full">
+            <h2>Design Fiction</h2></div>
+            <p>A design artifact from the future.</p>
+        </div>
+        <div class="half">
+          <p>
+          Some daydreaming around infrastructure and a future with uncapped growth led to this piece of design fiction where the excess used to support our excess is now defunct. Humanity has decided to give the vehicles used to move ourselves and our things around a second life. Subway cars and shipping containers are the building blocks of the city's expansions, filling open space between streets and buildings with new and modular vertical neighborhoods, yielding opportunities for residents to live, work, and play to their hearts' content. In this way humanity contines.
+          </p>
+      </div>
+
+      <div class="half">
+        <img src="./assets/design-fiction.gif">
+      </div>
   </main>
 </body>
 

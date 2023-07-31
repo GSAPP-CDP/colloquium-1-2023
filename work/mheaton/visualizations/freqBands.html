@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FREQ BANDZ</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #mapid { height: 100vh; }
+    </style>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+
+<div id="mapid"></div>
+
+<script>
+    var mymap = L.map('mapid').setView([51.505, -0.09], 2);
+
+    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    //     maxZoom: 19
+    // }).addTo(mymap);
+
+    function drawServiceArea(serviceArea) {
+        var coordinates = serviceArea.slice(4);
+        var polygonPoints = [];
+        for (var i = 0; i < coordinates.length; i++) {
+            if (coordinates[i] !== '') {
+                var coordinatePair = coordinates[i].split(',');
+                polygonPoints.push([parseFloat(coordinatePair[1]), parseFloat(coordinatePair[0])]);
+            }
+        }
+        L.polygon(polygonPoints, {color: 'blue'}).addTo(mymap);
+    }
+
+    Papa.parse("data/FM_service_contour_current.txt", {
+        download: true,
+        header: true,
+        dynamicTyping: true,
+        skipEmptyLines: true,
+        worker: true,
+        step: function(results) {
+            drawServiceArea(results.data);
+        }
+    });
+
+</script>
+
+</body>
+</html>

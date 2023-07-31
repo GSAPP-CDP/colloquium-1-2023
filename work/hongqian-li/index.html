@@ -16,8 +16,59 @@ image: cover.jpg
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/base.css" rel="stylesheet" />
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/main.css" rel="stylesheet" />
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/colloquium1.css" rel="stylesheet" />
-
   <title>Hongqian Li</title>
+  <style>
+    .grid-container {
+      width: 1144px;
+      height: 560px;
+      justify-items: center；
+    }
+
+    .carousel {
+        position: relative;
+        width: 910px;
+        height: 560px;
+        perspective: 1200px;
+    }
+
+    
+    .carousel img {
+    height: auto; /* This is the fixed height. */
+    width: auto; /* This allows the width to adjust based on the height. */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform 1s, opacity 1s;
+    transform-origin: left center;
+    }
+    .carousel img.active {
+        transform: translateX(0) scale(1) ;
+        opacity: 1;
+        z-index: 2;
+    }
+    .carousel img.inactive {
+        transform: translateX(55%) scale(0.7) ;
+        opacity: 0.5;
+        z-index: 1;
+    }
+    .carousel-controls {
+      display: flex;
+      justify-content: center;
+      width: 1144px; /* Set the width to 1200px */ /* Center horizontally and add margin at the top */
+    }
+    .carousel-controls button {
+        width: 130px;
+        height: 25px;
+        background: gray;
+        border: none;
+        margin: 0 5px;
+        color: white;
+    }
+    .carousel-controls button.active {
+        background: black;
+        color: white;
+    }
+</style>
 </head>
 
 <body>
@@ -321,17 +372,33 @@ image: cover.jpg
           <hr>
           <div class="full">
             <h2>Decoding the Bureaucracy: Reimagining Meeting Sheets for Enhanced Public Engagemen with ChatGPT</h2>
-            <img src="./3-2.jpg">
           </div>
-            <div class="half">
-            <p>
-              I selected the disposition sheet PDF from the NYC Department of Planning and mapped its structure.
-               I found that the document does not provide a space for recording public opinion, focusing instead 
-               solely on the voting results of the planning commission. To explore how this could be made more 
-               participatory, I utilized ChatGPT for suggestions. The AI proposed a more participatory version 
-               of the sheet that could include additional sections such as a Public Opinion Section, Public Voting, 
-               Decision Making, Community Representative, and Online Participation. 
-            </p>
+          
+          <div class="full">
+          <div class="grid-container">
+            <div class="carousel">
+                <img src="./sheet-1.jpg" class="active" />
+                <img src="./sheet-2.jpg" class="inactive" />
+            </div>
+            <div class="carousel-controls">
+                <button class="active">bureaucratic?</button>
+                <button>participatory?</button>
+            </div>
+          </div>
+          </div>
+          
+
+
+
+          <div class="half">
+          <p>
+          I selected the disposition sheet PDF from the NYC Department of Planning and mapped its structure.
+          I found that the document does not provide a space for recording public opinion, focusing instead 
+          solely on the voting results of the planning commission. To explore how this could be made more 
+          participatory, I utilized ChatGPT for suggestions. The AI proposed a more participatory version 
+          of the sheet that could include additional sections such as a Public Opinion Section, Public Voting, 
+          Decision Making, Community Representative, and Online Participation. 
+          </p>
           </p>
           I gathered public opinions from Reddit about the Madison Square Garden project, incorporating these perspectives 
           into the reimagined form. The feedback revealed several concerns about the project's impact on pedestrian traffic
@@ -342,15 +409,29 @@ image: cover.jpg
            Board 5 (CB5), which, upon reviewing the application, determined that the Madison Square Garden Arena did not meet
             the findings of Article 74-41 of the zoning resolution. The board strongly advocated for the arena's relocation 
             as the preferred solution to address the multitude of issues surrounding Penn Station.
-          </p>
+          </p> 
           </div>
+
           <div class="half">
-          <img src="./3-5.jpg"> 
+            <img src="./3-5.jpg">
           </div>
           <hr>
           <div class="full">
             <h2>Decoding the Bureaucracy: Reimagining Meeting Sheets for Enhanced Public Engagemen with Midjourney</h2>
-            <img src="./3-3.jpg">
+          </div>
+          <div class="full">
+            <div class="grid-container">
+              <div class="carousel">
+                <img src="./sheet-1.jpg" class="active" />
+                <img src="./sheet-2.jpg" class="inactive" />
+              </div>
+              <div class="carousel-controls">
+                <button class="active">bureaucratic?</button>
+                <button>participatory?</button>
+              </div>
+            </div>
+          </div>
+          <div class="full">
             <p>
             I also asked Midjourney to reimagine the record sheet for a participatory city planning public hearing. The prompt 
             was: 'A participatory city planning public hearing record sheet.' The reimagined version presented some intriguing 
@@ -360,10 +441,22 @@ image: cover.jpg
             participation, capturing a multitude of voices and perspectives.
             </p>
           </div>
+          
           <hr>
           <div class="full">
             <h2>Mapping Political Power Dynamics in Zoom Meeting Spaces</h2>
-            <img src="./3-4.jpg">
+          </div>
+          <div class="full">
+            <div class="grid-container1">
+              <div class="carousel1">
+                <img src="./sheet-1.jpg" class="active" />
+                <img src="./sheet-2.jpg" class="inactive" />
+              </div>
+              <div class="carousel-controls">
+                <button class="active">bureaucratic?</button>
+                <button>participatory?</button>
+              </div>
+            </div>
           </div>
           <div class="half">
             <p>
@@ -401,6 +494,48 @@ image: cover.jpg
 
       <footer></footer>
     </div>
+    <script>
+// Get a list of all carousels on the page
+const carousels = Array.from(document.querySelectorAll('.grid-container'));
+
+carousels.forEach((carouselContainer) => {
+  let currentIndex = 0;
+
+  // For each carousel, get the controls and images specifically inside that carousel
+  const controls = Array.from(carouselContainer.querySelectorAll('.carousel-controls button'));
+  const images = Array.from(carouselContainer.querySelectorAll('.carousel img'));
+
+  function setActive(index) {
+    controls.forEach((control, controlIndex) => {
+      control.classList.toggle('active', controlIndex === index);
+    });
+
+    images.forEach((image, imageIndex) => {
+      image.classList.toggle('active', imageIndex === index);
+      image.classList.toggle('inactive', imageIndex !== index);
+    });
+  }
+
+  controls.forEach((control, index) => {
+    control.addEventListener('click', () => {
+      currentIndex = index;
+      setActive(index);
+    });
+  });
+
+  // Add a wheel event listener to the carousel
+  carouselContainer.querySelector('.carousel').addEventListener('wheel', (event) => {
+    event.preventDefault(); // prevent the default scrolling behavior
+    currentIndex = (event.deltaY > 0) 
+      ? Math.min(currentIndex + 1, images.length - 1) // if scrolling down, increment the index (max is images.length - 1)
+      : Math.max(currentIndex - 1, 0); // if scrolling up, decrement the index (min is 0)
+    setActive(currentIndex);
+  });
+});
+
+    </script>
+    
+
   </main>
 </body>
 
