@@ -167,6 +167,8 @@ npx @11ty/eleventy --serve
 
 Browse to <http://localhost:8080/> or use the URL outputted by `yarn start`.
 
+Sometimes this fails with some obscure errors about the passthrough copy. In this case, one troubleshooting step is to completely remove the `_site` folder with `rm -rf _site` and try generating the site again.
+
 ## Deployment
 
 This repository is automatically deployed to GitHub Pages whenever a new commit is pushed to the 

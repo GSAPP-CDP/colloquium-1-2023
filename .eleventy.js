@@ -54,6 +54,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("**/*.mp3");
   eleventyConfig.addPassthroughCopy("**/*.mp4");
 
+  eleventyConfig.addPassthroughCopy("**/*.js");
+  eleventyConfig.addPassthroughCopy("**/*.css");
+
+  eleventyConfig.addPassthroughCopy("**/*.obj");
+  eleventyConfig.addPassthroughCopy("**/*.csv");
+
   return {
     dir: {
       // ⚠️ These values are both relative to your input directory.
