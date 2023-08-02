@@ -1,6 +1,6 @@
-/* This is just a little hack to get things to bump over and match the style of another GSAPP website. */
 .project {
-  margin-left: calc(25% + 8px);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Add a bit of space between paragraphs so we can read them better.*/
@@ -16,10 +16,17 @@
 .full {
   grid-column: 1 / -1;
 }
+@media (min-width: 640px) {
+}
 
 /* Use this class for a section half the width of the content zone. */
 .half {
-  grid-column: span 2;
+  grid-column: span 4; /* In mobile or narrow screens, span the entire width. */
+}
+@media (min-width: 640px) {
+  .half {
+    grid-column: span 2; /* Normally, span half the available columns. */
+  }
 }
 
 /* And this for a video. */
