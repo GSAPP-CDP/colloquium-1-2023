@@ -1,0 +1,18 @@
+.element {
+    background-color: beige;
+}
+
+.btn {
+    width: 200px;
+    height: 80px;
+    background-color: red;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    font-size: 24px;
+    transition: background-color 2s linear 1s;
+}
+
+.btn:hover {
+    background-color: pink;
+}
