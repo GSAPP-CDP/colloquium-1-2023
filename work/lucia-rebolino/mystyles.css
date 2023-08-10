@@ -1,6 +1,7 @@
 .scene {
   width:100%;
   height: 600px;
+  perspective: 6000px;
 }
   
   .cube {
