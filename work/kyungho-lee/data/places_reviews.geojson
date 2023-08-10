@@ -1,0 +1,3770 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJo4H04UiifDUR_h8JsSITeBI",
+        "business_status": "OPERATIONAL",
+        "rating": 3.9,
+        "user_ratings_total": 41,
+        "ratings_timestamp": [
+          1685176489,
+          1643796532,
+          1643465857,
+          1642008295,
+          1633686016,
+          1626949742,
+          1619845675,
+          1617005707,
+          1615705849,
+          1609423029,
+          1605944750,
+          1593018428,
+          1592975666,
+          1566828477,
+          1563349300,
+          1557750424,
+          1557207201,
+          1556540066,
+          1556456399,
+          1555751244,
+          1553322994,
+          1547984207,
+          1547895137,
+          1544542686,
+          1544003083,
+          1542974242,
+          1542178225,
+          1538389514,
+          1538293404,
+          1533201084,
+          1526038396,
+          1523874623,
+          1517041820,
+          1499292426,
+          1495875687,
+          1495357455,
+          1494260738,
+          1489327857,
+          1485750926,
+          1485468965,
+          1482043698
+        ],
+        "name": "Good Afternoon",
+        "user_ratings_2016": 1,
+        "user_ratings_2017": 7,
+        "user_ratings_2018": 10,
+        "user_ratings_2019": 10,
+        "user_ratings_2020": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9889629,
+          37.5379876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJn-lyG0mifDUR7s3TP0hCFJM",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ucee4\uba3c\ub514\uc790\uc778\uc2a4\ud29c\ub514\uc624",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9894408,
+          37.5375807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJfQZIp06ifDUR00ladKGbzOk",
+        "business_status": "OPERATIONAL",
+        "rating": 4.6,
+        "user_ratings_total": 127,
+        "ratings_timestamp": [
+          1690185974,
+          1689741721,
+          1688891021,
+          1687876973,
+          1686881933,
+          1681457568,
+          1681303565,
+          1674170110,
+          1662960997,
+          1659262009,
+          1656829027,
+          1655708251,
+          1653990707,
+          1653893229,
+          1653629112,
+          1649493354,
+          1648084056,
+          1646622176,
+          1644695068,
+          1641538827,
+          1636099800,
+          1632810420,
+          1626347777,
+          1625133945,
+          1623765670,
+          1623737663,
+          1623148925,
+          1622794192,
+          1617875910,
+          1617365983,
+          1615199835,
+          1614875266,
+          1613275524,
+          1612882732,
+          1612444709,
+          1610958434,
+          1610466842,
+          1602235509,
+          1601186952,
+          1598763875,
+          1595840228,
+          1595506264,
+          1590845943,
+          1584758082,
+          1584629052,
+          1584270857,
+          1583842643,
+          1583840486,
+          1582614834,
+          1581749704,
+          1581708279,
+          1581580718,
+          1581393499,
+          1580472260,
+          1579684076,
+          1579531293,
+          1578833473,
+          1578756927,
+          1578651724,
+          1578217039,
+          1577616436,
+          1577240828,
+          1576422863,
+          1575173665,
+          1574754484,
+          1573648958,
+          1571311335,
+          1570351731,
+          1569573237,
+          1569071198,
+          1568983662,
+          1568548318,
+          1567237206,
+          1566626411,
+          1566566519,
+          1565512262,
+          1564047564,
+          1563109215,
+          1562483320,
+          1560659488,
+          1560405176,
+          1559460170,
+          1558108852,
+          1556687645,
+          1553928362,
+          1553838507,
+          1552641045,
+          1552201085,
+          1551971497,
+          1551633258,
+          1551478568,
+          1551417550,
+          1550393623,
+          1549774277,
+          1545725357,
+          1542378214,
+          1542191970,
+          1541311915,
+          1540362118,
+          1539841317,
+          1539010788,
+          1536658905,
+          1533974521,
+          1533445457,
+          1530274058,
+          1530195683,
+          1529187406,
+          1525330946,
+          1522087410,
+          1518850703,
+          1516333709,
+          1511308961,
+          1509680189,
+          1509590941,
+          1509515961,
+          1508141511,
+          1503801051,
+          1501310789,
+          1499266887,
+          1497546177,
+          1497528174,
+          1495892014,
+          1492494159,
+          1488007848,
+          1486246035,
+          1485817212,
+          1481788288
+        ],
+        "name": "\uc0ac\ub8e8",
+        "user_ratings_2016": 1,
+        "user_ratings_2017": 15,
+        "user_ratings_2018": 17,
+        "user_ratings_2019": 34,
+        "user_ratings_2020": 23
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9916306,
+          37.53923119999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJEz2bi06ifDURNN61VzBx9L4",
+        "business_status": "OPERATIONAL",
+        "rating": 4.5,
+        "user_ratings_total": 57,
+        "ratings_timestamp": [
+          1691126362,
+          1686614193,
+          1679104830,
+          1665623611,
+          1664323970,
+          1664112918,
+          1661176312,
+          1661078608,
+          1657463776,
+          1655887633,
+          1655188823,
+          1647869867,
+          1647076017,
+          1623283617,
+          1620129436,
+          1617629385,
+          1600981325,
+          1589087987,
+          1588084414,
+          1582001692,
+          1579505014,
+          1578882600,
+          1578113267,
+          1576125356,
+          1575282741,
+          1574958019,
+          1570097946,
+          1569725011,
+          1568287614,
+          1567863284,
+          1565588285,
+          1560394540,
+          1559892782,
+          1559888237,
+          1557310633,
+          1557176511,
+          1553072021,
+          1551949980,
+          1550868882,
+          1550834905,
+          1550455841,
+          1541832756,
+          1539317689,
+          1536660911,
+          1534350759,
+          1530178307,
+          1526683577,
+          1522858373,
+          1521282677,
+          1518244688,
+          1517962111,
+          1516160564,
+          1499320790,
+          1491105683,
+          1489646009,
+          1482139491,
+          1476345907
+        ],
+        "name": "Berkeley Coffee Social",
+        "user_ratings_2016": 2,
+        "user_ratings_2017": 3,
+        "user_ratings_2018": 11,
+        "user_ratings_2019": 18,
+        "user_ratings_2020": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9905059,
+          37.5409102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJZ8xgWEiifDURgEAHMJyH8Zs",
+        "business_status": "OPERATIONAL",
+        "rating": 3.2,
+        "user_ratings_total": 18,
+        "ratings_timestamp": [
+          1659248345,
+          1647633747,
+          1645464450,
+          1546795067,
+          1544926202,
+          1541224611,
+          1538978582,
+          1537179440,
+          1534580611,
+          1534386240,
+          1529326316,
+          1528878469,
+          1527935156,
+          1523696642,
+          1521881445,
+          1520750662,
+          1498798058,
+          1487218341
+        ],
+        "name": "\uc288\uac00\ub808\uc778",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 2,
+        "user_ratings_2018": 12,
+        "user_ratings_2019": 1,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.988208,
+          37.537272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJLeOyLEmifDURPcwXTqPz7CM",
+        "business_status": "OPERATIONAL",
+        "rating": 2.5,
+        "user_ratings_total": 4,
+        "ratings_timestamp": [
+          1567286717,
+          1566213678,
+          1557251016,
+          1541315212
+        ],
+        "name": "Gongsa Coffee",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 1,
+        "user_ratings_2019": 3,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9894144,
+          37.5392006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJCaM_1E6ifDURh4rt2qG-c9s",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ube7d\ub2e4\ubc29\uc774\ud0dc\uc6d0\uacbd\ub9ac\ub2e8\uae38\uc810",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9892703,
+          37.53948139999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJc6pEmVajfDURevPyvAU3Rmo",
+        "business_status": "OPERATIONAL",
+        "rating": 4.4,
+        "user_ratings_total": 12,
+        "ratings_timestamp": [
+          1689196307,
+          1686533910,
+          1682236304,
+          1672307132,
+          1661132911,
+          1660628509,
+          1644675241,
+          1641380412,
+          1622744882,
+          1615877824,
+          1580958763,
+          1572660833
+        ],
+        "name": "Paris Baguette Cafe",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 1,
+        "user_ratings_2020": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9889112,
+          37.5389252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJqVIn0kiifDUR2u-tRuKNMXc",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\uc5b4\uc378\uc2a4\ud130\ud504",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9884607,
+          37.5392681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJCbOeOGGjfDURxtVyH-rGL6I",
+        "business_status": "OPERATIONAL",
+        "rating": 4.6,
+        "user_ratings_total": 12,
+        "ratings_timestamp": [
+          1683469637,
+          1649076239,
+          1636326998,
+          1632719614,
+          1631603789,
+          1622104751,
+          1620312352,
+          1619165239,
+          1581309131,
+          1575789916,
+          1573489234,
+          1568952954
+        ],
+        "name": "Almost Home",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 3,
+        "user_ratings_2020": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9896276,
+          37.53983489999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJRYne2k6ifDURZDbZVrOYXcI",
+        "business_status": "OPERATIONAL",
+        "rating": 4.2,
+        "user_ratings_total": 6,
+        "ratings_timestamp": [
+          1562651368,
+          1560407262,
+          1559211631,
+          1557139448,
+          1524577464,
+          1507959424
+        ],
+        "name": "Long Bread, Gyungridan",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 1,
+        "user_ratings_2018": 1,
+        "user_ratings_2019": 4,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9896261,
+          37.5398367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJw6pRz06ifDURWNog343UGu4",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "INNO.D.CAFE",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9900029,
+          37.53954280000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJVxWyMUmifDURsK0C7AfYg9M",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "Nammi",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9898191,
+          37.5386409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJT3-F2nKjfDURQoSLeUgZcxA",
+        "business_status": "OPERATIONAL",
+        "rating": 3,
+        "user_ratings_total": 2,
+        "ratings_timestamp": [
+          1632114000,
+          1562811345
+        ],
+        "name": "Toy Story Pop Up",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 1,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9887061,
+          37.5386061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJuZc91yGjfDURIAz2DPTVhrQ",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\uce74\ud398 \ube44\uc2a4\ud0b7",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9882504,
+          37.5388401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ3TyYx06ifDURVA9WYM0RaWs",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\uba54\ub9ac\ub9b0",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9903315,
+          37.539624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJyz5_x06ifDURkWFiHqcu4pI",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ub178\ub780\uc625\uc218\uc218",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9903528,
+          37.5395924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJzREQP9ajfDURWSW9IM9xVo0",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\uce74\ud398 \ube44\uc698\ub4dc\ubb38",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9901082,
+          37.5399011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJcY4iDpKjfDUR7MFcIJQi7Zg",
+        "business_status": "OPERATIONAL",
+        "rating": 2,
+        "user_ratings_total": 1,
+        "ratings_timestamp": [
+          1653660796
+        ],
+        "name": "\uba3c\uc140\ucee4\ud53c",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9904833,
+          37.5392322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJfUmAk-yjfDUR2exmiFMuHu8",
+        "business_status": "OPERATIONAL",
+        "rating": 4.5,
+        "user_ratings_total": 15,
+        "ratings_timestamp": [
+          1686411018,
+          1685876718,
+          1684555731,
+          1684021654,
+          1683984038,
+          1677603243,
+          1676184585,
+          1665816630,
+          1661139629,
+          1659296161,
+          1650162967,
+          1650027131,
+          1648668312,
+          1647673180,
+          1646649329
+        ],
+        "name": "\ube44\uc698\ub4dc\ubb38",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9901,
+          37.5399615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJSVzvBiujfDURnYGyvXLbRuY",
+        "business_status": "OPERATIONAL",
+        "rating": 4.3,
+        "user_ratings_total": 3,
+        "ratings_timestamp": [
+          1679471132,
+          1654488199,
+          1571635434
+        ],
+        "name": "ANNA\u2019S CAFE",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 1,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9880448,
+          37.538732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ9xY7uU6ifDURIYOoZ4a-0x0",
+        "business_status": "CLOSED_TEMPORARILY",
+        "rating": 3.5,
+        "user_ratings_total": 2,
+        "ratings_timestamp": [
+          1556442888,
+          1555928512
+        ],
+        "name": "salon \ub9cc\uc6d4",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 2,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9905855,
+          37.5395986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJOxA0OLGjfDUR8gHHJbDyybU",
+        "business_status": "OPERATIONAL",
+        "rating": 4.9,
+        "user_ratings_total": 7,
+        "ratings_timestamp": [
+          1686541614,
+          1683278690,
+          1681369044,
+          1667266232,
+          1666594808,
+          1666330596,
+          1666330395
+        ],
+        "name": "Plantica",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.98769,
+          37.5393588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJUw8zwEiifDURPlBfAz_etwA",
+        "business_status": "OPERATIONAL",
+        "rating": 3.9,
+        "user_ratings_total": 7,
+        "ratings_timestamp": [
+          1649179745,
+          1595651847,
+          1563768225,
+          1555418156,
+          1553946121,
+          1552142985,
+          1485309724
+        ],
+        "name": "COFFEE COURT Gyeongnidan-gil",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 1,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 4,
+        "user_ratings_2020": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.987843,
+          37.5386726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJUw8zwEiifDURYgwAgJdJO2I",
+        "business_status": "OPERATIONAL",
+        "rating": 4.5,
+        "user_ratings_total": 2,
+        "ratings_timestamp": [
+          1579438994,
+          1576596398
+        ],
+        "name": "Beleuno",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 1,
+        "user_ratings_2020": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.987847,
+          37.5386372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJYyfavU6ifDURbFERCkMGmtE",
+        "business_status": "OPERATIONAL",
+        "rating": 3.7,
+        "user_ratings_total": 9,
+        "ratings_timestamp": [
+          1615743148,
+          1615711050,
+          1613287031,
+          1601749570,
+          1589184704,
+          1571303095,
+          1566566350,
+          1539701071,
+          1538481302
+        ],
+        "name": "\uce74\ud398 \ubb34\uc81c",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 2,
+        "user_ratings_2019": 2,
+        "user_ratings_2020": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9907265,
+          37.5397817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJzazyVfOjfDURjacT0P59kgg",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\uacbd\ub9ac\ub2e8 \uadf8 \uc9d1",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.988319,
+          37.5382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJR4FaaxWjfDURioz9GOWylCc",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 2,
+        "ratings_timestamp": [
+          1668227455,
+          1663666805
+        ],
+        "name": "\uc0b0\uc218\ubaa9 \ubaa8\ubaa8\uc2a4",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9887422,
+          37.5379487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJqw7tsGCjfDURJ8zpyOdQK_E",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 1,
+        "ratings_timestamp": [
+          1654301073
+        ],
+        "name": "\ud3ec\uc9c0\ud2f0\ube0c\ubbf8 Positive Me",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9909434,
+          37.5395164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ32adHkmifDURvE0M78FG0Qk",
+        "business_status": "OPERATIONAL",
+        "rating": 4.5,
+        "user_ratings_total": 4,
+        "ratings_timestamp": [
+          1650927569,
+          1631246379,
+          1629022726,
+          1622352709
+        ],
+        "name": "\ud504\ub86c\ub354\ud14c\uc774\ube14",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9892428,
+          37.5378286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ90Jz4kiifDURhYsF19v0zz0",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\uc544\ub9c8\ud30c\uc1a1",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9890028,
+          37.5378383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJgVdV-0iifDURPCtFqs69WaI",
+        "business_status": "OPERATIONAL",
+        "rating": 4.3,
+        "user_ratings_total": 73,
+        "ratings_timestamp": [
+          1685165699,
+          1673170057,
+          1665289326,
+          1660298837,
+          1658662992,
+          1645357176,
+          1642417576,
+          1640856448,
+          1639441633,
+          1636876770,
+          1624566925,
+          1622109764,
+          1619334164,
+          1618043733,
+          1594186209,
+          1583635726,
+          1583195196,
+          1582453819,
+          1581168981,
+          1579819872,
+          1579048711,
+          1575342472,
+          1574582259,
+          1570934984,
+          1569855733,
+          1558784254,
+          1558333957,
+          1556457590,
+          1555995492,
+          1555993820,
+          1555715263,
+          1551877780,
+          1549457071,
+          1549296125,
+          1548339076,
+          1547545373,
+          1547096071,
+          1546929878,
+          1545582087,
+          1545043698,
+          1543031576,
+          1537875584,
+          1536237250,
+          1536229827,
+          1533941623,
+          1532946516,
+          1531114473,
+          1531008154,
+          1524578208,
+          1524398052,
+          1523860410,
+          1517032826,
+          1514881619,
+          1513873072,
+          1511600080,
+          1511216330,
+          1508568361,
+          1508216235,
+          1507256017,
+          1504404159,
+          1504170505,
+          1503811258,
+          1502791249,
+          1502010733,
+          1500128171,
+          1498367120,
+          1495779271,
+          1493191724,
+          1491925132,
+          1491211223,
+          1490147144,
+          1489335932,
+          1481426757
+        ],
+        "name": "Tiger Espresso",
+        "user_ratings_2016": 1,
+        "user_ratings_2017": 19,
+        "user_ratings_2018": 15,
+        "user_ratings_2019": 17,
+        "user_ratings_2020": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9886907,
+          37.5377374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJpU1pmE6ifDURZg70-zEV7SQ",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ub9e4\ub4dc\ud504\ub85c\uc81d\ud2b8",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9911491,
+          37.5397848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJYWPxuV2jfDUR8RA8LpQvr5E",
+        "business_status": "OPERATIONAL",
+        "rating": 4.3,
+        "user_ratings_total": 24,
+        "ratings_timestamp": [
+          1691068773,
+          1689818874,
+          1688179562,
+          1687918928,
+          1684822690,
+          1683903657,
+          1682216776,
+          1679922935,
+          1679325641,
+          1679192278,
+          1678178760,
+          1678104919,
+          1675580189,
+          1674396826,
+          1674300061,
+          1674134352,
+          1673252755,
+          1673244640,
+          1672396096,
+          1670396959,
+          1670140661,
+          1664790735,
+          1660106032,
+          1655514689
+        ],
+        "name": "\uc2a4\ud0c0\ubc85\uc2a4 \uacbd\ub9ac\ub2e8\uae38\uc810",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9874086,
+          37.5385806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJgWCU8tSjfDURTG2Grw8KwH0",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 1,
+        "ratings_timestamp": [
+          1611298923
+        ],
+        "name": "Flower Cafe",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9874086,
+          37.5385806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ1aH3OMyjfDURhhc80KQT4Ko",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 1,
+        "ratings_timestamp": [
+          1562899920
+        ],
+        "name": "\uc2ec\ud50c\ub9ac\uc2dc\ub5bc \ucee4\ud53c Simplicit\u00e9 Coffee",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 1,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9912806,
+          37.53951299999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJme60o06ifDURB2EVjEXtnk0",
+        "business_status": "OPERATIONAL",
+        "rating": 3.8,
+        "user_ratings_total": 5,
+        "ratings_timestamp": [
+          1524803755,
+          1518852829,
+          1513722429,
+          1502007686,
+          1493803972
+        ],
+        "name": "I Me Mine",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 3,
+        "user_ratings_2018": 2,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9912806,
+          37.53951299999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJla4KQ0GjfDURhGnij8L8epc",
+        "business_status": "CLOSED_TEMPORARILY",
+        "rating": 4.2,
+        "user_ratings_total": 14,
+        "ratings_timestamp": [
+          1654363717,
+          1647437745,
+          1647395940,
+          1645584662,
+          1637799640,
+          1623594890,
+          1620474470,
+          1620471529,
+          1619192731,
+          1617516627,
+          1613064749,
+          1611392833,
+          1605395969,
+          1564370723
+        ],
+        "name": "\ub8e8\ub098\ub775\uc2a4",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 1,
+        "user_ratings_2020": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9886824,
+          37.5375985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ3aVGHHejfDURkui7aKOKlTs",
+        "business_status": "OPERATIONAL",
+        "rating": 4.5,
+        "user_ratings_total": 4,
+        "ratings_timestamp": [
+          1609102555,
+          1604476906,
+          1603541590,
+          1564720444
+        ],
+        "name": "Lunarthings",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 1,
+        "user_ratings_2020": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9886824,
+          37.5375985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJmTcVEC-jfDURPAx_uDDK590",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "Cafe Four M",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9915304,
+          37.5394428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJMfnY8E6ifDURIkewkWNT7t8",
+        "business_status": "OPERATIONAL",
+        "rating": 4.3,
+        "user_ratings_total": 64,
+        "ratings_timestamp": [
+          1681628426,
+          1679806754,
+          1668937150,
+          1668156705,
+          1667353792,
+          1660461611,
+          1658827217,
+          1655082991,
+          1651228727,
+          1649583931,
+          1649500432,
+          1649153688,
+          1646118935,
+          1645260344,
+          1635072920,
+          1624450696,
+          1614737868,
+          1612597511,
+          1603602526,
+          1600041503,
+          1599631040,
+          1583654364,
+          1583567299,
+          1580688109,
+          1578367808,
+          1575795803,
+          1573531840,
+          1573337956,
+          1572923612,
+          1572922773,
+          1567635392,
+          1567575489,
+          1567218433,
+          1565768790,
+          1565154397,
+          1563500918,
+          1560402198,
+          1560235539,
+          1560143969,
+          1557128645,
+          1553834886,
+          1551475200,
+          1550895775,
+          1549945178,
+          1546578979,
+          1543814922,
+          1540341869,
+          1540188172,
+          1539501868,
+          1536038992,
+          1531813460,
+          1531467476,
+          1530529303,
+          1526976757,
+          1526273626,
+          1521890130,
+          1520396994,
+          1518768390,
+          1517719583,
+          1513920945,
+          1513560532,
+          1512213951,
+          1512080084,
+          1488611250
+        ],
+        "name": "Water Street",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 5,
+        "user_ratings_2018": 14,
+        "user_ratings_2019": 20,
+        "user_ratings_2020": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9898572,
+          37.54101989999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJKRiW-UiifDURW3Sg7BRdsc4",
+        "business_status": "OPERATIONAL",
+        "rating": 4.3,
+        "user_ratings_total": 21,
+        "ratings_timestamp": [
+          1603983589,
+          1599903520,
+          1590228673,
+          1583583328,
+          1582700526,
+          1582557184,
+          1581683443,
+          1580873692,
+          1576757072,
+          1576312098,
+          1575809732,
+          1574690203,
+          1569663016,
+          1566942103,
+          1566031788,
+          1561301941,
+          1559047351,
+          1556158470,
+          1555166619,
+          1553434528,
+          1551499967
+        ],
+        "name": "\uc870\uc774\uc758\uacf5\uac04",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 13,
+        "user_ratings_2020": 8
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9884653,
+          37.5374632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJN9XeRW2jfDUR9XWEbB5frM0",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 3,
+        "ratings_timestamp": [
+          1668086432,
+          1668086221,
+          1667557528
+        ],
+        "name": "\uc774\ud0dc\uc6d0\ubaa8\uba3c\ud2b8(Itaewon moment)",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9884458,
+          37.53744239999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ4VayleWjfDUR0StNCerFKLU",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ud06c\ub9bc\ucee4\ub125\uc158",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.988396,
+          37.5374132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJOZYYkqijfDURLEFvw2DL6nU",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 14,
+        "ratings_timestamp": [
+          1675406109,
+          1675177176,
+          1674026080,
+          1674015752,
+          1673943363,
+          1673850878,
+          1673850775,
+          1673482218,
+          1673426626,
+          1673336821,
+          1673253948,
+          1673084229,
+          1673083980,
+          1672886180
+        ],
+        "name": "\uc5d1\uc2a4\ud504\ub808\uc18c \uc544\uc624\ub77c expres\u00f3 ahora",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9868773,
+          37.5382133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJy8MghkiifDURbIRZTnb_Wgg",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "Nogsa",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.987006,
+          37.5379779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJaRMgWUiifDUR_6inrZ9Jbo4",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\uc790\ubabd",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.988099,
+          37.53723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJf7euTEyifDURdMUVpWv6-gY",
+        "business_status": "OPERATIONAL",
+        "rating": 4.2,
+        "user_ratings_total": 199,
+        "ratings_timestamp": [
+          1688950370,
+          1686562693,
+          1685761242,
+          1684565345,
+          1682929989,
+          1681911853,
+          1679305708,
+          1677396476,
+          1673923625,
+          1672469623,
+          1670055600,
+          1666794429,
+          1665245136,
+          1660457049,
+          1657432983,
+          1656293291,
+          1655538724,
+          1649842361,
+          1649677111,
+          1649605258,
+          1648086555,
+          1646897024,
+          1646139209,
+          1645600360,
+          1644145259,
+          1643608021,
+          1641204991,
+          1640877017,
+          1640696700,
+          1640502469,
+          1639100196,
+          1638242696,
+          1636348008,
+          1635837621,
+          1635634312,
+          1634816287,
+          1632657328,
+          1629266422,
+          1625905217,
+          1625145874,
+          1624863754,
+          1624363778,
+          1623409200,
+          1622436183,
+          1618041047,
+          1614174435,
+          1605346809,
+          1604312444,
+          1604098485,
+          1603449956,
+          1603012349,
+          1602509284,
+          1602431711,
+          1602395875,
+          1601739909,
+          1597922212,
+          1593150852,
+          1592734680,
+          1589088062,
+          1588584680,
+          1584183269,
+          1583582648,
+          1583470124,
+          1583247019,
+          1582981664,
+          1582364639,
+          1582032944,
+          1582013218,
+          1581747982,
+          1580795528,
+          1579790925,
+          1579419262,
+          1578819079,
+          1578797864,
+          1578545171,
+          1578477630,
+          1578133405,
+          1577604558,
+          1577571777,
+          1577545770,
+          1577522601,
+          1577413640,
+          1577206451,
+          1577201383,
+          1576481120,
+          1575807337,
+          1575714444,
+          1575174544,
+          1574815889,
+          1574231544,
+          1573888299,
+          1573733155,
+          1573360133,
+          1573041762,
+          1571832594,
+          1571313364,
+          1570342760,
+          1570186900,
+          1569603287,
+          1569386525,
+          1568725576,
+          1565605250,
+          1564732805,
+          1564494363,
+          1564309042,
+          1563349046,
+          1562724711,
+          1560052064,
+          1559757350,
+          1559408542,
+          1556376431,
+          1556376340,
+          1556258333,
+          1555343652,
+          1554299643,
+          1553857235,
+          1553575010,
+          1553442566,
+          1553420222,
+          1553174878,
+          1552714547,
+          1551912766,
+          1551841093,
+          1551708006,
+          1551587130,
+          1548589190,
+          1548579145,
+          1548571354,
+          1548316937,
+          1547962179,
+          1547729277,
+          1546249909,
+          1545812617,
+          1544630387,
+          1543912967,
+          1543137762,
+          1543132590,
+          1542725095,
+          1542610678,
+          1542341960,
+          1542253168,
+          1541995733,
+          1541225443,
+          1540733815,
+          1540543256,
+          1540176587,
+          1539833274,
+          1539487312,
+          1538461612,
+          1535718109,
+          1534824098,
+          1534423566,
+          1533254548,
+          1531360915,
+          1530349004,
+          1528816309,
+          1527754197,
+          1527329272,
+          1525071629,
+          1523200551,
+          1522480572,
+          1522057398,
+          1521968961,
+          1521628632,
+          1521456097,
+          1519958918,
+          1518858501,
+          1518158714,
+          1517485724,
+          1517048586,
+          1516579661,
+          1516539211,
+          1516523632,
+          1516196722,
+          1515292029,
+          1515289882,
+          1514962517,
+          1514615719,
+          1513607855,
+          1512996099,
+          1512532318,
+          1511753402,
+          1511370352,
+          1511062410,
+          1507110008,
+          1505193035,
+          1504076415,
+          1503627523,
+          1501900185,
+          1501019316,
+          1499958410,
+          1498276308,
+          1496213508,
+          1493135477,
+          1493020496,
+          1492751803,
+          1491984242,
+          1489717455,
+          1487379306
+        ],
+        "name": "Everything But The Hero Cafe",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 22,
+        "user_ratings_2018": 46,
+        "user_ratings_2019": 54,
+        "user_ratings_2020": 31
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9934144,
+          37.5400376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ0XzLp02ifDURBaEFl0XDCfw",
+        "business_status": "OPERATIONAL",
+        "rating": 3.9,
+        "user_ratings_total": 146,
+        "ratings_timestamp": [
+          1689259337,
+          1687964757,
+          1687615415,
+          1686628722,
+          1686271502,
+          1685123954,
+          1683964765,
+          1682611452,
+          1676384294,
+          1673141956,
+          1665324063,
+          1664485493,
+          1662269687,
+          1660035974,
+          1653375043,
+          1652924759,
+          1652923447,
+          1652878480,
+          1652097895,
+          1632799962,
+          1632580886,
+          1628860920,
+          1627312113,
+          1625737199,
+          1624423173,
+          1623940728,
+          1623638775,
+          1623244345,
+          1622473364,
+          1621952124,
+          1619114809,
+          1618901478,
+          1618900966,
+          1618493729,
+          1615773950,
+          1604997946,
+          1604407126,
+          1604209716,
+          1602761689,
+          1601892528,
+          1597236828,
+          1596284961,
+          1591526257,
+          1590677983,
+          1586109548,
+          1583845742,
+          1583758138,
+          1583480115,
+          1582613327,
+          1581946222,
+          1581252312,
+          1580568760,
+          1577833977,
+          1576341027,
+          1576318534,
+          1576153974,
+          1575269506,
+          1567584033,
+          1566465049,
+          1564840441,
+          1564335576,
+          1563681637,
+          1563118625,
+          1563089210,
+          1562771439,
+          1562418466,
+          1561830751,
+          1561828071,
+          1561025749,
+          1560182325,
+          1559911770,
+          1558676356,
+          1558533218,
+          1557823536,
+          1557501692,
+          1557415391,
+          1557402532,
+          1557380175,
+          1556356455,
+          1555757362,
+          1554380555,
+          1553950626,
+          1553410186,
+          1552811798,
+          1552234787,
+          1547954478,
+          1547916725,
+          1547129482,
+          1545212033,
+          1544635060,
+          1544196957,
+          1543768523,
+          1542645215,
+          1539676662,
+          1538798748,
+          1538422979,
+          1538234226,
+          1537929570,
+          1537442840,
+          1537027374,
+          1536757011,
+          1536499338,
+          1536497252,
+          1536170422,
+          1533886342,
+          1532230120,
+          1531583157,
+          1531013476,
+          1530956847,
+          1530194472,
+          1530062922,
+          1529666968,
+          1529486513,
+          1529411981,
+          1529238963,
+          1529063753,
+          1528767843,
+          1528701015,
+          1526890096,
+          1526545858,
+          1526274386,
+          1526274175,
+          1525522075,
+          1524542381,
+          1521277936,
+          1520736967,
+          1520729747,
+          1520637857,
+          1519729439,
+          1518871437,
+          1515819371,
+          1509439998,
+          1508917613,
+          1507818794,
+          1506775135,
+          1505908705,
+          1505881967,
+          1505613208,
+          1505059718,
+          1504447484,
+          1504001685,
+          1503922616,
+          1503895255,
+          1503631281,
+          1503384144,
+          1500170059
+        ],
+        "name": "Seoul Ludens",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 15,
+        "user_ratings_2018": 43,
+        "user_ratings_2019": 36,
+        "user_ratings_2020": 17
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.994238,
+          37.5403915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJy0mUCU2ifDURrONSdSkwZAE",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "Tijan",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9944972,
+          37.5404694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJPa8Gp1CjfDURxkTMu1c4m4o",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 3,
+        "ratings_timestamp": [
+          1537086973,
+          1515983432,
+          1510570981
+        ],
+        "name": "\ubd80\ubd80\ub9ac\ud558\uc6b0\uc2a4(bubulee house)",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 1,
+        "user_ratings_2018": 2,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9943615,
+          37.5400635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJZ7ZTqU2ifDUR2VjLUTQSST0",
+        "business_status": "OPERATIONAL",
+        "rating": 4.4,
+        "user_ratings_total": 8,
+        "ratings_timestamp": [
+          1681962930,
+          1666890647,
+          1649605232,
+          1587754898,
+          1569334655,
+          1561453499,
+          1552969029,
+          1540109998
+        ],
+        "name": "\ucee8\ud15c\ud3ec\ub7ec\ub9ac",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 1,
+        "user_ratings_2019": 3,
+        "user_ratings_2020": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9940774,
+          37.5401324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJbeI3s02ifDURorlZPorhquw",
+        "business_status": "CLOSED_TEMPORARILY",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "Roasting House",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.993475,
+          37.5400705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJf7euTEyifDURWoDcwtXM9lY",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ub9ac\ud034\ub4dc\ub7f0\uce58",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9934144,
+          37.5400376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJYZhft02ifDUR9jaRYFHc9PM",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ub354\ud504\ub79c\ube44\ud22c",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9933154,
+          37.5406683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJo6fNq-2jfDURdd28Bfn3vQ0",
+        "business_status": "OPERATIONAL",
+        "rating": 4,
+        "user_ratings_total": 2,
+        "ratings_timestamp": [
+          1658837154,
+          1653775042
+        ],
+        "name": "\ub4dc\ub85c\uc6b0\uc9c0",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9954877,
+          37.5409436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ70xbuE2ifDURyGmJajeezPc",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "Cafe N Dear",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9931571,
+          37.5408265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJtZFDuE2ifDURNQ2ph9lOY9c",
+        "business_status": "OPERATIONAL",
+        "rating": 3.5,
+        "user_ratings_total": 2,
+        "ratings_timestamp": [
+          1547023205,
+          1486615535
+        ],
+        "name": "By 92",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 1,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 1,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9931571,
+          37.5408265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJl3G1P02ifDURk0V4TCp31Fs",
+        "business_status": "CLOSED_TEMPORARILY",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ud0a4\uc988\ud50c\ub77c\ub137",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9958281,
+          37.5401978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ1UZcHkejfDURew6szFqxJ18",
+        "business_status": "OPERATIONAL",
+        "rating": 4.3,
+        "user_ratings_total": 6,
+        "ratings_timestamp": [
+          1689239299,
+          1623830588,
+          1619611247,
+          1616924094,
+          1615019430,
+          1613817885
+        ],
+        "name": "\uadf8\ub808\uc774\ud2b8\ub9ac grey tree",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9960291,
+          37.5405082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJwR9O20WjfDURv88G653JIWE",
+        "business_status": "OPERATIONAL",
+        "rating": 4.4,
+        "user_ratings_total": 37,
+        "ratings_timestamp": [
+          1691146514,
+          1691129440,
+          1690968492,
+          1690934664,
+          1690777050,
+          1690539352,
+          1690522829,
+          1690468563,
+          1690377962,
+          1690035769,
+          1689926072,
+          1689567854,
+          1689311064,
+          1689019378,
+          1688720907,
+          1688645409,
+          1688440267,
+          1687700805,
+          1687582613,
+          1687500040,
+          1687338630,
+          1687162945,
+          1687001238,
+          1686992677,
+          1686960788,
+          1686860152,
+          1686491248,
+          1685982936,
+          1685846231,
+          1685111346,
+          1685085189,
+          1684253137,
+          1683776926,
+          1683330258,
+          1682931249,
+          1682655311,
+          1681228774
+        ],
+        "name": "\ud638\uc6b0\uc8fc\uc758\ubcf4",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.993651,
+          37.5417727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJQcU4RyyjfDURxh8I9GvAKqc",
+        "business_status": "OPERATIONAL",
+        "rating": 4.9,
+        "user_ratings_total": 11,
+        "ratings_timestamp": [
+          1652107768,
+          1650273491,
+          1648163604,
+          1647840779,
+          1636642421,
+          1636097553,
+          1635427637,
+          1631019549,
+          1626446558,
+          1626272140,
+          1620454406
+        ],
+        "name": "HB\uce74\ud398\ubc14\uc774\uc624\ud2f1\uc2a4",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9950831,
+          37.5388831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ75M8MEyifDUR4oU4mqeAxzo",
+        "business_status": "OPERATIONAL",
+        "rating": 4,
+        "user_ratings_total": 2,
+        "ratings_timestamp": [
+          1664257452,
+          1553928548
+        ],
+        "name": "\uc2a4\ud0e0\ub529\ucee4\ud53c \ub85c\uc2a4\ud130\uc988 \ucee4\ud53c\ubc14",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 1,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9924326,
+          37.5399265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJmQTGOkyifDURW-m_wDJKUAA",
+        "business_status": "OPERATIONAL",
+        "rating": 3.4,
+        "user_ratings_total": 9,
+        "ratings_timestamp": [
+          1607854868,
+          1606147220,
+          1601472557,
+          1597148435,
+          1579912440,
+          1577360376,
+          1577316089,
+          1570163407,
+          1569573859
+        ],
+        "name": "\uc544\uc774\uc544\uc774 \uce74\ud398",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 4,
+        "user_ratings_2020": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9924272,
+          37.5397536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJY76c7E2ifDURIpZkSblb9Gc",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 2,
+        "ratings_timestamp": [
+          1681789291,
+          1675070961
+        ],
+        "name": "\uce74\ud398\uc81c\uc778",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9929595,
+          37.5416766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJxxe7GE6jfDURLNDtvs4D6mA",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "57-22 itaewon dong",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9921017,
+          37.5400456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJzWzt1k2ifDURRhRq4_MsXhw",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\uceac\ube0c\ub4dc\uc140",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9919275,
+          37.54096740000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJO50M2U2ifDURK_DF1BzhBUI",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\uc544\ub780\uc544\ub760",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9919566,
+          37.5413298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJu6rTYTmjfDURNaioiaXdfmE",
+        "business_status": "OPERATIONAL",
+        "rating": 4.5,
+        "user_ratings_total": 83,
+        "ratings_timestamp": [
+          1691259663,
+          1688980276,
+          1683380629,
+          1679109049,
+          1675322337,
+          1675215004,
+          1673923515,
+          1667056129,
+          1665817356,
+          1663144210,
+          1661838787,
+          1660402593,
+          1658460972,
+          1658310153,
+          1658306612,
+          1658282509,
+          1658224279,
+          1657442574,
+          1657422595,
+          1653107406,
+          1650779736,
+          1645927759,
+          1645248829,
+          1637320117,
+          1636386106,
+          1634115441,
+          1631195801,
+          1629078225,
+          1628731236,
+          1624364565,
+          1620366112,
+          1619571726,
+          1616309142,
+          1604797464,
+          1599132362,
+          1598156687,
+          1596808631,
+          1596687774,
+          1595998795,
+          1594685609,
+          1590291114,
+          1589186150,
+          1584938636,
+          1583850577,
+          1582194832,
+          1581319292,
+          1580999927,
+          1580213262,
+          1580106946,
+          1579440440,
+          1579259863,
+          1577153762,
+          1577152846,
+          1575012670,
+          1574820446,
+          1573383517,
+          1572156050,
+          1571620882,
+          1570600424,
+          1569739040,
+          1566466370,
+          1565049076,
+          1563703963,
+          1563625879,
+          1562485319,
+          1561798976,
+          1561698309,
+          1561209441,
+          1560153535,
+          1559361279,
+          1559276216,
+          1559214205,
+          1557985459,
+          1557232158,
+          1557059572,
+          1554537995,
+          1553922764,
+          1550914712,
+          1549274102,
+          1548723685,
+          1548425150,
+          1539743709,
+          1534599163
+        ],
+        "name": "\uce74\ud398 \ud2f0\uc54c\ube0c\uc774\uc54c \uc774\ud0dc\uc6d0\uc810",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 2,
+        "user_ratings_2019": 30,
+        "user_ratings_2020": 18
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9935149,
+          37.53825229999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJJYXFcUyifDURHn2TR9D0h1o",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ud2f0\uc54c\ube0c\uc774\uc54c\uce74\ud398",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9935143,
+          37.5382453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJG3629E2ifDUR7XV4o3oV0Z8",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\uc18c\uc124 & \uc18c\uc15c",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9930331,
+          37.542281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJlwNF2E2ifDURxZH5fPpGCZc",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "Koken",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9918289,
+          37.54131429999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJK0cnDyWjfDUR_WeTBElonNo",
+        "business_status": "OPERATIONAL",
+        "rating": 4,
+        "user_ratings_total": 1,
+        "ratings_timestamp": [
+          1651059009
+        ],
+        "name": "\uce74\ud398 \ub300\ucd94\uc640 \uc790\ubabd",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9916243,
+          37.5409957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJP1HPGkyifDUR0ufkSBXowJU",
+        "business_status": "OPERATIONAL",
+        "rating": 3,
+        "user_ratings_total": 1,
+        "ratings_timestamp": [
+          1559699165
+        ],
+        "name": "key's the universe",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 1,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9922773,
+          37.53877709999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJq0PBrFKifDURAkPdfabiIhg",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\uce74\ud398\ub9ac\uc5d4",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9970156,
+          37.5414324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ6cqPfE6ifDUR9OgQbDV8nP0",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 1,
+        "ratings_timestamp": [
+          1674298157
+        ],
+        "name": "Beulluseu",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9911718,
+          37.54111949999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ_4Mz_3ujfDUR-L-iEdkwNGo",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 4,
+        "ratings_timestamp": [
+          1690950212,
+          1690075237,
+          1674273057,
+          1674118779
+        ],
+        "name": "Blues Cafe Bar",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9911368,
+          37.541112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJkSkHXE-ifDURkwwIH0GPt3k",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ube14\ub8e8\ube48 \ucee4\ud53c \ucef4\ud37c\ub2c8",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9867016,
+          37.5410722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJQwizbk-ifDURK0n1jClP-Zs",
+        "business_status": "OPERATIONAL",
+        "rating": 4,
+        "user_ratings_total": 16,
+        "ratings_timestamp": [
+          1581864113,
+          1579911561,
+          1576584228,
+          1573042263,
+          1572887246,
+          1563376732,
+          1563119081,
+          1540727009,
+          1537368757,
+          1536919695,
+          1536918718,
+          1532158289,
+          1523262149,
+          1513929929,
+          1505098724,
+          1497459599
+        ],
+        "name": "Hackney",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 3,
+        "user_ratings_2018": 6,
+        "user_ratings_2019": 5,
+        "user_ratings_2020": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9872931,
+          37.5414305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJxRUNHL6jfDUR1yZDz37Om5U",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "Hill&Europa",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9871034,
+          37.5416079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJzfntycujfDURrMOuuPUCMlA",
+        "business_status": "OPERATIONAL",
+        "rating": 4.3,
+        "user_ratings_total": 17,
+        "ratings_timestamp": [
+          1688204405,
+          1688163086,
+          1685017816,
+          1681883354,
+          1680597463,
+          1677389871,
+          1672755548,
+          1663934549,
+          1662534429,
+          1661087805,
+          1660635342,
+          1659022775,
+          1654493943,
+          1645940725,
+          1641256400,
+          1625734417,
+          1622560009
+        ],
+        "name": "Hills & Europa",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9870995,
+          37.5416063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJZQmvaE-ifDUR2g1bnXRrg1o",
+        "business_status": "OPERATIONAL",
+        "rating": 4.6,
+        "user_ratings_total": 73,
+        "ratings_timestamp": [
+          1689436104,
+          1682827770,
+          1682415622,
+          1679293810,
+          1678811715,
+          1676129103,
+          1674868947,
+          1672723592,
+          1670366292,
+          1669682864,
+          1666091246,
+          1659949376,
+          1657007466,
+          1656553639,
+          1654731113,
+          1654730765,
+          1642232398,
+          1639305524,
+          1631344755,
+          1627817333,
+          1626564022,
+          1620103711,
+          1614146161,
+          1612600145,
+          1611789882,
+          1599362605,
+          1596442360,
+          1593488300,
+          1578123539,
+          1577190358,
+          1577168765,
+          1576648998,
+          1576401217,
+          1576338151,
+          1575078581,
+          1574771505,
+          1574592542,
+          1571624823,
+          1569668170,
+          1567310673,
+          1566009424,
+          1561114200,
+          1557548135,
+          1555338944,
+          1552707689,
+          1552015803,
+          1546511355,
+          1544847233,
+          1543355539,
+          1542524493,
+          1537868953,
+          1534596147,
+          1532582194,
+          1530407532,
+          1527331227,
+          1526707248,
+          1524923666,
+          1524291566,
+          1524179941,
+          1520135704,
+          1518245078,
+          1517747737,
+          1515986759,
+          1515286557,
+          1509316158,
+          1508593088,
+          1508568407,
+          1505994528,
+          1504339792,
+          1502013497,
+          1501242378,
+          1500534393,
+          1500274364
+        ],
+        "name": "Le Cafe \ub974\uce74\ud398",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 9,
+        "user_ratings_2018": 17,
+        "user_ratings_2019": 18,
+        "user_ratings_2020": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9870958,
+          37.5415001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJZQmvaE-ifDURpiSopJfkj3U",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "Leukkape",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9870435,
+          37.5414824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJgQ_8MiujfDURlMagv9IBnwI",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "Pollux coffee \ud3f4\ub8e9\uc2a4\ucee4\ud53c",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9874249,
+          37.5419165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ50XztsmjfDURLS1OZNaGvak",
+        "business_status": "CLOSED_TEMPORARILY",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "Nordic Frost Coffee",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9869977,
+          37.5413514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ-7OFhA2jfDURl2IS-gNzSP4",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 3,
+        "ratings_timestamp": [
+          1682902778,
+          1681280331,
+          1673675346
+        ],
+        "name": "\uce74\ud398 \ud30c\ub974\uace0",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9874951,
+          37.54214220000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJMVweqjKjfDURizKXfwqLtgo",
+        "business_status": "OPERATIONAL",
+        "rating": 4.3,
+        "user_ratings_total": 6,
+        "ratings_timestamp": [
+          1682050453,
+          1660403808,
+          1603075505,
+          1589330409,
+          1585302544,
+          1583216747
+        ],
+        "name": "\ub9c8\uc774\uc96c\uc2a4 \ud574\ubc29\ucd0c\ubcf8\uc810",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9871635,
+          37.5411428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ56qYdU-ifDURdoRu3QWOrRg",
+        "business_status": "OPERATIONAL",
+        "rating": 3.4,
+        "user_ratings_total": 5,
+        "ratings_timestamp": [
+          1658048592,
+          1655531061,
+          1648258376,
+          1638878948,
+          1632623926
+        ],
+        "name": "Cafe",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9875148,
+          37.5421851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJJ0-FmWujfDURv3jcCJj7wQ0",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "Sweetnswitz (\uc2a4\uc717\uc564\uc2a4\uc704\uce20)",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9865022,
+          37.54168049999999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ5QlgLwKjfDURd_dLrdGVJBo",
+        "business_status": "OPERATIONAL",
+        "rating": 3.5,
+        "user_ratings_total": 8,
+        "ratings_timestamp": [
+          1666600694,
+          1655023164,
+          1646481832,
+          1641026383,
+          1639467445,
+          1638268822,
+          1635260071,
+          1626938895
+        ],
+        "name": "Ouya Espresso Bar Haebangchon",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9867162,
+          37.5411102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJLS0ayd6jfDUR88yCht2Bl-U",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ubc14\uc6b4\uc2a4 Bounce",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9867129,
+          37.5411082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJR8QGXE-ifDURTkbfff9oLSY",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\uc528\uc640\uc640\uce74\ud398",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9867016,
+          37.5410722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJpTxUmU-ifDURIpJssOLP5QQ",
+        "business_status": "OPERATIONAL",
+        "rating": 4,
+        "user_ratings_total": 1,
+        "ratings_timestamp": [
+          1580798225
+        ],
+        "name": "Intogo",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9873631,
+          37.542566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ5Yh0lU-ifDUR8f2e--tAuNw",
+        "business_status": "OPERATIONAL",
+        "rating": 4.4,
+        "user_ratings_total": 22,
+        "ratings_timestamp": [
+          1651387270,
+          1634059538,
+          1621410488,
+          1617524907,
+          1614035301,
+          1613884936,
+          1604962103,
+          1604665668,
+          1603296258,
+          1602833620,
+          1599800597,
+          1595864733,
+          1595755367,
+          1594794993,
+          1591783683,
+          1591620074,
+          1590659052,
+          1582522662,
+          1573724501,
+          1561716969,
+          1555254777,
+          1552487133
+        ],
+        "name": "Make Sense",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 4,
+        "user_ratings_2020": 12
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9875882,
+          37.5430591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJt_Hu9tWjfDURKyhYzhPZQjU",
+        "business_status": "OPERATIONAL",
+        "rating": 3.5,
+        "user_ratings_total": 2,
+        "ratings_timestamp": [
+          1682260990,
+          1674189625
+        ],
+        "name": "\ud3ec\ubbac\ub77c\ucee4\ud53c",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.987805,
+          37.543073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJPSanFjKjfDURWVSd8kEyHJ0",
+        "business_status": "OPERATIONAL",
+        "rating": 4.4,
+        "user_ratings_total": 49,
+        "ratings_timestamp": [
+          1688589523,
+          1667387974,
+          1656521486,
+          1655034474,
+          1652153842,
+          1644495758,
+          1643111523,
+          1641191653,
+          1635604874,
+          1631355196,
+          1627725829,
+          1626268763,
+          1623225884,
+          1623218948,
+          1622889306,
+          1620824876,
+          1620486038,
+          1620129449,
+          1619817075,
+          1619499284,
+          1618375218,
+          1613303137,
+          1610523002,
+          1606651753,
+          1606576850,
+          1606106617,
+          1602480342,
+          1599376832,
+          1596971143,
+          1596538037,
+          1593962099,
+          1591616094,
+          1590329900,
+          1584538209,
+          1584369327,
+          1583107042,
+          1582971157,
+          1581155615,
+          1580547442,
+          1580125976,
+          1579343439,
+          1578921655,
+          1577198595,
+          1574515377,
+          1572075038,
+          1568623677,
+          1559904577,
+          1559055605,
+          1549114491
+        ],
+        "name": "Dedot",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 7,
+        "user_ratings_2020": 19
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.988084,
+          37.5431934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJkV5Dx0-ifDURvcrPAd9aH3w",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 1,
+        "ratings_timestamp": [
+          1557857949
+        ],
+        "name": "\ub514\uc2a4\ucf54\uc11c\ud504\uce74\ud398",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 1,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.988084,
+          37.5431934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ1xku60-ifDURmF8NfLzDsgA",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ub108\uc758\uc694\uad6c",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.987477,
+          37.5433963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ1xku60-ifDURNZYwug9ZRNI",
+        "business_status": "OPERATIONAL",
+        "rating": 4.2,
+        "user_ratings_total": 5,
+        "ratings_timestamp": [
+          1580631615,
+          1575897212,
+          1561764493,
+          1523196214,
+          1519615351
+        ],
+        "name": "\uce58\ud0a4\uce5c (chikitchen)",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 2,
+        "user_ratings_2019": 2,
+        "user_ratings_2020": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.987477,
+          37.5433963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJ7SFTKc-jfDUR8Xb4yGLlVbo",
+        "business_status": "OPERATIONAL",
+        "rating": 4.6,
+        "user_ratings_total": 13,
+        "ratings_timestamp": [
+          1689683155,
+          1682172923,
+          1681921546,
+          1678160555,
+          1666849489,
+          1666088546,
+          1665924175,
+          1662874049,
+          1659667480,
+          1655035097,
+          1648986311,
+          1644307641,
+          1621075533
+        ],
+        "name": "CAFE OEE",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9881326,
+          37.5432946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJNzgCyzujfDURqfMKnd4S5Mk",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 3,
+        "ratings_timestamp": [
+          1682834236,
+          1673161189,
+          1664257020
+        ],
+        "name": "\uc624\uc544\uc2dc\uc2a4 \ud574\ubc29\ucd0c",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9873925,
+          37.54378760000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJZZ1B9U-ifDURXcsiYvyrF8s",
+        "business_status": "OPERATIONAL",
+        "rating": "",
+        "user_ratings_total": 0,
+        "ratings_timestamp": [],
+        "name": "\ub4e0\ud574\ucee4\ud53c",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9864075,
+          37.5438269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJIYonHvOjfDUR2yIXBSfuWgo",
+        "business_status": "OPERATIONAL",
+        "rating": 5,
+        "user_ratings_total": 7,
+        "ratings_timestamp": [
+          1671820876,
+          1671558475,
+          1671558439,
+          1671558374,
+          1671470902,
+          1671020300,
+          1669203715
+        ],
+        "name": "Dal Cafe and Bar HBC",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9864233,
+          37.5393182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_id": "ChIJO6e8S8GjfDURhpVRcGaWApA",
+        "business_status": "OPERATIONAL",
+        "rating": 4.5,
+        "user_ratings_total": 4,
+        "ratings_timestamp": [
+          1680773926,
+          1677759735,
+          1672990815,
+          1658102323
+        ],
+        "name": "\ud504\ub8e8\ud504\uc778\ub354\ucee4\ud53c",
+        "user_ratings_2016": 0,
+        "user_ratings_2017": 0,
+        "user_ratings_2018": 0,
+        "user_ratings_2019": 0,
+        "user_ratings_2020": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9902432,
+          37.5423523
+        ]
+      }
+    }
+  ]
+}

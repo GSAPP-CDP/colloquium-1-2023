@@ -1,8 +1,3 @@
----
-student: Kyungho Lee
-tags: students
-image: participation.jpg
----
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,48 +11,18 @@ image: participation.jpg
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/base.css" rel="stylesheet" />
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/main.css" rel="stylesheet" />
   <link href="https://gsapp-cdp.github.io/colloquium-1-2023/colloquium1.css" rel="stylesheet" />
-  <style>
-    .hover {
-      position: relative;
-    }
+  
+  <link rel="stylesheet" href="https://use.typekit.net/uhn7mut.css">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script type='text/javascript' src="map.js" defer></script>
+  <script src="header.js" defer></script>
 
-    .image {
-      opacity: 1;
-      display: block;
-      width: 100%;
-      height: auto;
-      transition: .5s ease;
-      backface-visibility: hidden;
-    }
-
-    .middle {
-      transition: .5s ease;
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    .hover:hover .image {
-      opacity: 0.3;
-    }
-
-    .hover:hover .middle {
-      opacity: 1;
-    }
-
-    .text {
-      background-color: #ED2939;
-      color: white;
-      font-size: 16px;
-      padding: 16px 32px;
-    }
-  </style>
-
-  <title>Klee</title>
+  <title>Kyungho Lee</title>
 </head>
 
 <body>
@@ -83,349 +48,107 @@ image: participation.jpg
     </div>
   </header>
 
-  <main>
-    <div class="container">
+  <div id='map'></div>
+    <div id='story'>
+        <div id="header">
+            <div id="header__cover">
+                <div class="header__title__container">
+                    <h1 class="header__title">SEOUL</h1>
+                    <div class="header__counter__container">
+                        <h1 class="header__counter">2023</h1>
+                    </div>
+                </div>
+                <div class="overlay_black"></div>
+                <img class="cover" src="./images/seoul/1984.jpg"  alt="seoul satellite view 1984">
+                <img class="cover invisible" src="./images/seoul/1986.jpg" alt="seoul satellite view 1986">
+                <img class="cover invisible" src="./images/seoul/1988.jpg" alt="seoul satellite view 1988">
+                <img class="cover invisible" src="./images/seoul/1990.jpg" alt="seoul satellite view 1990">
+                <img class="cover invisible" src="./images/seoul/1992.jpg" alt="seoul satellite view 1992">
+                <img class="cover invisible" src="./images/seoul/1994.jpg" alt="seoul satellite view 1994">
+                <img class="cover invisible" src="./images/seoul/1996.jpg" alt="seoul satellite view 1996">
+                <img class="cover invisible" src="./images/seoul/1998.jpg" alt="seoul satellite view 1998">
+                <img class="cover invisible" src="./images/seoul/2000.jpg" alt="seoul satellite view 2000">
+                <img class="cover invisible" src="./images/seoul/2002.jpg" alt="seoul satellite view 2002">
+                <img class="cover invisible" src="./images/seoul/2004.jpg" alt="seoul satellite view 2004">
+                <img class="cover invisible" src="./images/seoul/2006.jpg" alt="seoul satellite view 2006">
+                <img class="cover invisible" src="./images/seoul/2008.jpg" alt="seoul satellite view 2008">
+                <img class="cover invisible" src="./images/seoul/2010.jpg" alt="seoul satellite view 2010">
+                <img class="cover invisible" src="./images/seoul/2012.jpg" alt="seoul satellite view 2012">
+                <img class="cover invisible" src="./images/seoul/2014.jpg" alt="seoul satellite view 2014">
+                <img class="cover invisible" src="./images/seoul/2016.jpg" alt="seoul satellite view 2016">
+                <img class="cover invisible" src="./images/seoul/2018.jpg" alt="seoul satellite view 2018">
+                <img class="cover invisible" src="./images/seoul/2020.jpg" alt="seoul satellite view 2020">
+                <img class="cover invisible" src="./images/seoul/2020.jpg" alt="seoul satellite view 2020">
+            </div>
 
-      <div class="post">
-        <div class="post-header">
-          <div class="post-title">
-            <h1>Klee</h1>
-          </div>
+            <div class="header__text">
+                <h1>the Spontaneous City and the impact of social media volatility</h1>
+                <img src="./images/spontaneous_city.png" alt="seoul spontaneous city">
+                <p>
+                    The large part of the city has evolved organically without extensive centralized urban planning. Instead, 
+                    it has been growing based on the natural actions and decisions of its inhabitants. In result, dynamic and 
+                    flexible urban fabric became one of the characteristics of Seoul. The villas, high density low-rise residential blocks, 
+                    are the most common building type in the organic urban fabric and today they take up almost 40% area of Seoul. 
+                    When the villas corridors are adjacent to the urban attractions, the alley often brings in young creative enterpreneurs and transforms
+                    into "hot places" in Instagram. 
+                </p>
+                <img src="./images/villas_alley.JPG" alt="spontaneous development in villas alley">
+                <h4>Before and after the corridor gets popular in social media.</h4>
+                <p>
+                    Social media, particularly Instagram, has played a pivotal role in the commercial development of urban corridors. 
+                    It has turned ordinary visitors into brand ambassadors, and through the power of imagery and social sharing, 
+                    it has contributed to making these areas trendy, sought-after destinations for both locals and tourists.
+                    The trends in social media became the number one factor for the success of bussinesses in the commercial corridors besides the rent.
+                </p>
+            </div>
+
+            <div class="header__text">
+                <h1>The pain point</h1>
+                <img src="./images/stakeholders.png" alt="stakeholders diagram">
+                <p>
+                    Elements: Architect, Students, Teachers, Librarians, Builders, Design tools, Communication tools, Time, Budget<br>
+                    Function or Purpose: The purpose of the systems can be elaborated in multiple ways. One, to spend more time on creative activity rather than laborious works.
+                    Two, to improve the quality of design outcome by communicating design iterations with clients reflecting clients’ feedback more effectively.
+                    Three, to make school library more aesthetically pleasing and functional for students and teachers to study and communicate each other’s ideas more dynamically.<br>
+                </p>
+                <img src="./images/feedback_loops.png" alt="system diagram with feedback loops">
+                <p>
+                    Feedback loops: There are both balancing and reinforcing feedback loops in the effective work-flows systems. Miscommunications with clients and builders
+                    have negative effect on the systems' flow rate, however architects can learn from these trials and errors and develop their communication skill more quickly
+                    therefore stabilizing the systems. Improvment in effectiveness of work-flows also leads to more projects and experience, which reinforce flow rate of the systems.<br>
+                    Pain points: Usually the lack of budget and time is the most problematic pain points in proceeding architecture projects. It is hard to solve problems regarding budgets. So it is better to focus on
+                    other major problems that are relatively easy to solve such as High fidelity in schematic design phase. By proceeding SD phase with low fidelity and gradually increase fidelity as design phase progresses,
+                    architects can acheive effective work-flows.
+                </p>
+            </div>
+
+            <div class="header__text">
+                <h1>Gyeonglidan-gil, the rise and fall of the commercial corridor</h1>
+                <p>
+                    Gyeonglidan-gil is the typical example of the villas alley that went through the pain points above, drastic change in social media trends and the gentrification. Which leverage point can we tackle here with a digital tool?<br><br>
+                    Leverage points: There are several leverage points to cause changes in system behavior. One, more effective communication and presentation tools lead to more feedback from users which result in better design satisfaction from clients.
+                    Two, streamlined workflows from design to rendering and documentation remove repetitive laborious tasks, which help architects focus more on creative activities. 
+                </p>
+                <p class="scroll_continue">
+                    Scroll to continue 
+                    <br>
+                    ▼
+                </p>
+            </div>
         </div>
 
-        <div class="post-body project content">
-          <!-- ALL WORK SHOULD BE CONTAINED HERE. -->
-
-          <div class="toc full">
-            <h2>Table of Contents</h2>
-            <ul>
-              <li><a href="#assignment-1">1 &ndash; Systems</a></li>
-              <li><a href="#assignment-2">2 &ndash; Authorship</a></li>
-              <li><a href="#assignment-3">3 &ndash; Politics</a></li>
-              <li><a href="#assignment-4">4 &ndash; Governance</a></li>
-              <li><a href="#assignment-5">5 &ndash; Behavior</a></li>
-            </ul>
-          </div>
-
-          <div class="full assignment">
-            <h1 id="assignment-1">1 &ndash; Systems</h1>
-            <h2>Workflows of Architects</h2>
-            <p>Effective workflows of architects in school library renovation projects.</p>
-          </div>
-
-          <div class="full">
-            <img src="./Diagram01.jpg">
-          </div>
-
-          <hr>
-
-          <div class="half">
-            <img src="./Diagram02.jpg">
-          </div>
-
-          <div class="half">
-            <h2>What do systems consist of?</h2>
+        <div id="footer">
+            <h1>About Me</h1>
             <p>
-              <b>Elements:</b> Architect, Students, Teachers, Librarians, Builders, Design tools, Communication tools, Time, Budget<br><br>
-              <b>Interconnections:</b> Design iterations based on the clients needs<br>
-              students and teachers’ demands for the library → design presentation →  clients’ feedback → revise design (flow of information)<br><br>
-              <b>Function or Purpose:</b> The purpose of the systems can be elaborated in multiple ways. One, to spend more time on creative activity rather than laborious works.
-              Two, to improve the quality of design outcome by communicating design iterations with clients reflecting clients’ feedback more effectively.
-              Three, to make school library more aesthetically pleasing and functional for students and teachers to study and communicate each other’s ideas more dynamically.<br><br>
-              <b>Stocks:</b> In this case, stocks are not physical entity but effectiveness in exchanging design information. Effective communication with clients and builders all adds up to better work-flows of architects. 
+                Hello world! Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!
+                Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!
+                Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!
+                Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!
+                Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!
+                Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!Hello world!
             </p>
-          </div>
-
-          <div class="half">
-            <h2>What do systems consist of?</h2>
-            <p>
-              <b>Feedback loops:</b> There are both balancing and reinforcing feedback loops in the effective work-flows systems. Miscommunications with clients and builders
-              have negative effect on the systems' flow rate, however architects can learn from these trials and errors and develop their communication skill more quickly
-              therefore stabilizing the systems. Improvment in effectiveness of work-flows also leads to more projects and experience, which reinforce flow rate of the systems<br><br>
-              <b>Leverage points:</b> There are several leverage points to cause changes in system behavior. One, more effective communication and presentation tools lead to more feedback from users which result in better design satisfaction from clients.
-              Two, streamlined workflows from design to rendering and documentation remove repetitive laborious tasks, which help architects focus more on creative activities. 
-              Three, architect’s various mental models on the library increase effectiveness of work-flows such as 'What is the purpose of the library?', 'How to handle circulations in library projects?' and 
-              'How to organize numerous volume of books?'. Equipped with diverse mental models of libraries, architects can greatly improve their work-flows.<br><br>
-            </p>
-          </div>
-
-          <div class="half">
-            <img src="./Diagram04.jpg">
-          </div>
-
-          <hr>
-
-          <div class="half">
-            <img src="./Diagram03.jpg">
-          </div>
-          <div class="half">
-            <h2>Most problematic pain points</h2>
-            <p>
-              Usually the lack of budget and time is the most problematic pain points in proceeding architecture projects. It is hard to solve problems regarding budgets. So it is better to focus on
-              other major problems that are relatively easy to solve such as High fidelity in schematic design phase. By proceeding SD phase with low fidelity and gradually increase fidelity as design phase progresses,
-              architects can acheive effective work-flows.
-        
-            </p>
-          </div>
-          <div class="half">
-            <img src="./Diagram06.jpg">
-          </div>
-          <div class="half">
-            <img src="./Diagram07.jpg">
-          </div>
-
-          <hr>
-
-          <div class="half">
-            <img src="./Diagram08.jpg">
-            <img src="./Diagram09.jpg">
-          </div>
-
-          <div class="half">
-            <img src="./Diagram10.jpg">
-            <img src="./Diagram05.jpg">
-          </div>
-
-          <hr>
-
-          <div class="full assignment">
-            <h1 id="assignment-2">2 &ndash; Authorship</h1>
-            <h2>Collective Authorship in Design</h2>
-            <p>Strategies in authorship methods for effective workflows of architects</p>
-          </div>
-
-          <div class="half">
-            <img src="./participation.jpg">
-          </div>
-
-          <div class="half">
-            <h2>Authorship Philosophy Matters</h2>
-            <p>
-              Effective workflow of architects heavly rely on authorship methods of the atelier system. Ways to communicate and govern design principles 
-              follow authorship philosophy. So choosing the right authorship method is the key for successful architecture project. There are many stakeholders 
-              in architecture project such as clients, design team, head architect, builders, and government officials. Here I will focus on the three stakeholders 
-              (clients, designers, and a head architect) and talk about how authorship methods of the system affects design communication between them in the early 
-              design phase. 
-              The key to running architecture project successfully (in terms of workflow) is in how to govern Design Authorship 
-              (who has control in design principles in architecture projects) There are serveral Authorships Strategies that you can follow. 
-              Each authorship has pros and cons and appropriate one should be adopted based on the scale of the project and the design team. 
-            </p>
-          </div>
-
-          <div class="half">
-            <h2>Pain Points in Singular Design Authorship</h2>
-            <p>
-              While singular Authorship works well when the size of the atelier is very small, the design authorship throughout the design team is very unbalanced 
-              based on job titles. Under singular authorship it is hard to train all designers with the head architect's design principles. So <u>desgin miscommunications between 
-              a design team and a head architect happen very often.</u> Also such design miscommunications and unbalanced design authorship within the firm often leads to 
-              miscommunications with clients. Design communications between clients and a design team also takes a long process. <u>First a design team has to present design 
-              options to the clients and wait for their feedback and usually those design feedback from clients are in verbal form.
-              So lots of miscommunication happen when translating verbal language to visual langauge and vice verca.</u> If there is a client-inclusive digital design tool where 
-              clients can quickly show their design feedback in visual language, the workflow of early design phase would be more effective.
-            </p>
-          </div>
-
-          <div class="half">
-            <img src="./Design Authorship(current).JPG">
-          </div>
-
-          <hr>
-
-          <div class="half">
-            <img src="./Github_workflow.png">
-          </div>
-
-          <div class="half">
-            <h2>Learning from Github: Collective Authorship</h2>
-            <p>
-              One of the fundamental key values of tech industry is a community-based collective authorship in open source, which is opposite to average architecture ateliers’ 
-              authorship structure. Github fork & pull request workflow is actualization of collective authorship in digital UI form. For example, d3 repository has been forked more 
-              than 23k times by 124 contributors although most of contributions come from a few people. Each member's contribution is clearly recorded in the server and anyone who 
-              wants to contribute can fork the existing repository and request for a merge to the main branch. If design ateliers can update their design principles to github like repositories not
-              in the brain of a single architect, collabroation and communications between a design team and the head architect will be more effective. 
-            </p>
-          </div>
-
-          <div class="half">
-            <img src="./rhino.jpg">
-          </div>
-
-          <div class="half">
-            <h2>Rhino 3D: Convenience that leads to more Authorship</h2>
-            <p>
-              There are laborious works that have less to do with authorship such as hatching patterns, erasing drawing repetitive stairs… etc. 
-              Rhino has great tools to finish these repetitive tasks a lot quicker than hand drafting. This kind of convenience enables architects spend more time on creative works. 
-              Also nurbs modeling in rhino makes it a lot easier to achieve curved surfaces. If someone wants their projects to have curved smooth surfaces as design language, using
-              Nurbs modeling or SubD modeling in Rhino provides a convenient way to create and manipulate curves. In result, users can focus on the design and concept of their 3d model 
-              rather than putting efforts on making smooth curves. 
-            </p>
-          </div>
-
-          <div class="half">
-            <h2>'Lock in' geometries to lower the barriers to entry</h2>
-            <img src="./coloring book.jpg">
-          </div>
-
-          <div class="half">
-            <h2>Convenience that leads to less Authorship</h2>
-            <img src="./construction-website-templates.png">
-          </div>
-
-          <hr>
-
-          <div class="full hover">
-            <h2>Group Zines: Four systems where money and technology can be barriers</h2>
-            <a href="https://jon-marchos.github.io/jonathan-marcos/" >
-              <img src="./Authorship_Assignment_Group_Zines.gif">
-              <div class="middle">
-                <div class="text">Click here for authorship user journey!</div>
-              </div>
-            </a>
-          </div>
-
-          <hr>
-
-          <div class="full assignment">
-            <h1 id="assignment-3">3 &ndash; Politics</h1>
-            <h2>$ Lender Money $</h2>
-            <p>A spatial analysis with multiple forms of data.</p>
-          </div>
-
-          <div class="half">
-            <img src="data01.JPG">
-          </div>
-
-          <div class="half">
-            <h2>Gather data 1. quotes from Quora</h2>
-            <p>
-              Focusing on the pain point (design micommunication between clients and designers), I tried to gather people's thoughts on it by searching on Quora with
-              the following keywords (design feedback / design communication) and analyzing the titles of people's questions on the issue. I found most of people who
-              asked questions are web designers and many of them asked about tools for effective communications<br>
-              <i>Q.'What is the best web-based application for gathering design feedback?'</i><br>
-              <i>Q.'Do you know if there is a great web design feedback tool?'</i><br>
-              <i>Q.'What are some good principles of providing design feedback?'</i><br>
-              <i>Q.'Can you give user/design feedback on this app?'</i><br>
-              <i>Q.'How do you ask a client to be more specific in their design feedback?'</i><br>
-              <i>Q.'How do you respond to design feedback from a client that doesn't make sense or contradicts itself?'</i><br>
-              <i>Q.'What is the user-designer communication gap?'</i><br>
-              <i>Q.'Is there any online platform where designers communicate with each other?'</i><br>
-              <i>Q.'What are the disadvantages of graphics communication?'</i><br>
-              <i>Q.'How do web designers communicate design ideas with their clients?'</i>
-            </p>
-            <a href="https://www.quora.com/search?q=design%20communication">Quora search with the keyworkd 'design communication'</a><br>
-            <a href="https://www.quora.com/search?q=design%20feedback">Quora search with the keyworkd 'design feedback'</a>
-          </div>
-
-          <hr>
-
-          <div class="half">
-            <h2>Gather data 2. Quick Draw! The Data</h2>
-            <p>
-              One of my pain points was translating verbal langauge to visual language in design communication. The image below is people's sketch 
-              on the word 'skyscraper'. I wanted to see how people convey different visual forms given the same keyword. The image on the right shows 
-              how design can go terribly wrong in its implementation process without design feedbacks on a regular basis.
-            </p>
-          </div>
-
-          <div class="half">
-            <img src="miscommunication.png">
-          </div>
-
-          <div class="full">
-            <img src="data02.png">
-            <a href="https://quickdraw.withgoogle.com/data/skyscraper">Click here to 'Quick Draw The Data'</a>
-          </div>
-
-          <hr>
-
-          <div class="full">
-            <h2>Gather data 3. Local Architecture Firms from google maps</h2>
-            <img src="Architects.JPG">
-          </div>
-
-          <div class="full">
-            <h2>Gather data 4. Architecture Projects of Local Architecture Firms </h2>
-            <img src="architecture_projects.jpg">
-          </div>
-
-          <hr>
-
-          <div class="full" style="text-align: center;">
-            <blockquote>
-              System Change <br><br>
-              Urban disparity in Seoul residential areas where money is a barrier to natural amenities.
-            </blockquote>
-          </div>
-
-          <hr>
-
-          <div class="half">
-            <h2>Human vision angle</h2>
-            <img src="04_human_vision.png">
-          </div>
-
-          <div class="half">
-            <h2>Sky exposure analysis</h2>
-            <img src="04_view_analysis.JPG">
-          </div>
-
-          <div class="half">
-            <h2>Gather data 1. Seoul sky exposure analysis on 3D model</h2>
-            <img src="04_seoul_3d.JPG">
-          </div>
-
-          <div class="half">
-            <h2>Sky exposure percent metrics</h2>
-            <img src="04_metrics.JPG">
-          </div>
-
-          <div class="full">
-            <h2>Gather data 2. Seoul real estate price per squared meter</h2>
-            <img src="04_price.JPG">
-          </div>
-
-          <div class="full">
-            <h2>Gather data 3. Street view images</h2>
-            <img src="04_street_views.jpg">
-          </div>
-
-          <hr>
-
-          <div class="half">
-            <img src="04_villas_apartments.JPG">
-          </div>
-
-          <div class="half">
-            <h2>Villas and Apartments</h2>
-            <p>
-              There are two typical residential building types in Seoul. Villas are generally older and have three to four floors. 
-              Most of villas were built with no clear urban planning in the past, so usually roads between villas are very narrow with
-              no sidewalks for pedestrians. The street is full of cars parking beside a building and there is no safe paths to walk for residents. 
-              With a lack of public parks in Seoul residents in villas have very limited access to natural amenities, whereas newer apartments 
-              have gardens and playgrounds in their private parks. The korean government has neglected to provide public amenities for villas 
-              and as a result the residential disparity in Seoul has been deepened. Most of the time, natural amenities such as river, parks and sky view
-              are only for residents in high-rise apartments with underground parking lots. Next, we will see a user journey of residents in the two different
-              residential types through maps, street views and statistics. 
-            </p>
-          </div>
-
-          <div class="full">
-            <h2>User Journey: Seoul Residents in Villas</h2>
-            <p></p>
-            <img src="04_User_Journey_Villas.gif">
-          </div>
-
-          <div class="full">
-            <h2>User Journey: Seoul Residents in Apartments</h2>
-            <img src="04_User_Journey_Apartments.gif">
-          </div>
-
         </div>
-      </div>
-
-      <footer></footer>
     </div>
-  </main>
 </body>
 
 </html>

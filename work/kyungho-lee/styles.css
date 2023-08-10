@@ -1,0 +1,267 @@
+/* Universal tags */
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: articulat-cf, sans-serif;
+}
+
+#map {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -5;
+}
+
+#header {
+  margin: auto;
+  min-height: 220vh;
+
+  & #header__cover {
+    height: 100vh;
+    position: relative;
+    pointer-events: none;
+
+    & .overlay_black {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.2);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    & .header__title__container {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      color: white;
+      font-size: 50px;
+      z-index: 10;
+
+      & .header__title {
+        position: relative;
+        margin: 0;
+        right: 18px;
+      }
+
+      & .header__counter__container {
+        position: relative;
+        left: 18px;
+        width: 240px;
+        text-align: left;
+      }
+    }
+  }
+
+  & .header__text {
+    margin-top: 200px;
+
+    & img {
+      display: block;
+      width: 700px;
+      margin: auto;
+    }
+
+    & .scroll_continue {
+      text-align: center;
+      padding: 20px;
+      padding-bottom: 60px;
+    }
+  }
+
+  & h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    margin: auto;
+    max-width: 700px;
+    padding: 30px;
+    line-height: 1.5em;
+  }
+
+  & h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 700px;
+  }
+
+  & p {
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 1em auto 1em auto;
+    line-height: 1.5em;
+  }
+}
+
+#features {
+  padding-top: 80vh;
+  padding-bottom: 10vh;
+  z-index: 100;
+
+  & h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1.5em;
+    max-width: 50vw;
+  }
+
+  & p {
+    text-align: left;
+    font-size: 1.2em;
+    max-width: 50vw;
+  }
+}
+
+#footer {
+  min-height: 100vh;
+  text-align: left;
+  line-height: 25px;
+
+  & h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    margin: auto;
+    max-width: 700px;
+    padding: 30px;
+    padding-top: 300px;
+    line-height: 1.5em;
+  }
+
+  & p {
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 1em auto 1em auto;
+    line-height: 1.4em;
+  }
+}
+
+a, a:hover, a:visited {
+  color: #e96138;
+}
+
+.centered {
+  width: 50vw;
+  margin: 0 auto;
+}
+.lefty {
+  width: 33vw;
+  margin-left: 5vw;
+}
+.righty {
+  width: 33vw;
+  margin-left: 60vw;
+}
+.light {
+  color: black;
+  background-color: #fafafa;
+  border-radius: 10px;
+}
+.dark {
+  color: #fafafa;
+  background-color: #444;
+}
+.step {
+  padding-bottom: 50vh;
+}
+.step div {
+  padding: 25px 50px;
+  line-height: 25px;
+  font-size: 13px;
+}
+.step img {
+  width: 100%;
+}
+
+
+
+
+.title {
+	background-color: #fff;
+	opacity: 0.9;
+	border-radius: 1em;
+	top: 5em;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	font: .8em/.9em articulat-cf, sans-serif;
+	line-height: 2.5em;
+	padding: 1em 2em 0em;
+	position: absolute;
+	max-width: 25%;
+	margin: 0em 5em;
+	z-index: 100;
+
+  & h1 {
+    opacity: 100%;
+  }
+
+  & p {
+    line-height: 1.5em;
+    opacity: 100%;
+  }
+
+  & div span {
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin-left: 5px;
+    width: 10px;
+  }
+
+  & hr {
+    border-top: .2em dashed #404040;
+    border-bottom: 0em;
+    margin-top: .75em;
+    margin-bottom: .75em;
+  }
+}
+
+#legend_price {
+  padding: 0;
+  margin-top: 20px;
+
+  & h4 {
+    margin: 0 0 10px;
+    opacity: 100%
+  }
+
+  & div {
+    padding: 0;
+  }
+
+  & div span {
+    border-radius: 0%;
+    display: inline-block;
+    height: 10px;
+    margin-top: 0px;
+    margin-right: 20px;
+    width: 10px;
+  }
+}
+
+.invisible {
+  display: none;
+}
