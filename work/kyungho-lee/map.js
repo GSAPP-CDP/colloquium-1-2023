@@ -112,9 +112,16 @@ map.on('load', function () {
             'data': 'data/places_reviews.geojson'
         },
         'paint': {
-            'circle-color': '#ff7f50',
             'circle-stroke-color': '#4d4d4d',
             'circle-stroke-width': 0.5,
+            'circle-color': ['step', ['get', 'user_ratings_total'],
+                '#ffee78',
+                15, '#ffd458',
+                30, '#ffb93c',
+                60, '#ff9b27',
+                90, '#ff7a1d',
+                120, '#ff5220',
+                150, '#ff002a'],
             'circle-radius': ['step', ['get', 'user_ratings_total'],
                 5,
                 15, 10,
@@ -230,6 +237,32 @@ map.on('load', function () {
                 3450, 1.4,
                 4000, 1.2,
                 4550, 1],
+            'line-opacity': ['case', ['==', ['get', 'distance_attractions'], null], 0, 0]
+        }
+    }, 'road-rail');
+
+    map.addLayer({
+        'id': 'streets_viability',
+        'type': 'line',
+        'source': {
+            'type': 'geojson',
+            'data': 'data/streets_distance_attractions.geojson'
+        },
+        'paint': {
+            'line-color': ['step', ['get', 'distance_attractions'],
+                '#ff002a', 
+                2350, '#ea5400',
+                2900, '#ca7900',
+                3450, '#a39400',
+                4000, '#ea5400',
+                4550, '#74a800'],
+            'line-width': ['step', ['get', 'distance_attractions'],
+                1.5, 
+                2350, 1.7,
+                2900, 1.9,
+                3450, 2.1,
+                4000, 2.3,
+                4550, 2.5],
             'line-opacity': ['case', ['==', ['get', 'distance_attractions'], null], 0, 0]
         }
     }, 'road-rail');

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Mapbox Storytelling</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        a, a:hover, a:visited {
+            color: #0071bc;
+        }
+        
+        #map {
+            top:0;
+            height: 100vh;
+            width:100vw;
+            position: fixed;
+        }
+        .mapboxgl-ctrl-bottom-left{
+            display: none;
+        }
+        #header {
+            margin: auto;
+            width: 100%;
+            position: relative;
+            z-index: 5;
+        }
+        #header h1, #header h2, #header p {
+            margin: 0;
+            padding: 2vh 2vw;
+            text-align: center;
+        }
+        #footer {
+            width: 100%;
+            min-height: 5vh;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            text-align: center;
+            line-height: 25px;
+            font-size: 13px;
+            position: relative;
+            z-index: 5;
+        }
+
+        .legend {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .legend div {
+            display: flex;
+            align-items: left;
+            padding: 0;
+        }
+        
+        .legend .legend-inner {
+        padding: 0;
+        }
+
+        .legend span {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .legend span:first-child {
+            width: 15px;
+            height: 15px;
+        }
+
+        .legend span:last-child {
+            font-size: 14px; /* Adjust this value to your preference */
+        }
+
+        #features {
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+        .centered {
+            width: 50vw;
+            margin: 0 auto;
+        }
+        .lefty {
+            width: 33vw;
+            margin-left: 5vw;
+        }
+        .righty {
+            width: 33vw;
+            margin-left: 62vw;
+        }
+        .fully {
+            width: 100%;
+            margin: auto;
+        }
+        .light {
+            color: #444;
+            background-color: #fafafa;
+        }
+        .dark {
+            color: #fafafa;
+            background-color: #444;
+        }
+        .step {
+            padding-bottom: 50vh;
+            /* margin-bottom: 10vh; */
+            opacity: 0.4;
+        }
+        .step.active {
+            opacity: 0.9;
+        }
+
+        .step div {
+            padding:  25px 50px;
+            line-height: 32px;
+            font-size: 18px;
+        }
+
+        .step img {
+            width: 100%;
+        }
+
+        @media (max-width: 750px) {
+            .centered, .lefty, .righty, .fully {
+                width: 90vw;
+                margin: 0 auto;
+            }
+        }
+
+        /* Fix issue on mobile browser where scroll breaks  */
+        .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+        .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+            touch-action: unset;
+        }
+
+        </style>
+</head>
+<body>
+
+<div id="map"></div>
+<div id="story"></div>
+
+<script src="./map_config.js"></script>
+<script>
+    var initLoad = true;
+    var layerTypes = {
+        'fill': ['fill-opacity'],
+        'line': ['line-opacity'],
+        'circle': ['circle-opacity', 'circle-stroke-opacity'],
+        'symbol': ['icon-opacity', 'text-opacity'],
+        'raster': ['raster-opacity'],
+        'fill-extrusion': ['fill-extrusion-opacity'],
+        'heatmap': ['heatmap-opacity']
+    }
+
+    var alignments = {
+        'left': 'lefty',
+        'center': 'centered',
+        'right': 'righty',
+        'full': 'fully'
+    }
+
+    function getLayerPaintType(layer) {
+        var layerType = map.getLayer(layer).type;
+        return layerTypes[layerType];
+    }
+
+    function setLayerOpacity(layer) {
+        var paintProps = getLayerPaintType(layer.layer);
+        paintProps.forEach(function(prop) {
+            var options = {};
+            if (layer.duration) {
+                var transitionProp = prop + "-transition";
+                options = { "duration": layer.duration };
+                map.setPaintProperty(layer.layer, transitionProp, options);
+            }
+            map.setPaintProperty(layer.layer, prop, layer.opacity, options);
+        });
+    }
+
+    function updateLegend(chapter) {
+    // Get or create the legend container
+    var legendContainer = document.getElementById('legend');
+    if (!legendContainer) {
+        legendContainer = document.createElement('div');
+        legendContainer.id = 'legend';
+        document.body.appendChild(legendContainer);
+    }
+
+    // Clear the current legend
+    legendContainer.innerHTML = '';
+
+    // Add each layer to the legend
+    chapter.legend.forEach(layer => {
+        var legendItem = document.createElement('div');
+        var colorBox = document.createElement('div');
+        colorBox.style.backgroundColor = layer.color;
+        colorBox.style.width = '20px';
+        colorBox.style.height = '20px';
+        colorBox.style.display = 'inline-block';
+        colorBox.style.marginRight = '10px';
+        legendItem.appendChild(colorBox);
+
+        var description = document.createElement('span');
+        description.innerText = layer.description;
+        legendItem.appendChild(description);
+
+        legendContainer.appendChild(legendItem);
+    });
+    }
+
+
+
+    var story = document.getElementById('story');
+    var features = document.createElement('div');
+    features.setAttribute('id', 'features');
+
+    var header = document.createElement('div');
+
+    if (config.title) {
+        var titleText = document.createElement('h1');
+        titleText.innerText = config.title;
+        header.appendChild(titleText);
+    }
+
+    if (config.subtitle) {
+        var subtitleText = document.createElement('h2');
+        subtitleText.innerText = config.subtitle;
+        header.appendChild(subtitleText);
+    }
+
+    if (config.byline) {
+        var bylineText = document.createElement('p');
+        bylineText.innerText = config.byline;
+        header.appendChild(bylineText);
+    }
+
+    if (header.innerText.length > 0) {
+        header.classList.add(config.theme);
+        header.setAttribute('id', 'header');
+        story.appendChild(header);
+    }
+
+    config.chapters.forEach((record, idx) => {
+        var container = document.createElement('div');
+        var chapter = document.createElement('div');
+
+        if (record.title) {
+            var title = document.createElement('h3');
+            title.innerText = record.title;
+            chapter.appendChild(title);
+        }
+
+        if (record.image) {
+            var image = new Image();
+            image.src = record.image;
+            chapter.appendChild(image);
+        }
+
+        if (record.description) {
+            var story = document.createElement('p');
+            story.innerHTML = record.description;
+            chapter.appendChild(story);
+        }
+
+        // Add the legend div here
+        if (record.legend && record.legend.length > 0) {
+            var legendDiv = document.createElement('div');
+            legendDiv.setAttribute('class', 'legend');
+
+            record.legend.forEach(item => {
+                var legendItem = document.createElement('div');
+                legendItem.className = 'legend-inner';
+                var colorBox = document.createElement('span');
+                colorBox.setAttribute('style', `background-color: ${item.color};`);
+                var description = document.createElement('span');
+                description.innerText = item.description;
+
+                legendItem.appendChild(colorBox);
+                legendItem.appendChild(description);
+                legendDiv.appendChild(legendItem);
+            });
+
+         chapter.appendChild(legendDiv);
+        }
+
+        container.setAttribute('id', record.id);
+        container.classList.add('step');
+        if (idx === 0) {
+            container.classList.add('active');
+        }
+
+        chapter.classList.add(config.theme);
+        container.appendChild(chapter);
+        container.classList.add(alignments[record.alignment] || 'centered');
+        if (record.hidden) {
+            container.classList.add('hidden');
+        }
+        features.appendChild(container);
+    });
+
+    story.appendChild(features);
+
+    var footer = document.createElement('div');
+
+    if (config.footer) {
+        var footerText = document.createElement('p');
+        footerText.innerHTML = config.footer;
+        footer.appendChild(footerText);
+    }
+
+    if (footer.innerText.length > 0) {
+        footer.classList.add(config.theme);
+        footer.setAttribute('id', 'footer');
+        story.appendChild(footer);
+    }
+
+    mapboxgl.accessToken = config.accessToken;
+
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: config.style,
+        center: config.chapters[0].location.center,
+        zoom: config.chapters[0].location.zoom,
+        bearing: config.chapters[0].location.bearing,
+        pitch: config.chapters[0].location.pitch,
+        interactive: true,
+        minZoom: 11,
+        maxZoom: 13,
+        projection: config.projection
+    });
+
+    // instantiate the scrollama
+    var scroller = scrollama();
+
+
+    map.on("load", function() {
+
+        map.addSource('all-offices', {
+                type: 'geojson',
+                // Use a URL for the value for the `data` property.
+                data: './assets/office_building_bldg_class.geojson'
+            });
+            
+            map.addLayer({
+            'id': 'all-offices-layer',
+            'type': 'fill',
+            'source': 'all-offices',
+            'paint': {
+                'fill-color': '#ababab', // gray color fill
+                'fill-opacity': 1}
+            });
+
+            map.addSource('res-zoning-offices', {
+                type: 'geojson',
+                // Use a URL for the value for the `data` property.
+                data: './assets/office_bldgs_in_res_zoning.geojson'
+            });
+            
+            map.addLayer({
+            'id': 'res-zoning-offices-layer',
+            'type': 'fill',
+            'source': 'res-zoning-offices',
+            'paint': {
+                'fill-color': '#db0f00', // red color fill
+                'fill-opacity': 0}
+            });
+
+            map.addSource('res-zones', {
+                type: 'geojson',
+                // Use a URL for the value for the `data` property.
+                data: './assets/pluto_res_zones.geojson'
+            });
+            
+            map.addLayer({
+            'id': 'res-zones-layer',
+            'type': 'line',
+            'source': 'res-zones',
+            'paint': {
+                'line-color': '#ffb69c', //salmon color
+                'line-opacity': 0
+                }
+            });
+
+            map.addSource('flex-zoning-offices', {
+                type: 'geojson',
+                // Use a URL for the value for the `data` property.
+                data: './assets/flex_zoning_offices.geojson'
+            });
+            
+            map.addLayer({
+            'id': 'flex-zoning-offices-layer',
+            'type': 'fill',
+            'source': 'flex-zoning-offices',
+            'paint': {
+                'fill-color': '#0367fc', // blue color fill
+                'fill-opacity': 0}
+            });
+
+            map.addSource('flex-zones', {
+                type: 'geojson',
+                // Use a URL for the value for the `data` property.
+                data: './assets/flex_community_districts.geojson'
+            });
+            
+            map.addLayer({
+            'id': 'flex-zones-layer',
+            'type': 'line',
+            'source': 'flex-zones',
+            'paint': {
+                'line-color': '#52f7ec', //light-blue color
+                'line-opacity': 0
+                }
+            });
+
+            map.addSource('proposed_offices', {
+                type: 'geojson',
+                // Use a URL for the value for the `data` property.
+                data: './assets/buildings_with_yearbuilt.geojson'
+            });
+            
+            map.addLayer({
+            'id': 'proposed-offices-layer',
+            'type': 'fill',
+            'source': 'proposed_offices',
+            'paint': {
+                'fill-opacity': 0,
+                'fill-color': [
+                    'interpolate',
+                    ['linear'],
+                    ['get', 'YearBuilt'],
+                    1961,
+                    '#440154',  // dark purple-blue
+                    1977,
+                    '#29af7f',  // teal-green
+                    1990,
+                    '#6ece58',  // green
+                    2000,
+                    '#b5de2b',  // yellow-green
+                    2020,
+                    '#fde725'   // lightest yellow
+                    ]}
+            });
+
+
+        // setup the instance, pass callback functions
+        scroller
+        .setup({
+            step: '.step',
+            offset: 0.5,
+            progress: true
+        })
+        .onStepEnter(async response => {
+            var current_chapter = config.chapters.findIndex(chap => chap.id === response.element.id);
+            var chapter = config.chapters[current_chapter];
+            updateLegend(chapter);
+
+            
+            response.element.classList.add('active');
+            map[chapter.mapAnimation || 'flyTo'](chapter.location);
+
+            if (chapter.onChapterEnter.length > 0) {
+                chapter.onChapterEnter.forEach(setLayerOpacity);
+            }
+            if (chapter.callback) {
+                window[chapter.callback]();
+            }
+            if (chapter.rotateAnimation) {
+                map.once('moveend', () => {
+                    const rotateNumber = map.getBearing();
+                    map.rotateTo(rotateNumber + 180, {
+                        duration: 30000, easing: function (t) {
+                            return t;
+                        }
+                    });
+                });
+            }
+            if (config.auto) {
+                var next_chapter = (current_chapter + 1) % config.chapters.length;
+                map.once('moveend', () => {
+                    document.querySelectorAll('[data-scrollama-index="' + next_chapter.toString() + '"]')[0].scrollIntoView();
+                });
+            }
+        })
+        .onStepExit(response => {
+            var chapter = config.chapters.find(chap => chap.id === response.element.id);
+            response.element.classList.remove('active');
+            if (chapter.onChapterExit.length > 0) {
+                chapter.onChapterExit.forEach(setLayerOpacity);
+            }
+        });
+
+
+        if (config.auto) {
+            document.querySelectorAll('[data-scrollama-index="0"]')[0].scrollIntoView();
+        }
+    });
+
+
+    // setup resize event
+    window.addEventListener('resize', scroller.resize);
+
+</script>
+
+</body>
+</html>

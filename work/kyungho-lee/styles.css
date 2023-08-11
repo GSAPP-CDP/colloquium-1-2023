@@ -146,7 +146,16 @@ html, body {
     margin: auto;
     max-width: 700px;
     padding: 30px;
-    padding-top: 300px;
+    padding-top: 250px;
+    line-height: 1.5em;
+  }
+
+  & h2 {
+    font-weight: 700;
+    text-align: left;
+    margin: auto;
+    max-width: 700px;
+    font-size: 1.5em;
     line-height: 1.5em;
   }
 
@@ -157,6 +166,7 @@ html, body {
     max-width: 700px;
     margin: 1em auto 1em auto;
     line-height: 1.4em;
+    margin-top: 0;
   }
 }
 
