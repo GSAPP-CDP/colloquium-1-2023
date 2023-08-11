@@ -1,0 +1,581 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 56.3vw;
+    overflow: hidden;
+}
+#section3 {
+    position: relative;
+    width: 100%;
+    height: 18.77vw;
+    overflow: hidden;
+}
+#section4 {
+    position: relative;
+    width: 100%;
+    height: 17.9vw;
+    overflow: hidden;
+}
+#section5 {
+    position: relative;
+    width: 100%;
+    height: 9.38vw;
+    overflow: hidden;
+}
+#section6 {
+    position: relative;
+    width: 100%;
+    height: 37.53vw;
+    overflow: hidden;
+}
+#section7 {
+    position: relative;
+    width: 100%;
+    height: 37.53vw;
+    overflow: hidden;
+}
+#section8 {
+    position: relative;
+    width: 100%;
+    height: 56.3vw;
+    overflow: hidden;
+    font-size: 0;
+}
+#section9 {
+    position: relative;
+    width: 100%;
+    height: 28.15vw;
+    overflow: hidden;
+}
+
+.background-video, .background-gif, .background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56.3vw;
+    object-fit: cover;
+    z-index: -1;
+}
+#section4 .background-gif{
+    top :0;
+    width: 100%;
+    height: 17.9vw;
+}
+.section h3 {
+    position: absolute;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: white;
+    font-size: 2em;
+    text-align: left;
+    left: 2%;
+    right: 2%;
+    bottom: 10%;
+}
+.section p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    padding: 1%;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 5;
+}
+.content2 {
+    position: absolute;
+    top: 33.33%;
+    right: 0;
+    width: 32%;
+    height: 33.33%;    
+}
+.content3 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 90%; 
+    overflow: hidden;
+}
+.content4 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    text-align: center;
+    z-index: 5;
+}
+.content5 {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    text-align: center;
+    z-index: 5;
+}
+.content6 {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%; 
+    overflow: hidden;
+}
+/* .front-img{
+    position: relative;
+    top: 55%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    height: 9.38vw;
+} */
+
+
+.foreground-img {
+    position: absolute;
+    top: 50.01%;
+    left: 67%;
+    width: 16.6%;
+    height: 16.6%;
+    object-fit: cover;
+}
+.foreground-img {
+    z-index: 1; /* 确保这个图片显示在背景图片上面 */
+    transition: transform 0.3s ease; /* 图片放大时的过渡效果 */
+}
+.text-box {
+    position: relative;
+    top: 50.01%; /* 根据实际情况调整这个值 */
+    left: 16.67%; 
+    width: 8.335%;
+    height: 16.67%;/* 根据实际情况调整这个值 */
+    z-index: 2; /* 确保文本框显示在前景图片上面 */
+    color: white;
+    font-family: 'Helvetica', Arial, sans-serif; 
+    font-size: 0.5vw;  
+    background-color: rgba(0, 0, 0, 0.7);;
+}
+
+.text-box2 {
+    position: relative;
+    display: inline-block;
+    vertical-align: top; /* 确保两个并列的框在同一行的顶部对齐 */
+    width: 50%;
+    height: 66.67%;
+}
+
+.video-box {
+    display: inline-block;
+    vertical-align: top; /* 确保两个并列的框在同一行的顶部对齐 */
+    width: 50%;
+    height: 66.67%;
+}
+
+.front-img {
+    display: block;  
+    height: 9.38vw;
+    margin: 10px auto;
+    left: 53%;  
+}
+.imageToHover{
+    position: relative;
+    margin:0;
+    left: 36%; 
+}
+
+.inline-textbox {
+    position: relative;  
+    height: 100%;
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);  
+}
+
+.text1, .text2 {
+    position: relative;
+    width: 49%;
+    height: 90%;
+    display: inline-block;
+    padding: 20px;
+    box-sizing: border-box; 
+    vertical-align: top;
+}
+.text3 {
+    position: relative;
+    width: 49%;
+    height: 90%;
+    display: inline-block;
+    box-sizing: border-box; 
+    vertical-align: top;
+}
+
+
+.container {
+    position: relative;
+    place-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 56.3vw;
+    --position: 50%;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%
+    /* aspect-ratio: 1/1; */
+}
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+.image-before {
+    position: absolute;
+    inset: 0;
+    width: var(--position);
+}
+.slider {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    opacity: 0;
+    /* for Firefox */
+    width: 100%;
+    height: 100%;
+}
+.slider:focus-visible ~ .slider-button {
+    outline: 5px solid black;
+    outline-offset: 3px;
+}
+.slider-line {
+    position: absolute;
+    inset: 0;
+    width: .2rem;
+    height: 100%;
+    background-color: #fff;
+    /* z-index: 10; */
+    left: var(--position);
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+.slider-button {
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    padding: .5rem;
+    border-radius: 100vw;
+    display: grid;
+    place-items: center;
+    top: 50%;
+    left: var(--position);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* z-index: 100; */
+    box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
+}
+
+
+
+
+.image-slider {
+    position: relative;
+    overflow-x: scroll;
+    white-space: nowrap;  /* This prevents the images from wrapping to the next line */
+    width: 100%;        /* Adjust this value as per your requirement */
+    height: 19.45vw;        /* Adjust this value as per your requirement */
+    scrollbar-width: thin;
+    box-sizing: border-box;
+    scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+    background: #ffffff;
+    transition: scrollLeft 0.5s
+}
+#image-slider2 {
+    position: relative;
+    overflow-x: scroll;
+    white-space: nowrap;  /* This prevents the images from wrapping to the next line */
+    width: 100%;        /* Adjust this value as per your requirement */
+    height: 19.45vw;        /* Adjust this value as per your requirement */
+    scrollbar-width: thin;
+    box-sizing: border-box;
+    scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
+    background: #ffffff;
+    z-index: 5;
+}
+.image-slider .image-container {
+    display: flex;
+    flex-direction: row;
+}
+.image-slider .image-container img {
+    width: auto;
+    height: auto;
+    margin-right: 0;  /* You can adjust this to add spacing between images */
+}
+.image-slider::-webkit-scrollbar {
+    width: 100%;
+    height: 10px;
+}
+.image-slider::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.7);
+    border-radius: 10px;
+}
+.image-slider::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+
+/* MAP------------------------------------------------------------ */
+#map {
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+    z-index: -10;
+}
+#header {
+    text-align: center;
+    background: url('backgound5.jpg') no-repeat center center fixed;
+    background-size: cover;
+	margin: auto;
+    height: 37.53w;
+	width: 100%;
+	padding: 2vh 0vh 5vh 0vh;
+}
+#features {
+	padding-top: 80vh;
+	padding-bottom: 10vh;
+}
+@media (max-width: 750px) {
+	#features {
+	width: 90vw;
+	margin: 0 auto;
+	}
+}
+#footer {
+	min-height: 2vh;
+	text-align: left;
+	line-height: 25px;
+	width: 100%;
+	position: relative;
+	z-index: 5;
+}
+#header h1 {
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    font-weight: 700;
+    color: #ffffff;
+}
+#header h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    max-width: 600px;
+    color: #ffffff;
+}
+#header p.byline {
+    font-weight: 300;
+    font-size: 0.9em;
+    margin: 0.5em auto 0.8em auto;
+    color: #ffffff;
+}
+#header p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 1em auto 1em auto;
+    color: #ffffff;
+}
+#features h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    text-align: left;
+    max-width: 50vw;
+}
+#features p {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: left;
+    font-size: 1.2em;
+    max-width: 50vw;
+}
+#features .imageCredit {
+    font-size: 0.9em;
+    margin-top: -5px;
+}
+#footer p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.9em;
+    max-width: 600px;
+    padding: 0.75em 0em;
+    margin: 0px auto;
+}
+a, a:hover, a:visited {
+	color: #e96138;
+}
+.hidden {
+	visibility: hidden;
+}
+.centered {
+	width: 50vw;
+	margin: 0 auto;
+}
+.lefty {
+	width: 33vw;
+	margin-left: 5vw;
+}
+.righty {
+	width: 33vw;
+	margin-left: 62vw;
+}
+.fully {
+	width: 100%;
+	margin: auto;
+}
+.light {
+	color: #444;
+	background-color: #ffffff;
+}
+.dark {
+	color: #fafafa;
+	background-color: #444;
+}
+.step {
+	padding-bottom: 50vh;
+	opacity: 0.15;
+}
+.step.active {
+	opacity: 0.99;
+}
+.step div {
+	padding: 25px 50px;
+	line-height: 25px;
+	font-size: 13px;
+}
+.step img {
+	width: 100%;
+}
+@media (max-width: 750px) {
+	.centered, .lefty, .righty, .fully {
+	width: 90vw;
+	margin: 0 auto;
+	}
+}
+/* Fix issue on mobile browser where scroll breaks  */
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan, 
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+	touch-action: unset;
+}
+
+
+/* TYPEWRITER------------------------------------------------------------ */
+#typewriter1 {
+    position: relative;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#typewriter1 h1 {
+    color: #fff;
+    font-family: Merriweather;
+    overflow: hidden; 
+    white-space: wrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    text-align: center;
+    font-size: 4vw;
+}
+
+#typewriter1 p {
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow: hidden; 
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    text-align: center;
+    font-size: 2vw;
+}
+
+
+#typewriter2 {
+    position: relative;
+    height: 80%;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    white-space: normal;
+    bottom: 0;
+
+    /* Add these lines for centering the content */
+    display: flex;
+    align-items: center;  /* vertical centering */
+    justify-content: center; /* horizontal centering */
+    flex-direction: column; /* stack children vertically */
+}
+
+#typewriter2 h1, #typewriter2 h2 {
+    color: #fff;
+    font-family: Merriweather;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#typewriter2 p{
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+#typewriter2 h3{
+    color: #fff;
+    font-family: Merriweather;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 2em;
+}
+
+#typewriter2 h1 {
+    font-size: 2.5em;
+    margin-bottom: 1vw;
+}
+
+#typewriter2 h2 {
+    font-size: 2em;
+}
+
+.highlight {
+    background-color: rgb(255, 0, 191);  /* 或您喜欢的任何其他颜色 */
+    padding: 2px 5px;  /* 根据需要调整 */
+    border-radius: 3px;  /* 如果您想要圆角背景 */
+}

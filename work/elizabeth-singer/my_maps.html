@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my_styles.css">
+    <title>Hate Crimes in NYC During Covid-19</title>
+    <link rel="icon" href="favicon.jpeg" type="image/png">
+</head>
+<body>
+    <div class="map-container">
+        <div class="maps">
+            <div class="map-frame">
+                <iframe class="map small-map align-right" src="nyc_complaints.html"></iframe>
+            </div>
+            <div class="map-frame">
+                <iframe class="map small-map align-right" src="nyc_anti_asian_complaints.html"></iframe>
+            </div>
+            <div class="map-frame">
+                <iframe class="map small-map align-right" src="nyc_anti_lgbt_complaints.html"></iframe>
+            </div>
+            <div class="map-frame">
+                <iframe class="map small-map align-right" src="nyc_anti_black_complaints.html"></iframe>
+            </div>
+            <div class="map-frame">
+                <iframe class="map small-map align-right" src="nyc_anti_jewish_complaints.html"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <center><p><b>Visualizing Confirmed Hate Crime Incidents in NYC During the Covid-19 Pandemic</b></p></center>
+        <center><p>by <a href=./about.html><b> Elizabeth Singer</b></a><p></center>
+        
+        <center></p>CW: Discussion of Racism, Anti-Semitism, Homophobia, and Transphobia; Discussion of Violence, Hate Crimes, Police Brutality, and Discrimination </p></center>
+        
+        <p><b>Introduction<p></b>
+        <p>One of the more upsetting developments that occurred in the United States of America during the COVID-19 pandemic was the nationwide increase in acts of racism and hatred. Several stories were published in 2020 about the rising tide of anti-Asian sentiment and anti-Asian hate crimes across the country. As early as March 26, 2020, less than two weeks after the President declared a national state of emergency, NBC News ran a story with the headline “Asian Americans report over 650 racist acts over last week, new data says.” <sup><a href="#fn1" id="ref1">[1]</a></sup>  Indeed, the problem became so large that in April of 2021, the United States Senate voted 92-6 to pass a bill to combat the surge in crimes against Asian Americans. This bill was later signed by President Biden.<sup><a href="#fn3" id="ref3">[3]</a></sup></p>
+        <p>This nationwide rise in anti-Asian hate crimes was accompanied (or, perhaps more accurately, prompted) by a surge in anti-Asian rhetoric surrounding the coronavirus. President Trump, for instance, notably referred to the virus as the “China virus,” and the “kung flu.” <sup><a href="#fn4" id="ref4">[4]</a></sup></p>
+        <p>Members of the Asian community were not the only group that suffered from increased hostility and racism during the pandemic. There was a similar rise in anti-semitic rhetoric surrounding the COVID-19 pandemic and its origins. The Anti-Defamation League reported extensively on online anti-semitism related to the coronavirus. <sup><a href="#fn5" id="ref5">[5]</a></sup> During this time, many internet users began pushing disinformation and anti-semitic conspiracy theories about the virus being created by George Soros and the Rothschild family.</p>
+        <p>The COVID-19 pandemic was not the only contribution to the rise of hate crimes and racist rhetoric during this time. On May 25, 2020, George Floyd was murdered by officers in the Minneapolis Police Department. In the weeks following this incident, protesters took to the streets in protest of this act of brutality. In the aftermath of the murder, the Black Lives Matter movement gained tremendous support, and companies pledged millions of dollars to help ensure civil rights and equality for Black Americans. However, there were also individuals and groups who responded with more acts of racism and hatred.</p>
+        <p>As with the coronavirus, several conspiracy theories began to circulate online surrounding the circumstances of George Floyd’s death. The general thrust of this disinformation was that the officers were not responsible for Floyd’s death. <sup><a href="#fn6" id="ref6">[6]</a></sup> Indeed, those on the right are still attempting to downplay Floyd’s murder. An opinion piece published on August 3, 2023 (just under one week ago at the time of this research paper) by Fox News bears the headline “What if the George Floyd narrative is false?”. <sup><a href="#fn7" id="ref7">[7]</a></sup> </p>
+        <p>Across the country, murals commemorating the life of George Floyd were vandalized and defaced. <sup><a href="#fn8" id="ref8">[8]</a></sup> Violent hate crimes against members of the Black community also increased dramatically during and immediately after the protest. <sup><a href="#fn9" id="ref9">[9]</a></sup> Many disturbing attacks occurred targeting members of the Black community across the country in 2020.This surge in anti-Black hate crimes was yet another concerning rise in bigotry and violence during this period. This overall climb in incidents of hatred is the focus of this research paper.</p>
+        <p>This project analyzes data related to confirmed hate crime incidents in New York City between 2019 and 2023. In examining acts of hatred in the nation’s biggest city, this project is particularly interested in visualizing where these hate crimes are occurring, which specific minority groups are being targeted, and whether the composition of hate crime victims varies significantly across geography (e.g., whether certain areas are more dangerous for members of the Jewish community and whether these areas are the same areas which are more dangerous for Black Americans, members of the LGBT community, etc.). In answering these questions and plotting these trends, this project aims to assemble a cultural portrait of hatred in New York City – and in the United States of America – during the COVID-19 pandemic.</p>
+        <center><img src="all_years_all_crimes.jpeg" alt="Figure 1"></center>
+        <center><p>Figure 1: Hate Crimes 2019 - 2022
+        Race = hot pink, Religion = purple, Sexual Orientation = light pink</p></center>
+        <center><img src="all_years_all_crimes_2.jpeg" alt="Figure 2"></center>
+        <center><p>Figure 2: Hate Crimes 2019 - 2022
+        Anti-Jewish = hot pink, Anti-Black = purple, Anti-Asian = light pink</p></center>
+        <p><b>Data Analysis - About the Dataset </p></b>
+        <p>The dataset used in this study was obtained from NYC Open Data. <sup><a href="#fn10" id="ref10">[10]</a></sup> It was assembled by the New York Police Department (NYPD), and is updated quarterly. The dataset catalogs confirmed hate crime incidents that occurred in New York City between January 1, 2019 and June 27, 2023. Importantly, however, there are several significant ways in which this dataset is likely incomplete and/or unrepresentative of reality.</p>
+        <p>First, the total number of hate crimes that occurred in New York City during this time period is likely far greater than the total number of hate crimes included in the dataset. The data used in this study lists incidents that were reported to the NYPD and categorized by the NYPD as “Confirmed Hate Crimes”. But there are three major reasons why this is likely to under-represent the number of total hate crimes. </p>
+        <p>For one, many hate crimes are not reported to law enforcement. The victim of a hate crime may elect not to report the incident to law enforcement. Doing so may involve the victim “outing” themselves as a member of the LGBT community. Sometimes the perpetrator is personally known to the victim. Sometimes the victim is a member of a community with a widespread distrust of the police. And sometimes the victim may simply not want the hassle: reporting incidents to law enforcement is time-consuming and often requires reliving the traumatic event several times over several months after it occurred. Thus, many hate crimes are understandably never even reported to the NYPD in the first place.</p>
+        <p>Second, even when hate crimes are reported to law enforcement, the victim might not report it as a hate crime. The victim might simply say they were the victim of a robbery, an assault, a battery, etc., even if the incident was obviously motivated by the victim’s race, gender, sexuality, or religion. The victim may elect not to disclose that. </p>
+        <p>Third, even if the hate crime is reported to the police and reported as a hate crime, the police may not  <i>recognize</i>  the incident as a hate crime. Often, recording an event as an unambiguous hate crime requires a certain degree of certainty that the crime was committed with the victim’s identity being a primary motivation for the crime. Motive is often exceedingly difficult to establish.</p>
+        <p>The Bureau of Justice Statistics performed a study on this, based on nationwide hate crime statistics, concluding that the statistics offered by law enforcement are often highly under-representative. The study found that between 2013 and 2017, the annual number of hate crime victims reported by law enforcement agencies nationwide represented an average of only 3.67% of actual annual hate crime victims. <sup><a href="#fn11" id="ref11">[11]</a></sup> Figure 3 below reproduces a figure of the BJS report estimating the dropoff at various stages in the reporting process.</p>
+        <center><img src="fig1.jpeg" alt="Figure 3"></center>
+        <center><p>Figure 3</p></center>
+        <p>For these reasons, the data examined in this paper should not be understood as representing a complete account of the hate crimes that <i> occurred </i> in New York City during this time. Indeed, it is in all likelihood not even representative of <i> most </i>  of the hate crimes that occurred in New York City. </p>
+        <p>There are likely further inaccuracies within the data beyond the gross number of hate crimes. There are almost certainly inaccurate numbers within the “Bias Motive” category, since each individual hate crime incident was only assigned one “bias motive” category in the NYPD dataset. It is unclear how that “bias motive” category was assigned in cases where the victim belonged to more than one minority category. How would the NYPD classify the assault of a biracial person who is also a member of the LGBT community? This is unclear, but each entry is assigned only one bias motive.</p>
+        <p>Even though the dataset that is available has limitations, much about New York City can be gleaned from this dataset, even in its incomplete condition.</p>
+        <p><b>Data Analysis - Key Findings</p></b>
+        <p>The NYPD recorded 2,247 confirmed hate crime incidents in New York City between January 1, 2019 and June 27, 2023. With 983 confirmed incidents, Anti-Jewish hate crimes were by far the most common type, making up about 43.7% of the total incidents. Aside from Anti-Jewish hate crimes, the most common types of bias motive were as follows: 299 Anti-Asian hate crimes (13.3%), 276 Anti-Male-Homosexual hate crimes (12.3%), and 196 Anti-Black hate crimes (8.7%). </p>
+        <center><img src="fig2.jpeg" alt="Figure 4"></center>
+        <center><p>Figure 4</p></center>
+        <p>Anti-Asian hate crimes had by far the sharpest spike over time. In 2019, there was <i>one</i> confirmed anti-Asian hate crime in all of New York City according to this dataset. In 2021, there were 150. That is a <i>15,000%</i> increase. Anti-Asian hate crimes are also the only type of hate crime that increased from 2019 to 2020. Hate crimes against all other groups decreased between 2019 and 2020, as did most crimes in general, since nearly everyone that was able to do so remained largely inside during the COVID-19 pandemic lockdown.</p>
+        <center><img src="fig3.jpeg" alt="Figure 5"></center>
+        <center><p>Figure 5</p></center>
+        <center><img src="fig4.jpeg" alt="Figure 6"></center>
+        <center><p>Figure 6</p></center>
+        <p>Geographically, gross hate crimes seem to be fairly evenly distributed across the city, though there are some trends worth noting. Anti-Asian hate crimes seem to be concentrated in Manhattan. The 5 precincts reporting the most anti-Asian hate crimes are all located in South Manhattan, with 59% of the Anti-Asian hate crimes reported during this period occurring in Manhattan, and 47% occurring in South Manhattan alone.</p>
+        <center><img src="all_years_anti_asian.jpeg" alt="Figure 7"></center>
+        <center><p>Figure 7: Anti-Asian Hate Crimes 2019 - 2022</p></center>
+        
+        <p>Anti-gay hate crimes were also concentrated in Manhattan. However these were not <i>as</i> concentrated as the anti-Asian hate crimes, with 45% of the total hate crimes categorized by the NYPD as “anti-male homosexual” occurring in Manhattan. </p>
+        <p>Anti-Jewish hate crimes, meanwhile, seem to have been more concentrated in Brooklyn. In this case, Brooklyn precincts accounted for roughly 43% of the anti-Jewish hate crimes reported in the dataset.</p>
+        <center><img src="all_years_anti_jewish.jpeg" alt="Figure 8"></center>
+        <center><p>Figure 8: Anti-Jewish Hate Crimes 2019 - 2022</p></center>
+        
+        <p>Anti-Black hate crimes were fairly evenly distributed, with no individual precinct accounting for more than 5% of the total. Interestingly, the two precincts with the most anti-Black hate crimes were both located in Staten Island - an unusually high amount. Staten Island precincts account for 2% of anti-Asian hate crimes, 2% of anti-gay hate crimes, and 4% of anti-Jewish hate crimes, but 14% of anti-Black hate crimes. </p>
+        <center><img src="all_years_anti_black.jpeg" alt="Figure 9"></center>
+        <center><p>Figure 9: Anti-Black Hate Crimes 2019 - 2022</p></center>
+        <p><b>Data Analysis - Explanation of Key Findings</p></b>
+        <p>The 15,000% increase in annual anti-Asian hate crimes, as well as the increase in anti-Asian hate crimes in 2020 when hate crimes of all other types decreased during the same period, is almost certainly attributable to the coronavirus.</p>
+        <p>Another notable finding is that Anti-Jewish hate crimes constitute such a large plurality of the total hate crime incidents in the dataset. This speaks to several cultural and socio-economic dynamics present in the city of New York. First of all, it reveals that, despite having a larger Jewish population than Jerusalem and Tel Aviv combined, New York City is not an oasis of tolerance in a desert of anti-semitism. There are people living in New York who do not like the Jewish community. The United States of America is not free of anti-semitism, and it still rears its ugly head in NYC.</p>
+        <p>However, this dataset indicates that anti-semitism is about 5.02 times as prevalent in New York City as anti-Black racism. There are roughly equal numbers of individuals that identify as Jewish and individuals that identify as Black in New York City. And yet, according to this dataset, Jewish people are the victims of hate crimes 5 times more often than are Black people. This is a statistically significant difference, and it requires exploration. One explanation, which seems quite probable, is that members of the Black community are not reporting hate crime incidents to the police as often as members of the Jewish Community are.</p>
+        <p>Jewish Americans (unlike members of the Black and LGBT communities) do not have historical widespread distrust of American law enforcement. There is a long history of police brutality against Black and LGBT individuals in the United States of America. And while the Jewish community certainly has experienced the single worst instance of police brutality in human history, it is one continent and eight decades removed from 21st century New York City. This should be viewed in contrast with recent, local history. In 2014, officers from the New York Police Department (one could argue) <i>committed</i> an anti-Black hate crime when they strangled Eric Garner to death. As such, many anti-Black hate crimes likely go unreported and are underrepresented in these data.</p>
+        <footer>
+            <sup id="fn1">[1]</sup> Source: <a href="https://www.nbcnews.com/n1169821" target="_blank">NBC News</a>.
+            <br>
+            <sup id="fn2">[2]</sup> Source: <a href="https://www.npr.org/2021/05/20/998599775/biden-to-sign-the-covid-19-hate-crimes-bill-as-anti-asian-american-attacks-rise" target="_blank">NPR</a>.
+            <br>
+            <sup id="fn3">[3]</sup> Source: <a href="https://www.nytimes.com/2020/03/18/us/politics/china-virus.html" target="_blank">The New York Times</a>.
+            <br>
+            <sup id="fn4">[4]</sup> Source: <a href="https://www.theguardian.com/us-news/2020/jun/20/trump-covid-19-kung-flu-racist-language" target="_blank">The Guardian</a>.
+            <br>
+            <sup id="fn5">[5]</sup> Source: <a href="https://www.adl.org/resources/blog/coronavirus-crisis-elevates-antisemitic-racist-tropes" target="_blank">ADL</a>.
+            <br>
+            <sup id="fn6">[6]</sup> Source: <a href="https://www.reuters.com/article/idUSKBN23J2JK" target="_blank">Reuters</a>.
+            <br>
+            <sup id="fn7">[7]</sup> Source: <a href="https://www.foxnews.com/opinion/what-if-george-floyd-narrative-false" target="_blank">Fox News</a>.
+            <br>
+            <sup id="fn8">[8]</sup> Source: <a href="https://www.forbes.com/sites/nicholasreimann/2020/06/11/some-george-floyd-murals-are-being-defaced/" target="_blank">Forbes</a>.
+            <br>
+            <sup id="fn9">[9]</sup> Source: <a href="https://www.usatoday.com/story/news/nation/2020/07/07/black-americans-report-hate-crimes-amid-black-lives-matter-gains/3259241001/" target="_blank">USA Today</a>.
+            <br>
+            <sup id="#fn10">[10]</sup> Source: <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Hate-Crimes/bqiq-cu78" target="_blank">NYC Open Data</a>.
+        </footer>
+        
+    </div>
+    <canvas id="cursorCanvas"></canvas>
+    <script>
+// Add this to the existing <script> section
+    const canvas = document.createElement("canvas");
+canvas.id = "cursorCanvas";
+canvas.style.position = "fixed";
+canvas.style.pointerEvents = "none";
+document.body.appendChild(canvas);
+
+const ctx = canvas.getContext("2d");
+
+const lines = [];
+const lineCount = 100;
+const lineLength = 10;
+
+for (let i = 0; i < lineCount; i++) {
+    lines.push({
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight,
+        angle: Math.random() * Math.PI * 2,
+    });
+}
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeStyle = 'white';
+
+    lines.forEach((line, index) => {
+        ctx.beginPath();
+        ctx.moveTo(line.x, line.y);
+        const nextLine = lines[(index + 1) % lines.length];
+        ctx.lineTo(nextLine.x, nextLine.y);
+        ctx.stroke();
+    });
+}
+
+function updateLines(event) {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+
+    lines.forEach(line => {
+        const distanceX = mouseX - line.x;
+        const distanceY = mouseY - line.y;
+        const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+
+        if (distance < 100) {
+            line.angle += 0.1;
+            line.x += Math.cos(line.angle) * lineLength;
+            line.y += Math.sin(line.angle) * lineLength;
+        }
+    });
+
+    lines.push({
+        x: mouseX,
+        y: mouseY,
+        angle: Math.random() * Math.PI * 2,
+    });
+
+    while (lines.length > lineCount) {
+        lines.shift();
+    }
+
+    draw();
+}
+
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+
+document.addEventListener("mousemove", updateLines);
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Call your revealText function with the appropriate element ID
+    revealText("elementId"); // Replace "elementId" with the actual ID of the element you want to reveal
+});
+
+
+    </script>
+</body>
+</html>
+

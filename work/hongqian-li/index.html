@@ -1,584 +1,320 @@
 ---
 student: Hongqian Li
 tags: students
-image: cover.jpg
+image: cover.gif
 ---
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">  
-  <meta name="description"
-  content="Student work from Colloquium 1 of the Columbia GSAPP CDP Program in 2023." />
-  <link rel="icon" href="https://gsapp-cdp.github.io/colloquium-1-2023/favicon.ico" sizes="any">
-  <link rel="icon" href="https://gsapp-cdp.github.io/colloquium-1-2023/favicon.svg" type="image/svg+xml">
-  <link href="https://gsapp-cdp.github.io/colloquium-1-2023/base.css" rel="stylesheet" />
-  <link href="https://gsapp-cdp.github.io/colloquium-1-2023/main.css" rel="stylesheet" />
-  <link href="https://gsapp-cdp.github.io/colloquium-1-2023/colloquium1.css" rel="stylesheet" />
-  <title>Hongqian Li</title>
-  <style>
-    .grid-container {
-      width: 1144px;
-      height: 700px;
-      justify-items: center；
-    }
-    .carousel {
-        position: relative;
-        width: 650px;
-        height: 700px;
-        perspective: 1200px;
-    }
-    .carousel img {
-    height: auto; /* This is the fixed height. */
-    width: auto; /* This allows the width to adjust based on the height. */
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: transform 1s, opacity 1s;
-    transform-origin: left center;
-    }
-    .carousel img.active {
-        transform: translateX(0) scale(1) ;
-        opacity: 1;
-        z-index: 2;
-    }
-    .carousel img.inactive {
-        transform: translateX(55%) scale(0.7) ;
-        opacity: 0.5;
-        z-index: 1;
-    }
-    .carousel-controls {
-      display: flex;
-      justify-content: center;
-      width: 1144px; /* Set the width to 1200px */ /* Center horizontally and add margin at the top */
-    }
-    .carousel-controls button {
-        width: 130px;
-        height: 25px;
-        background: gray;
-        border: none;
-        margin: 0 5px;
-        color: white;
-    }
-    .carousel-controls button.active {
-        background: black;
-        color: white;
-    }
-  </style>
-
+    <title>Hongqian Li</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="app.js" defer></script>
 </head>
+
 <body>
-  <header class="container">
-    <div class="header-context">
-      <div class="h2">
-        <a class="fade" href="https://www.arch.columbia.edu/programs/15-m-s-computational-design-practices"
-          target="_blank">Columbia GSAPP</a>
-      </div>
-    </div>
-
-    <div class="header-title">
-      <div class="h1">
-        <a class="fade" href="/">Computational Design Practices</a>
-      </div>
-      <div class="h2">GSAPP CDP 2023-4 Colloquium I</div>
-    </div>
-
-    <div class="header-nav">
-      <div class="h2">
-        <a class="fade" href="/about">About</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-
-      <div class="post">
-        <div class="post-header">
-          <div class="post-title">
-            <h1>Hongqian Li</h1>
-          </div>
+    <div id="section1" class="section">
+        <video autoplay muted loop class="background-video">
+            <source src="public_video_people2.mp4" type="video/mp4">
+        </video>
+        <div id="typewriter1" class="typewriter">
+            <h1 data-content="CITY PULSE"></h1>
+            <p data-content="Exploring Human Behaviors and Perceptions in Urban Context through Machine Vision"></p>
         </div>
+    </div>
 
-        <div class="post-body project content">
-          <!-- ALL WORK SHOULD BE CONTAINED HERE. -->
-
-          <div class="toc full">
-            <h2>Table of Contents</h2>
-            <ul>
-              <li><a href="#assignment-1">1 &ndash; Systems</a></li>
-              <li><a href="#assignment-2">2 &ndash; Authorship</a></li>
-              <li><a href="#assignment-3">3 &ndash; Politics</a></li>
-              <li><a href="#assignment-4">4 &ndash; Governance</a></li>
-              <li><a href="#assignment-5">5 &ndash; Behavior</a></li>
-            </ul>
-          </div>
-
-          <div class="full assignment">
-            <h1 id="assignment-1">1 &ndash; Systems</h1>
-            <h2>Open Space</h2>
-            <p>A system mapping of NYC Open Plaza Program.</p>
-          </div>
-
-          <div class="half">
-            <img src="./assembly_diagram.jpg">
-          </div>
-
-          <div class="half">
-            <h2>What is the system?</h2>
-            <p>
-              The New York City Plaza Program is an initiative by the New York 
-              City Department of Transportation (NYCDOT) aimed at increasing the 
-              availability of public open spaces in the city. System Function: Transform underused 
-              streets into vibrant, social public spaces to to ensure that all New Yorkers live 
-              within a 10-minute walk of quality open space. The elements of this system include the NYCDOT, community partners 
-              (usually non-profit organizations), physical spaces (the plazas themselves), 
-              and users. 
-            </p>
-          </div>
-
-          <div class="half">
-            <p>
-              In the NYC Open Plaza Program system, the primary stocks are the 
-              quantity and quality of the plazas.For the quantity stock, the inflow is the
-               opening of new plazas, and the outflow is the closure of existing plazas. 
-               Various factors contribute to these inflows and outflows. The opening of new 
-               plazas can be influenced by increased funding, greater community engagement, 
-               supportive policies, outreach initiatives, and improving public health conditions 
-               following the COVID-19 pandemic. Conversely, policy changes, community opposition, 
-               funding cuts, and public safety concerns can contribute to the closure of plazas. 
-               There is a balancing feedback loop at play here: as the quantity of plazas increases, 
-               if these plazas are not well-managed, it could lead to the closure of some plazas, 
-               thus decreasing the overall quantity. For the quality stock, the inflow is the 
-               improvement of existing plazas, and the outflow is their degradation. Factors 
-               that can contribute to the improvement of plazas include good design, 
-               effective management, inclusivity and accessibility, and well-planned events. 
-               On the other hand, poor management and unjust practices can lead to degradation of plazas. 
-               There is a reinforcing feedback loop in this aspect of the system: when the quality of 
-               the plazas improves, it attracts more community support and funding, which can then 
-               be used for further improvements, thus enhancing the overall quality of the plazas.
-            </p>
-          </div>
-
-          <div class="half">
-            <img src="./cybernetic_diagram.jpg">
-          </div>
-
-          <hr>
-
-          <div class="video">
-            <img src="./system_diagram.png">
-          </div>
-
-          <hr>
-
-          <div class="half">
-            <img src="./shareholder_diagram.png">
-          </div>
-
-          <div class="half">
-            <h2>What are the shareholders?</h2>
-
-            <p>
-              Stakeholders of the New York City Open Plaza Program may come from multiple fields and can be categorized 
-              according to their roles and concerns. Government Agencies: This includes the NYC Department of Transportation, 
-              which manages and oversees the execution of the plaza program. The city planning department may also be involved, 
-              focusing on the overall city layout and development. Community Organizations: These could be non-profit organizations, 
-              community development teams, or resident associations. They are concerned with how the plaza serves the community and 
-              whether the use of the plaza meets the needs of community residents. 
-            </p>
-
-            <p>
-              Commercial Stakeholders: This could include nearby shops and businesses. They may be concerned about how the 
-              construction and use of the plaza affect their business. Plaza Users: This includes residents, tourists, 
-              pedestrians, etc. They are concerned about the facilities and activities in the plaza, and whether the overall 
-              environment of the plaza is conducive to their use. Funders: This can be the government, foundations, donors, etc. 
-              They may be concerned about whether their funds are effectively used and what the benefits of the plaza are.
-            </p>
-          </div>
-
-          <hr>
-
-          <div class="full">
-            <blockquote>
-              "Cities have the capability of providing something for everybody, only because, and only when, 
-              they are created by everybody." - Jane Jacobs
-            </blockquote>
-          </div>
-
-          <hr>
-
-          <div class="half">
-            <h2>What are its leverage points?</h2>
-
-            <p>
-              In the NYC Open Plaza Program system, potential leverage points could include:Community Engagement:
-               Policies or initiatives that effectively boost community engagement can have a significant impact. 
-               The success of plazas largely depends on the involvement of community members who can help shape 
-               plaza design, maintain cleanliness and order, as well as organize events.Facility Maintenance and 
-               Design: Consistent, high-quality facility maintenance and plaza design that meets community needs 
-               can significantly increase the attractiveness and utilization of plazas, thereby improving the 
-               effectiveness of the entire system.
-            </p>
-
-            <p>
-              Funding: Reliable and adequate sources of funding are crucial to the operation of the system. 
-              Investments in plaza maintenance, renovation, and event organization all directly impact the quality 
-              and usage of the plazas.Site Selection Inclusiveness and Accessibility: The site selection process 
-              for new plazas can greatly influence the entire system. Ensuring that this process is inclusive, meaning 
-              that it takes into account the needs and inputs of diverse community members, and focuses on 
-              locations that are easily accessible, can significantly broaden the impact and relevance of the plazas.
-
-            </p>
-          </div>
-
-          <div class="half">
-            <img src="./2x2-Painpoints_diagram.png">
-          </div>
-
-          <hr>
-
-          <div class="full">
-            <img src="./user_journey.jpg">
-          </div>
-
-          <hr>
-
-          <div class="full assignment">
-            <h1 id="assignment-2">2 &ndash; Authorship</h1>
-            <h2>Bridging the Gap</h2>
-            <p>Co-authorship: NYC Public Cultural Life System</p>
-          </div>
-
-          <div class="full">
-          <p>
-            In recent years, advancements in artificial intelligence (AI) have revolutionized 
-            various industries, including design and architecture. One notable area of progress 
-            lies in utilizing AI models to foster collaboration between professionals and the 
-            general public. By acting as a bridge, AI can facilitate the translation of creative 
-            ideas from non-professionals into a format that professionals can understand and implement.
-             This essay explores the significance of shared authorship in design and how AI models 
-             such as pix2pix GAN and Deep Convolutional Generative Adversarial Networks (DCGAN) 
-             contribute to this process. Through the examples of an interactive community park 
-             design platform and the DeepScope project, we will discuss how AI enables citizens 
-             to actively participate in the design process and enhance the quality of urban spaces.
-          </p>
-
-          
-            <img src="./2-1.png">
-          </div>
-
-          <div class="full">
-          <p>
-            The Power of Shared Authorship: Shared authorship, which involves the collaboration between professionals and the 
-            public, offers numerous benefits in the design process. It empowers communities by allowing them to voice their 
-            ideas and actively participate in shaping their environments. By involving citizens, professionals gain valuable 
-            insights and ensure that designs align with the needs and preferences of the intended users.
-          </p>
-
-            <img src="./2-2.png">
-          </div>
-
-          <div class="full">
-          <p>
-            The Role of AI as a Bridge:
-            AI models such as pix2pix GAN and DCGAN act as powerful tools to bridge the gap between professionals and 
-            non-professionals in the design process. These models enable the translation of non-technical ideas into 
-            professional renderings, making it easier for professionals to comprehend and implement the concepts proposed 
-            by the public.
-            a. Pix2pix GAN: The interactive community park design platform described in the research paper demonstrates the 
-            capabilities of the pix2pix GAN model. Through the platform, citizens can sketch their visions for the park using 
-            different colors, expressing their creativity without the need for technical skills. The model then translates 
-            these sketches into technical plan renderings, allowing non-professionals to visualize their ideas in a professional
-             format. This translation process ensures that the collaborative design process becomes more inclusive and accessible.
-          </p>
-
-            <img src="./2-3.png">
-          </div>
-
-          <div class="full">
-          <p>
-            b. DCGAN in the DeepScope Project: The Media Lab's DeepScope project takes a different approach, utilizing DCGAN and 
-            a Tangible User Interface (TUI) to facilitate real-time city prototype designing and visualization. By using Lego 
-            models, users can construct physical representations of urban design concepts. These Lego models are then processed
-             by the DCGAN, which generates perspective renderings of the proposed designs. This tangible and interactive 
-             approach encourages citizens to actively engage in the design process and provides them with a clearer 
-             understanding of how their ideas can be realized.
-          </p>
-
-            <img src="./2-7.png">
-          </div>
-
-
-          <div class="full">
-          <p>
-            Fostering Creativity and Implementing Ideas:The implementation of AI models in collaborative design not only 
-            enhances the participation of the public but also fosters creativity. By leveraging AI to transform non-professional
-             ideas into professional renderings, citizens can see their visions come to life in a tangible and visually 
-             appealing format. This process encourages further ideation and exploration, empowering individuals to contribute 
-             actively to the design of their community spaces.
-          </p>
-          <p>
-            In conclusion, the utilization of AI models such as pix2pix GAN and DCGAN in collaborative design processes allows 
-            for shared authorship between professionals and the public. AI acts as a bridge, transforming non-professional ideas 
-            into a format that professionals can comprehend and implement. Through the examples of the interactive community 
-            park design platform and the DeepScope project, we have seen how AI empowers citizens to actively participate in the
-             design process, fosters creativity, and enhances the quality of urban spaces. As we move forward, embracing AI in 
-             design can contribute to more inclusive and innovative solutions, ensuring that the voices of all stakeholders are 
-             heard and respected.
-          </p>
-          </div>
-
-          <hr>
-
-          <div class="full assignment">
-            <h1 id="assignment-3">3 &ndash; Politics</h1>
-            <h2>Counting on the Public</h2>
-            <p>Leveraging AI to Decode Bureaucracy and Enhance Public Engagement in NYC City Planning</p>
-          </div>
-
-          <div class="full">
-            <h2>Visualizing Public Engagement: An Analysis of Participation in City Planning Public Hearings</h2>
-            <img src="./public_video_people2.gif">
-            <img src="./population_change6.gif">
-          </div>
-
-          <div class="half">
-            <p>
-              The dataset for this study is derived from the NYC Department of Planning's Public and 
-              Special Meeting Disposition Sheets & Videos. I selected a most recent video from June 7, which focused 
-              on the Madison Square Garden Special Permit. From this video, I extracted 500 evenly distributed screenshots 
-              and employed an Object Detection and Segmentation algorithm (Mask R-CNN) to identify the number of 
-              participants in the meeting. This approach provides a snapshot of public participation in 
-              the planning process. My findings indicate that the average number of attendees in the 
-              meeting was approximately 12. Interestingly, the screenshot with the highest number of individuals, 
-              84 in total, was a perspective drawing of the project itself.
-            </p>
-
-          </div>
-
-          <div class="half">
-            <blockquote>
-            "We can imagine Utopias that are procedural, open ended, participative."
-            </blockquote>
-          </div>
-          <hr>
-          <div class="full">
-            <h2>Decoding the Bureaucracy: Reimagining Meeting Sheets for Enhanced Public Engagemen with ChatGPT</h2>
-          </div>
-          
-          <div class="full">
-          <div class="grid-container">
-            <div class="carousel">
-                <img src="./sheet-1.jpg" class="active" />
-                <img src="./sheet-2.png" class="inactive" />
+    <div id="section2" class="section">
+        <video autoplay muted loop class="background-video">
+            <source src="backgound2.mp4" type="video/mp4">
+        </video>
+        <div class="content2">
+            <div>
+            <p>I'm driven by the potential of machine learning, computer vision, and data visualization in understanding urban human behaviors and perceptions. I've used computer vision to analyze New York City Planning Department's public meetings, gauging public participation. I also explored generative AI for enhancing meeting layouts. Another project involved creating AR plants that react to human facial expressions. Additionally, I've harnessed crowdsourced data to craft perception maps of New York City, integrating them with sky visibility and Citi Bike mobility data to delve into urban influences on human perceptions. Beyond these, I'm enthusiastic about HCI, interaction design, UX design, and tangible interfaces, aspiring to develop user interfaces that foster community engagement.</p>
             </div>
-            <div class="carousel-controls">
-                <button class="active">bureaucratic?</button>
-                <button>participatory?</button>
-            </div>
-          </div>
-          </div>
-
-          <div class="half">
-          <p>
-          I selected the disposition sheet PDF from the NYC Department of Planning and mapped its structure.
-          I found that the document does not provide a space for recording public opinion, focusing instead 
-          solely on the voting results of the planning commission. To explore how this could be made more 
-          participatory, I utilized ChatGPT for suggestions. The AI proposed a more participatory version 
-          of the sheet that could include additional sections such as a Public Opinion Section, Public Voting, 
-          Decision Making, Community Representative, and Online Participation. 
-          </p>
-          </p>
-          I gathered public opinions from Reddit about the Madison Square Garden project, incorporating these perspectives 
-          into the reimagined form. The feedback revealed several concerns about the project's impact on pedestrian traffic
-           and local aesthetics. Respondents described the area around Madison Square Garden as chaotic, with heavy traffic 
-           and incessant honking, which created a challenging environment for pedestrians. Safety concerns were also raised, 
-           particularly regarding the compatibility of the arena with Penn Station. A prevalent sentiment was that relocating 
-           the arena could potentially resolve issues associated with Penn Station. This viewpoint was echoed by Community 
-           Board 5 (CB5), which, upon reviewing the application, determined that the Madison Square Garden Arena did not meet
-            the findings of Article 74-41 of the zoning resolution. The board strongly advocated for the arena's relocation 
-            as the preferred solution to address the multitude of issues surrounding Penn Station.
-          </p> 
-          </div>
-
-          <div class="half">
-            <img src="./3-5.jpg">
-          </div>
-          
-          <hr>
-          <div class="full">
-            <h2>Mapping Political Power Dynamics in Zoom Meeting Spaces</h2>
-          </div>
-
-          <div class="full">
-            <div class="grid-container">
-              <div class="carousel">
-                <img src="./sheet-3.jpg" class="active" />
-                <img src="./sheet-4.png" class="inactive" />
-              </div>
-              <div class="carousel-controls">
-                <button class="active">bureaucratic?</button>
-                <button>participatory?</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="full">
-            <div class="grid-container">
-              <div class="carousel">
-                <img src="./sheet-5.jpg" class="active" />
-                <img src="./sheet-6.png" class="inactive" />
-              </div>
-              <div class="carousel-controls">
-                <button class="active">bureaucratic?</button>
-                <button>participatory?</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="half">
-            <p>
-            By analyzing the elements and structure of both Zoom meetings and physical meeting rooms, I observed uneven power 
-            dynamics. In Zoom meetings, the maximum screen count is typically three: one for the representative speaking, one 
-            for commission members, and one for the meeting's poster slide. In physical spaces, power division is more apparent, 
-            with commission members seated on a pedestal and glass barriers separating people.
-          </p>
         </div>
+    </div>
+
+    <div id="section6" class="section">
+        <img src="backgound1.jpg" class="background-img">
+        <div class="content3">
+            <div id="typewriter2" class="typewriter">
+                <h1 data-content="#1 Meeting ParticiPix "></h1>
+                <h2 data-content="Using CV and AI to Decipher Human Participation in Public Meeting "></h2>
+                <p data-content="Utilizing computer vision techniques to analyze public meeting videos from the New York City Planning Department, assessing public participation by counting attendees. Further exploration is done using generative AI to envision a more participatory meeting record layout."></p>
+            </div>            
+        </div>
+    </div>
+
+    <div id="section5" class="section">
+        <img src="backgound1.jpg" class="background-img">
         
-        <div class="half">
-          <p>
-          To reimagine these spaces as more participatory, I engaged Midjourney. The results were intriguing. For Zoom meetings,
-           one suggestion was an interactive board where participants can chat and share opinions. Another was a game-like 
-           virtual meeting where attendees become characters in a city game. A simpler suggestion was to increase the number 
-           of people visible on the screen beyond the current limit of three. For physical meeting rooms, the reimagined design
-            featured a long table where community members could sit alongside commission members for discussions. This layout 
-            promotes a sense of equality and encourages more open dialogue.
-          </p>
-          </div>
-
-          <div class="full assignment">
-            <h1 id="assignment-4">4 &ndash; Governance</h1>
-            <h2>$ Lender Money $</h2>
-            <p>A profile of governance.</p>
-          </div>
-          <div class="full">
-            <h2>EmoPlant AR</h2>
-          </div>
-          <div class="full">
-            <p>
-            <b>Trend</b>: Amid the current severe pandemic situation, working from home and self-care have become global focuses. <br><b>Signal</b>: 
-            Decreased interpersonal interactions and the development of Augmented Reality (AR) technology, along with the DeepFace facial expression recognition algorithm.
-            </p>
-          <iframe width="1144" height="700" src="https://www.youtube.com/embed/XX64m7Dl_QA" title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-
-          <div class="full">      
-          <p>
-          Amid the current severe pandemic situation, working from home and self-care have become a global focus. Due to the lockdowns
-            and isolations caused by the pandemic, people are forced to work at home for extended periods, affecting many people's mental health.
-            Moreover, as interpersonal interactions decrease, many people may overlook their emotional changes, exacerbating emotional issues.
-            Against this backdrop, we have designed this application utilizing Augmented Reality (AR) technology in conjunction with the DeepFace
-            facial expression recognition algorithm. Through the interaction between users and the virtual plant, and the plant's state changes 
-            corresponding to the user's emotional changes, we hope to help users pay more attention to and better understand their emotional state. 
-            When they see the plant withering, users may realize that they might be in an unhappy mood, which will prompt them to pay attention to 
-            their mental health.
-          </p>
-          <img src="./4-1.jpg">  
-          <p>  
-            In the development of this application, we mainly used the DeepFace Python library for facial expression recognition and analysis. At 
-            the same time, to better showcase and test this application, we also created a video demonstrating how people can interact with it on 
-            various devices (such as smartphones, tablets, projectors), and experience the changes in the model and textures.
-          </p>
-          <p>  
-            Overall, we hope that through this application, high technology can help users better understand and care for their own psychological state, 
-            thereby improving the quality of life and work efficiency. This context has become increasingly relevant in the wake of the global pandemic, 
-            as more people work from home and face the challenges of isolation and mental health.
-          </p>
-          </div>
-          <div class="full">
-          <h2>YIMBY-Smart Community Grid</h2>
-          </div>
-          <div class="full">
-          <p>
-          <b>History</b>: Not in My Backyard Movement <br><b>Trend</b>: 
-          More and more people are against city construction.
-          </p>
-          <p>
-          <br><b>Signal 1: "Energy Empowerment"</b> - Each household becomes a power producer and consumer via solar panels and small wind turbines, reducing reliance on distant power plants and associated environmental impacts.
-          <br><b>Signal 2: "Automated Architect"</b> - 3D printing and automation technologies construct efficient, eco-friendly buildings tailored to community needs, decreasing resistance to new facilities.
-          <br><b>Signal 3: "AI Guardian"</b> - AI and Big Data analyze community data to predict needs and potential issues, improving planning and adjustment, thus better serving residents and minimizing potential NIMBY movements.
-          </p>
-          <img src="./4-2.jpg">
-          <p>
-          <br>Panel 1: A modern community with houses equipped with solar panels and small wind turbines on their rooftops. 
-          <br>Panel 2: A resident is seen at home, using a smartphone to check their energy consumption. The display screen shows information about their solar energy generation and energy usage.
-          <br>Panel 3: 3D printing and building automation technology for construction. A 3D printer is rapidly constructing the walls of the building, while robots install windows and doors with precision.
-          <br>Panel 4: Community residents are actively engaged in providing suggestions during the construction of the community center. They are seen collaborating with architects and an AI system.
-          <br>Panel 5: The intelligent community grid's big data system displays the needs and feedback of community residents. The AI system predicts future electricity demands and proactively adjusts energy supply to meet residents' needs.
-          </p>
-          <img src="./4-3.gif">
+            <h3>I extracted 500 screenshots of NYC planning meeting videos and use CV to count the number of people in these meetings...</h3>
+        
         </div>
-
-
-
-
-          <div class="full assignment">
-            <h1 id="assignment-5">5 &ndash; Behavior</h1>
-            <h2>$ Lender Money $</h2>
-            <p>Modeling agents of the system.</p>
-          </div>
-
-        </div>
-      </div>
-
-      <footer></footer>
     </div>
-    <script>
-// Get a list of all carousels on the page
-const carousels = Array.from(document.querySelectorAll('.grid-container'));
 
-carousels.forEach((carouselContainer) => {
-  let currentIndex = 0;
+    <div id="section2" class="section">
+        <video autoplay muted loop class="background-video">
+            <source src="public_video_people.mp4" type="video/mp4">
+        </video>
+    </div>
 
-  // For each carousel, get the controls and images specifically inside that carousel
-  const controls = Array.from(carouselContainer.querySelectorAll('.carousel-controls button'));
-  const images = Array.from(carouselContainer.querySelectorAll('.carousel img'));
+    <div id="section4" class="section">
+        <img src="Untitled-9.gif" class="background-gif">
+    </div>
 
-  function setActive(index) {
-    controls.forEach((control, controlIndex) => {
-      control.classList.toggle('active', controlIndex === index);
-    });
+    <div id="section9" class="section">
+        <img src="backgound1.jpg" class="background-img">
+        <div class="inline-textbox">
+            <span class="text1">
+                    <p>1. The average attendance during the meeting video was <b>12</b> individuals, peaking at 68. At the start, there were 30 attendees, composed of 10 commission members, 8 applicants, and a variable number from the general public.
+                    <br>2. The meeting was structured as follows: Opening and Introduction: 11.2%; Presentation by the Applicant(s): 37.1%; Question & Answer (Q&A) Session: 22.4%; Public Commentary: <b>19.7%</b>;Conclusion and Summary: 9.5%;
+                    <br>3. The number of attendees dwindled over time. The public commentary segment was positioned towards the end. The initial part predominantly featured presentations from the 8 applicants about the project and their requests, while the commission members primarily engaged in the middle portion during the Q&A session.
+                    </p>
+            </span>
+            <span class="text3">
+                <img src="moment1.jpg" class="front-img imageToHover" alt="Description">
+                <img src="moment2.jpg" class="front-img imageToHover" alt="Description">
+                <img src="moment3.jpg" class="front-img imageToHover" alt="Description">
+            </span>
+        </div>
+    </div>
 
-    images.forEach((image, imageIndex) => {
-      image.classList.toggle('active', imageIndex === index);
-      image.classList.toggle('inactive', imageIndex !== index);
-    });
-  }
+    <div id="section5" class="section">
+        <img src="backgound1.jpg" class="background-img">
+        
+        
+            <h3>Then I asked DALL.E to reimagine a more participatory planning meeting...here's what it thought that looks like...</h3>
+        
+        </div>
+    </div>
 
-  controls.forEach((control, index) => {
-    control.addEventListener('click', () => {
-      currentIndex = index;
-      setActive(index);
-    });
-  });
+    <div class="container">
+        <div class="image-container">
+            
+        <img
+            class="image-before slider-image"
+            src="sheet-5.jpg" 
+            alt="color photo"
+        />
 
-  // Add a wheel event listener to the carousel
-  carouselContainer.querySelector('.carousel').addEventListener('wheel', (event) => {
-    event.preventDefault(); // prevent the default scrolling behavior
-    currentIndex = (event.deltaY > 0) 
-      ? Math.min(currentIndex + 1, images.length - 1) // if scrolling down, increment the index (max is images.length - 1)
-      : Math.max(currentIndex - 1, 0); // if scrolling up, decrement the index (min is 0)
-    setActive(currentIndex);
-  });
-});
+        <img
+            class="image-after slider-image"
+            src="sheet-6.jpg"
+            alt="black and white"
+        />
 
-    </script>
-    
+        </div>
+        <input
+        type="range"
+        min="0"
+        max="100"
+        value="50"
+        aria-label="Percentage of before photo shown"
+        class="slider"/>
 
-  </main>
+        <div class="slider-line" aria-hidden="true"></div>
+
+        <div class="slider-button" aria-hidden="true">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            viewBox="0 0 256 256">
+            <rect width="256" height="256" fill="none"></rect>
+            <line
+            x1="128"
+            y1="40"
+            x2="128"
+            y2="216"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+            ></line>
+            <line
+            x1="96"
+            y1="128"
+            x2="16"
+            y2="128"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+            ></line>
+            <polyline
+            points="48 160 16 128 48 96"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+            ></polyline>
+            <line
+            x1="160"
+            y1="128"
+            x2="240"
+            y2="128"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+            ></line>
+            <polyline
+            points="208 96 240 128 208 160"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+            ></polyline>
+        </svg>
+    </div>
+    </div>
+
+    <div class="image-slider">
+        <div class="image-container">
+            <img src="image-slider/DALLE1.png" alt="Image 1">
+            <img src="image-slider/DALLE2.png" alt="Image 2">
+            <img src="image-slider/DALLE3.png" alt="Image 3">
+            <img src="image-slider/DALLE4.png" alt="Image 4">
+            <img src="image-slider/DALLE5.png" alt="Image 5">
+            <img src="image-slider/DALLE6.png" alt="Image 6">
+            <img src="image-slider/DALLE7.png" alt="Image 7">
+            <img src="image-slider/DALLE8.png" alt="Image 8">
+            <img src="image-slider/DALLE9.png" alt="Image 9">
+            <img src="image-slider/DALLE10.png" alt="Image 10">
+        </div>
+    </div>
+
+    <div id="section3" class="section">
+        <img src="backgound7.jpg" class="background-img">
+        <div class="inline-textbox">
+            <span class="text1">
+                <!-- <div id="typewriter2" class="typewriter"> -->
+                    <p style="text-align: center;">"BUREAUCRATIC VERSION"</p>
+                    <p>
+                    <br>1. The Commission and the public were separated by a layer of glass and a table, creating a physical and visual barrier.
+                    <br>2. The chairs around the conference table were neatly arranged, not easily movable or reconfigurable, limiting the flexibility of the space.
+                    <br>3. The internal sound system and technical equipment appeared outdated, hindering modern interaction and communication.
+                    </p>
+                <!-- </div> -->
+            </span>
+            <span class="text2">
+                <!-- <div id="typewriter2" class="typewriter"> -->
+                    <p style="text-align: center;">"PARTICIPATORY VERSION"</p>
+                    <p>
+                    <br>1. The boundary between the Commission and the public is blurred. The room features multiple smaller tables that promote group discussions, as well as round tables that foster inclusivity and equal participation.
+                    <br>2.Detailed maps of projects are displayed, on which the public can freely draw or mark, allowing them to visually express their opinions and suggestions.
+                    <br>3. The room is equipped with advanced interactive AR (Augmented Reality) and VR (Virtual Reality) tools. These technologies enable immersive presentations and allow participants to virtually explore project designs or city plans in real-time.
+                    </p>
+                <!-- </div> -->
+            </span>
+        </div>
+    </div>
+
+    <div id="section3" class="section">
+        <img src="backgound3.jpg" class="background-img">
+            <h3>Then I also examined the disposition sheet pdf and asked DALL.E to reimagine a more participatory sheet...here's what it thought that looks like...</h3>
+        </div>
+    </div>
+
+    <div id="section2" class="section">
+        <img src="backgound6.jpg" class="background-img">
+    </div>
+
+    <div class="image-slider">
+        <div class="image-container">
+            <img src="image-slider2/DALLE1.jpg" alt="Image 1">
+            <img src="image-slider2/DALLE2.jpg" alt="Image 2">
+            <img src="image-slider2/DALLE3.jpg" alt="Image 3">
+            <img src="image-slider2/DALLE4.jpg" alt="Image 4">
+            <img src="image-slider2/DALLE5.jpg" alt="Image 5">
+            <img src="image-slider2/DALLE6.jpg" alt="Image 6">
+            <img src="image-slider2/DALLE7.jpg" alt="Image 7">
+            <img src="image-slider2/DALLE8.jpg" alt="Image 8">
+            <img src="image-slider2/DALLE9.jpg" alt="Image 9">
+            <img src="image-slider2/DALLE10.jpg" alt="Image 10">
+        </div>
+    </div>
+
+    <div id="section3" class="section">
+        <img src="backgound4.jpg" class="background-img">
+        <div class="inline-textbox">
+            <span class="text1">
+                <!-- <div id="typewriter2" class="typewriter"> -->
+                    <p style="text-align: center;">"BUREAUCRATIC VERSION"</p>
+                    <p>
+                    <br>1. It primarily encompassed information related to the topics discussed in the meeting, the attendance of the City Planning Commission, and the voting results.
+                    <br>2. The format was a formal table where each row had a uniform height.
+                    <br>3. It was text-heavy with minimal visual elements.
+                    </p>
+                <!-- </div> -->
+            </span>
+            <span class="text2">
+                <!-- <div id="typewriter2" class="typewriter"> -->
+                    <p style="text-align: center;">"PARTICIPATORY VERSION"</p>
+                    <p>
+                    <br>1. A more flexible format, moving beyond the confines of square grids.
+                    <br>2. Enhanced interactivity, introducing a board-game-like map of projects within the sheet and adding spaces for public feedback.
+                    <br>3. Improved readability with an abundance of data visualizations, including pie charts and icons, all rendered in vibrant colors.
+                    </p>
+                <!-- </div> -->
+            </span>
+        </div>
+    </div>
+
+    <div id="section6" class="section">
+        <img src="backgound8.jpg" class="background-img">
+        <div class="content3">
+            <div id="typewriter2" class="typewriter">
+            <h1 data-content="#2 EmoPlant AR"></h1>
+            <h2 data-content="Using CV and AR for Human Emotion-Responsive Product"></h2>
+            <p data-content="Through computer vision, facial expressions of individuals are analyzed, leading to the creation of AR plants that interact based on these expressions."></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="section8" class="section">
+        <img src="backgound8.jpg" class="background-img">
+        <div class="video-box">
+            <iframe width=100% height=100% src="https://www.youtube.com/embed/XX64m7Dl_QA?loop=1&playlist=XX64m7Dl_QA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="text-box2">
+            <div>
+            <p>Due to the lockdowns and isolations caused by the pandemic, people are forced to work at home for extended periods, affecting many people's mental health. Moreover, as interpersonal interactions decrease, many people may overlook their emotional changes, exacerbating emotional issues. To address this, we designed an application using Augmented Reality (AR) and the DeepFace facial expression recognition algorithm. 
+                Through user interaction with a virtual plant that mirrors their emotional state, users are prompted to be more attuned to their feelings. For instance, a withering plant signifies possible unhappiness, nudging users to care for their mental health.
+                In the development of this application, we mainly used the DeepFace Python library for facial expression recognition and analysis. At the same time, to better showcase and test this application, we also created a video demonstrating how people can interact with it on various devices (such as smartphones, tablets, projectors), and experience the changes in the model and textures.
+                Overall, we hope that through this application, high technology can help users better understand and care for their own psychological state, thereby improving the quality of life and work efficiency. This context has become increasingly relevant in the wake of the global pandemic, as more people work from home and face the challenges of isolation and mental health.
+            </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section6" class="section">
+        <img src="backgound5.jpg" class="background-img">
+        <div class="content3">
+            <div id="typewriter2" class="typewriter">
+            "<h1 data-content="#3 City Sensing"></h1>"
+            <h2 data-content="Using CV to Probe Human Urban Perception"></h2>
+            <p data-content="In this study, I integrate 21,703 Google Streetview images with the Place Pulse 2.0 dataset, using advanced computer vision techniques to explore how people perceive urban spaces, sky views, and bicycle-friendly paths. Through this integrated content, we aim to gain a deeper understanding of how urban design influences our daily experiences and emotional responses."></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <div id='story'></div>
+    <script src='config.js'></script>
+    <script src="map.js"></script>
 </body>
-
 </html>
