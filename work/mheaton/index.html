@@ -1,454 +1,561 @@
 ---
 student: Matthew Heaton
 tags: students
-image: 11110_dither.png
+image: combined.gif
 ---
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">  
-  <meta name="description"
-  content="Student work from Colloquium 1 of the Columbia GSAPP CDP Program in 2023." />
-  <link rel="icon" href="https://gsapp-cdp.github.io/colloquium-1-2023/favicon.ico" sizes="any">
-  <link rel="icon" href="https://gsapp-cdp.github.io/colloquium-1-2023/favicon.svg" type="image/svg+xml">
-  <link href="https://gsapp-cdp.github.io/colloquium-1-2023/base.css" rel="stylesheet" />
-  <link href="https://gsapp-cdp.github.io/colloquium-1-2023/main.css" rel="stylesheet" />
-  <link href="https://gsapp-cdp.github.io/colloquium-1-2023/colloquium1.css" rel="stylesheet" />
-
-  <title>MATTHEW HEATON</title>
-  <style>
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-
-    .iframe-container {
-        width: 100%;
-        height: 100vh; /* height of viewport */
-        overflow: auto; /* allows page to be scrollable */
-        position: relative; /* allows the following z-index to be set */
-        z-index: 0;
-    }
-
-    .iframe-container iframe {
-        border: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    .content-below {
-        position: relative;
-        z-index: 1;
-    }
-</style>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/os-gui/windows-default.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
-
 <body>
-  <header class="container">
-    <div class="header-context">
-      <div class="h2">
-        <a class="fade" href="https://www.arch.columbia.edu/programs/15-m-s-computational-design-practices"
-          target="_blank">Columbia GSAPP</a>
-      </div>
-    </div>
+    
+<div class="window-body" id="splash-window">
+    <textarea id="command-prompt" rows="25" cols="80" autofocus>C:\> MS CDP_HEATON Startup Menu
+        =============================
+        1. Normal
+        2. Logged (\BOOTLOG.TXT)
+        3. Safe Mode
+        4. Step-by-step confirmation
+        5. Command prompt only
+        6. Safe mode command prompt only
 
-    <div class="header-title">
-      <div class="h1">
-        <a class="fade" href="/">Computational Design Practices</a>
-      </div>
-      <div class="h2">GSAPP CDP 2023-4 Colloquium I</div>
-    </div>
+        F5=Safe Mode Shift+F5=Command prompt Shift+F8= Step-by-step confirmation [N]
+        
+or press escape to continue to webpage</textarea>
+</div>
 
-    <div class="header-nav">
-      <div class="h2">
-        <a class="fade" href="/about">About</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-
-      <div class="post">
-        <div class="post-header">
-          <div class="post-title">
-            <h1>MATTHEW HEATON</h1>
-          </div>
+<div class="window quarter" id="bio">
+    <div class="title-bar">
+        <div class="title-bar-text">Matthew Heaton (part-time, colloquium i)</div>
+        <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize" class="maximize-button"></button>
+            <button aria-label="Restore" class="restore-button"></button>
+            <button aria-label="Close"></button>
         </div>
-
-        <div class="post-body project content">
-          <!-- ALL WORK SHOULD BE CONTAINED HERE. -->
-
-          <div class="toc full">
-            <h2>Table of Contents</h2>
-            <ul>
-              <li><a href="#assignment-1">1 &ndash; Systems</a></li>
-              <li><a href="#assignment-2">2 &ndash; Authorship</a></li>
-              <li><a href="#assignment-2.5">2.5 &ndash; ZINE.AI</a></li>
-              <li><a href="#assignment-3">3 &ndash; Politics</a></li>
-              <li><a href="#assignment-4">4 &ndash; Governance</a></li>
-              <li><a href="#assignment-5">5 &ndash; Behavior</a></li>
-            </ul>
-          </div>
-
-          <div class="full assignment">
-            <h1 id="assignment-1">1 &ndash; Systems</h1>
-            <h2>Modular Synthesis</h2>
-            <p>a system mapping of creative voltages</p>
-          </div>
-
-          <div class="half">
-            <img src="assets/index/assignment_1-01.png">
-          </div>
-
-          <div class="half">
-            <h2>What is the system?</h2>
+    </div>
+    <div class="window-body text-content">
+        <div class="">
             <p>
-              An application of systems theory I interact with on a regular basis is the synthesizer system that lives in my apartment. 
-              This system is made up of prefabricated units called “modules” that can be assembled according to a musician’s particular interests. The function of their system will change depending on
-               1) the initialization of modules into the system and 2) creative “patching” of signal across modules using removable 3.5mm cables. 
-               Depending on a user’s disposition, the system could be used to create dance music, pop, soundscapes, foley effects for film … many possibilities here.
-              </p>
-            <p> 
-              The system passes audio-rate signals from module to module. These are sounds that, if connected to a speaker, would be perceptible to a listener. 
-              In addition, the system includes control : literally electricity within designated minimum and maximum parameters (typically -5v to +8v). 
-              Control  (CV) are used to creatively alter the audio: its amount, its quality, its duration, etc. The “stock” of audio signals and control  alike can be purposely attenuated or amplified through resistor or gain circuits,
-              but otherwise voltage drop-off between modules is negligible.
+                I am interested in bridging the divide between analog terrestrial radio infrastructure and new intangible digital streaming infrastructures. 
             </p>
-          </div>
-
-          <div class="half">
-            <p>
-              A typical synthesizer patch designates a flow from sound source, perhaps an oscillating wave whose frequency designates its pitch and whose amplitude gives it a volume. 
-              This sound can be leveraged in myriad ways - filtering harmonics away to the fundamental tone, changing its behavior over time, or mixing multiple channels at different amplitudes 
-              to simulate a space.
-              </p> 
-            <p>
-              An interesting compositional tactic involves so-called generative musical techniques. By carefully arranging the flow of control  to ebb and flow durationally, 
-              commonly with an element of chance or randomness, the parameters of the system will unfurl into different configurations over time. For instance, boolean logic can be introduced to change
-               a rhythm or sequence of pitches once certain parameters are satisfied. Feedback loops give the effect of an instrument playing itself, and can expand the palette and creative potential 
-               of a musician who may otherwise be performing alone.
+            <p>Whereas conventional radio and its listeners are intractably linked to a geographic center, streaming platforms typically prompt the discovery of music and speech through opaque, aspatial metadata-based systems of recommendation. 
             </p>
-          </div>
-
-          <div class="half">
-            <img src="assets/index/assignment_1-02.png">
-          </div>
-<!-- 
-          <hr>
-
-          <div class="video">
-            <img src="https://placehold.co/1200x800">
-          </div>
-
-          <hr>
-
-          <div class="half">
-            <img src="https://placehold.co/600x400">
-            <img src="https://placehold.co/600x400">
-          </div>
-
-          <div class="half">
-            <h2>Authorship</h2>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Condimentum id venenatis a condimentum
-              vitae sapien pellentesque habitant. Praesent elementum facilisis leo vel fringilla
-              est. Sagittis nisl rhoncus mattis rhoncus urna neque. Velit laoreet id donec ultrices
-              tincidunt arcu non sodales neque. Volutpat blandit aliquam etiam erat velit. Duis 
-              tristique sollicitudin nibh sit amet. Quam pellentesque
-              nec nam aliquam sem et. Parturient montes nascetur ridiculus mus mauris vitae. Tellus
-              in metus vulputate eu. Nulla porttitor massa id neque aliquam.
+            I aim to reinterpret the latter through spatial means, and appreciate the subversive potential of so-called &quot;obsolete&quot; technologies like the former.
+        </p>
+            <p>Some other stuff I'll be thinking about:
+                <li>maintenance as a foil to the capitalistic growth imperative 
+                </li>
+                <li>pirate radio, web toys (etc) as an antidote to the brazen commodification of the internet
+                </li>
+                <li>the joylessness of hyper-frictionless-ness and 
+                </li>
+                <li>dysfunction & interference as sources of joy and the sublime
+                </li>
+                <li>plus nostalgia as coping mechanism ?
+                </li>
             </p>
-
-            <p>
-              Sagittis nisl rhoncus mattis rhoncus urna neque. Velit laoreet id donec ultrices
-              tincidunt arcu non sodales neque. Volutpat blandit aliquam etiam erat velit.
-              Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Volutpat blandit
-              aliquam etiam erat velit. Duis tristique sollicitudin nibh sit amet. Quam pellentesque
-              nec nam aliquam sem et. Parturient montes nascetur ridiculus mus mauris vitae. Tellus
-              in metus vulputate eu. Nulla porttitor massa id neque aliquam. Vestibulum sed arcu non
-              odio euismod lacinia at. In vitae turpis massa sed elementum tempus egestas sed sed.
-            </p>
-          </div>
-
-          <hr>
-
-          <div class="full">
-            <blockquote>
-              "Velit laoreet id donec ultrices tincidunt arcu…"
-            </blockquote>
-          </div>
-
-          <hr>
-
-          <div class="half">
-            <h2>What are its leverage points?</h2>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Condimentum id venenatis a condimentum
-              vitae sapien pellentesque habitant. Praesent elementum facilisis leo vel fringilla
-              est. Sagittis nisl rhoncus mattis rhoncus urna neque. Velit laoreet id donec ultrices
-              tincidunt arcu non sodales neque. Volutpat blandit aliquam etiam erat velit. Duis 
-              tristique sollicitudin nibh sit amet. Quam pellentesque
-              nec nam aliquam sem et. Parturient montes nascetur ridiculus mus mauris vitae. Tellus
-              in metus vulputate eu. Nulla porttitor massa id neque aliquam.
-            </p>
-
-            <p>
-              Sagittis nisl rhoncus mattis rhoncus urna neque. Velit laoreet id donec ultrices
-              tincidunt arcu non sodales neque. Volutpat blandit aliquam etiam erat velit.
-              Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Volutpat blandit
-              aliquam etiam erat velit. Duis tristique sollicitudin nibh sit amet. Quam pellentesque
-              nec nam aliquam sem et. Parturient montes nascetur ridiculus mus mauris vitae. Tellus
-              in metus vulputate eu. Nulla porttitor massa id neque aliquam. Vestibulum sed arcu non
-              odio euismod lacinia at. In vitae turpis massa sed elementum tempus egestas sed sed.
-            </p>
-          </div>
-
-          <div class="half">
-            <img src="https://placehold.co/600x400">
-            <img src="https://placehold.co/600x400">
-          </div>
-
-          <hr>
-
-          <div class="full">
-            <img src="https://placehold.co/1200x800">
-          </div> -->
-
-          <hr>
-
-          <div class="full assignment">
-            <h1 id="assignment-2">2 &ndash; Authorship</h1>
-            <h2>Authorship</h2>
-            <p>the sampler becomes the sampled</p>
-          </div>
-
-          <div class="half">
-            <img src="assets/index/madeforTV_excerpt.gif">
-          </div>
-
-          <div class="half">
-            <!-- <h2></h2> -->
-            <p>
-              In spite of my own experience as a working musician and ostensible “creative” (aka being screwed left and right out of a reliable paycheck),
-               digital authorship and ownership allows plenty of room for interpretation. 
-            </p>
-            <p> 
-              Historically, visual artists and musicians have lifted techniques, motifs, and with the advent of accessible recording technologies, literally "sampled" others' work. 
-              Typically the results are reinterpreted and obfuscated beyond easy recognition. I do this literally all the time. Sampling takes the concept of creative inspiration to its extremes, but I consider it a useful and deeply constructive creative methodology. To reduce a piece of art to its constituent parts then sculpt, stitch, rescale, and reframe them is a lovely way to lay a foundation for a new piece.
-            </p>
+            <br>
+            <div style="text-align: center">
+            <img class="" src="assets/gifs/link.gif"></img>
+            <img class="" src="assets/gifs/cd.gif"></img>
+            <img class="" src="assets/gifs/link.gif"></img>
             </div>
-            <div class="half">
-            <p>
-              In my case, sampling is often at the sub-second scale, in which a small component block of audio or video can be looped or composited to recontextualize it into something ... new. 
-              I have very distractingly excerpted some of my video work. Both clips are almost exclusively comprised of samples, the top from the work of Aldo Tambellini, Peter Tscherkassky, and Frans Zwartjes. 
-              The clip to the right is processed and animated imagery from the University of California's public-domain Cell Image Library. Both are reconfigured,  processed, and montaged into what I would describe as a novel form.
-            </p>
-            <p>
-              If one were to ignore the legal grounds of intellectual property disputes, which frankly do not interest me, where lies the line between inspiration and creative bankruptcy? 
-              After all, who isn’t guilty of riffing on another writer’s voice after finishing their book? Imitation is a natural and adaptive human tendency. 
-              I tend towards the the free sharing cultural media in the interest of accessibility and preservation, and against what the kids call “gatekeeping.” See: archive.org.
-              Am I the “Digital Maoist” that Jaron Lanier dismisses? Probably. Does this encourage continued financial exploitation of artists by publishing houses? Let's explore this later!
-              <!-- Two intractable pivot points of are profitability and scale. More on this later?            -->
-            </p>
+    
+    
+        </div>
+    </div>
+    </div>
+
+    <div class="window" style="margin: 8%; width: 250px; height: 105px;">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                Hello people
             </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body" style="bottom: 8px;">
+            <p>Refresh this page to find three hours of my life.</p>
+            <section class="field-row" style="justify-content: center;">
+                <button id="refresh-button">OK</button>
+            </section>
+        </div>
+    </div>
+  
+<div class="window quarter" id="window-ticker">
+    <div class="title-bar">
+        <div class="title-bar-text">A Very Important Message</div>
+        <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize" class="maximize-button"></button>
+            <button aria-label="Restore" class="restore-button"></button>
+            <button aria-label="Close"></button>
+        </div>
+    </div>
+    <div class="window-body ticker-container text-content">
+        <h1 class="ticker-text">I LOVE TO MAKE WEBSITES NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
+    </div>
+    <div class="status-bar">
+      <p class="status-bar-field" id="cpu">CPU Usage: 1000000000000000000000000000000000000%</p>
+  </div>
 
-          <!-- <div class="half">
-            <img src="assets/index/blueNudes_excerpt.gif">
-          </div> -->
+</div>
 
-          <div class="half">
-            <img src="assets/index/texture_sorting.gif">
-          </div>
-
-            <div class="full">
-            <p>
-              I might anthropomorphize the massive, indiscriminate act of training a neural network to the passive continuous act of taking inspiration from one’s daily life. 
-               Lanier differentiates between the human experience and machine intelligence. Humans navigate the world in a manner of continuous sensation and perception, 
-              experiencing growth and finding inspiration linearly in sequence.
-              Computers have come to do this asynchronously and indiscriminately. 
-              I take most offense to this general lack of intentionality in the training process. 
-              A person seeks inspiration for production; a network of machines consumes content for reproduction. Yeah, corny, but that’s the sublime for you!
+<div class="windows-container">
+    <div class="window half about" style="left: 15%; width:50%">
+        <div class="title-bar">
+            <div class="title-bar-text">A note on AI authorship</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body text-content">
+            <p>Most of the HTML, CSS, javascript, and python code involved in constructing this page was initialized by ChatGPT.</p>
+            <p>Plenty of it was then processed, edited, or otherwise altered manually. But plenty of it wasn't, too. Call it code curation.</p>
+            <p>This has enabled the development of much more robust and creative programming work that otherwise wouldn&#8217;t have been otherwise possible in such a short timeframe.</p>
+            <p>For reference, the &quot;Concrete Poetry&quot; application featured below was the most technically advanced web development project I was able to complete last summer ... those halcyon pre-GPT days.
             </p>
-            <p>Regarding Alberto Romero’s plaintive cries to keep calm and carry on…  I am at best skeptical of most editorial tech writing in a post-SEO internet. 
-              I interpret blogs like Mr. Romero’s as largely advertorial, written in uncanny linkedin-coded one-liners. 
-              Considering the inevitable profit motive involved when writing about one’s own profession, it makes sense. 
-              Still, I guess the convergent evolution taking place between cynics, skeptics, and 🤯-emoji practitioners could give us pause.
-            </p>
-            <p>Should it be concerning that guys speculating - speculating in the editorial sense and, crucially, the financial sense - on the future of artificial intelligence sound stressed? Maybe. 
-              The drama is irresistible, though, considering decades of science fiction precedent.
-            </p>
-          </div>
+        </div>
+    </div>
 
-          <div class="full assignment">
-            <h1 id="assignment-2.5">2.5 &ndash; Zine Break</h1>
-            <h2>ZINE.AI</h2>
-            <p>conversation of one</p>
-          </div>
+    <div class="window" style="right: 5%" style="width: 35%";>
+        <div class="title-bar">
+            <div class="title-bar-text">A couple minutes' worth of ChatGPT transcripts</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="">
+                <img src="assets/gifs/chatGPT_chat.gif"></img>
+            </div>
+        </div>
+    </div>
 
-          <div class="full iframe-container">
-            <iframe src="https://math-eaton.github.io/cdp_colloquium_i/zine_inline.html" title="ZINE.AI"></iframe>
-          </div>
+    <!-- <div class="windows-container">
+        <div class="window half about" style="left: 15%; width:50%">
+            <div class="title-bar">
+                <div class="title-bar-text">A note on AI authorship</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize" class="maximize-button"></button>
+                    <button aria-label="Restore" class="restore-button"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="window-body" id="content-container">           
+                 </div>
+            </div>
+        </div>
+     -->
+</div>
 
-          <!-- <div class="full">
-            <img src="https://placehold.co/1200x800">
-          </div>
+<div class="windows-container"id="radio-container">
+    <div class="window" id="point">
+        <div class="title-bar">
+            <div class="title-bar-text">Tower tour: Zoom level 15 imagery</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="">
+                <img class="monochrome" src="assets/gifs/processed_imagery_point.gif"></img>
+            </div>
+        </div>
+        <div class="status-bar">
+            <p class="status-bar-field">Analog Infrastructure</p>
+            <p class="status-bar-field">GIS + Web Scraping + Image Processing</p>
+            <p class="status-bar-field">Space + Sight + Services</p>
+      </div>
+    </div>
+    
+    <div class="window half" id="area">
+        <div class="title-bar">
+            <div class="title-bar-text">Tower tour: Estimated propagation area imagery</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="">
+                <img class="monochrome" src="assets/gifs/processed_imagery_area.gif"></img>
+            </div>
+        </div>
+        <div class="status-bar">
+            <p class="status-bar-field">Analog Infrastructure</p>
+            <p class="status-bar-field">GIS + Web Scraping + Image Processing</p>
+            <p class="status-bar-field">Space + Sight + Services</p>
+      </div>
+    </div>
+    
+    <div class="window half about" style="left: 30%;">
+        <div class="title-bar">
+            <div class="title-bar-text">About: Tower tour</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body text-content">
+            <p>These are the results of an exploratory exercise into the expansive spatial data archive the Federal Communications Commission maintains in their open data portal.</p>
 
-          <div class="full">
-            <img src="https://placehold.co/1200x800">
-          </div>
+            <p>In addition to transmitter locations, the FCC hosts a .txt database of estimated propagation curves that is updated daily based on local weather conditions. By superimposing these curves on aerial imagery, one can note the effect of terrain on radio propagation.</p>
+            
+            <p>These embedded animations are a subset &#40;n=178&#41; of the 27,104 FM transmitters and relays registered with the FCC. Imagery is scraped from the Bing Maps API based on transmitter coordinates  &#40;Zoom Level 15&#41; and total extent of each propagation curve surrounding the transmitter &#40;Estimated Propagation Area&#41;.
+            
+            <p>Imagery was processed using Floyd-Steinberg dithering in python image library to optimize for web view before assembling into GIFs.</p>
+            
+        </div>
+        <div class="status-bar">
+        <p class="status-bar-field">Analog Infrastructure</p>
+        <p class="status-bar-field">GIS + Web Scraping + Image Processing</p>
+        <p class="status-bar-field">Space + Sight + Services</p>
+        </div>
+    </div>
 
-          <div class="full">
-            <img src="https://placehold.co/1200x800">
-          </div>
-
-          <div class="full">
-            <img src="https://placehold.co/1200x800">
-          </div>
-
-          <div class="full">
-            <img src="https://placehold.co/1200x800">
-          </div>
- -->
-          <div class="full assignment">
-            <h1 id="assignment-3">3 &ndash; Politics</h1>
-            <h2>Demystifying the "Experimental" Echo Chamber</h2>
-            <p>new music? computer music?? how about you nerds get a damn job!</p>
-          </div>
-
-          <hr>
-
-          <div class="full">
-            <img src="assets/index/hoi.png">
-          </div>
-
-          <hr>
-
-          <div class="half">
-            <p>
-              A unstructured data search is a fun activity, and also deeply distracting. It’s an infinite treasure hunt. There’s a lot out there, and most of it is pretty interesting. Searching with the suffix “open source” leads to many labors of love, dead and alive, with passionate adherents (dead or alive?). Also of particular note… data graveyards. A hopeful click, then desolation. Miles of broken links. Something’s got to give.
-            </p>
-
-            <p>
-              Grant disbursement data was best structured and most easily accessible on only a few borough-specific nonprofits’ sites. The Brooklyn Arts Council and New York Foundation for the Arts clearly and specifically named grant recipients and their benefactors.
-            </p>
-
-          </div>
-
-
-          <div class="half">
-            <blockquote>
-              Miles of broken links. Something’s got to give.
-            </blockquote>
-          </div>
-
-
-          <div class="half">
-
-            <img src="assets/index/spotify_api.png">
-
-          </div>
-
-          <div class="half">
-
-            <img src="assets/index/mg.png">
-
-          </div>
-
-          <div class="full">
-            <p>
-              There is an interesting symmetry between the monopolistic corporate behemoths and hyper-niche special-interest platforms. The sheer amount of specialized user data in their orbit affords very granular, scalable inspection. Some of this is eminently scrapeable (in the case of wiki-like community aggregators like Modulargrid) or otherwise accessible through an API (e.g. Spotify). 
-            </p>
-
-            <p>
-              I had more trouble with the middle of the pack. Sites that are nominally commercial but swimming in a decidedly shallower pool of venture capital. ResidentAdvisor (rave curation/news/ticketing club-catchall platform) and Letterboxd (semi-amateur social film critique proving ground) come to mind. These sites are most likely to paywall most of the useful stuff for developers.
-            </p>
-          </div>
-
-          <div class="half">
-
-            <img src="assets/index/grants_data.gif">
-
-          </div>
-
-          <div class="half">
-            <p>
-              I found myself drawn to data with discrete, preconfigured coding schemes (i.e. json-friendly integers) that enable easy-peasey quantitative analysis. This belies the importance of qualities that aren’t easily reducible to numbers and may conceal misleading, nefarious, or simply lazy translation of complex phenomena into dashboard-ready metrics. That said, quantification does open the door to easy interoperability. Free and open (or at least unimpeded) data streams facilitate the creative application of that data.
-            </p>
-          </div>
-          
+    <div class="window half" id="combined">
+        <div class="title-bar">
+            <div class="title-bar-text">Tower tour: Propagation area w/ contours</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="">
+                <img class="monochrome" src="assets/gifs/combined.gif"></img>
+            </div>
+        </div>
+        <div class="status-bar">
+            <p class="status-bar-field">Analog Infrastructure</p>
+            <p class="status-bar-field">GIS + Web Scraping + Image Processing</p>
+            <p class="status-bar-field">Space + Sight + Services</p>
+        </div>
+    </div>
+    
+    <div class="window half" id="polyline">
+        <div class="title-bar">
+            <div class="title-bar-text">Tower tour: Estimated propagation contours (08/07/23)</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="">
+                <img class="monochrome" src="assets/gifs/processed_imagery_polyline.gif"></img>
+            </div>
+        </div>
+        <div class="status-bar">
+            <p class="status-bar-field">Analog Infrastructure</p>
+            <p class="status-bar-field">GIS + Web Scraping + Image Processing</p>
+            <p class="status-bar-field">Space + Sight + Services</p>
+        </div>
+    </div>
+</div>
 
 
-          <div class="full assignment">
-            <h1 id="assignment-4">4 &ndash; Governance</h1>
-            <h2>Visualizing Terrestrial Communications</h2>
-            <p>Networked Sound</p>
-          </div>
-
-          <div class="half">
-
-            <img src="assets/index/voronoi.png">
-            <p><em>Simulated service areas of New York State broadband network using a Voronoi diagram.</em></p>
-
-
-          </div>
-
-          <div class="half">
-
-            <img src="assets/index/MST.png">
-            <p><em>A minimum spanning tree across the same broadband network nodes.</em></p>
-
-
-          </div>
-
-          <div class="full">
-
-            <img src="assets/index/kml.png">
-            <p><em>The observed range of FM band 88.1 MHz on July 21, 2023.</em></p>
-
-
-          </div>
-
-          <div class="full assignment">
-            <h1 id="assignment-5">5 &ndash; Design Fiction</h1>
-            <h2>Knowledge Stewards</h2>
-            <p>How could one distinguish historical artifacts from artifice in the age of deep learning models? One solution: training AI to capture itself.</p>
-          </div>
-
-          <div class="full iframe-container">
-            <iframe src="https://math-eaton.github.io/cdp_colloquium_i/images.html" title="FUTURE GOOGLE IMAGES"></iframe>
-          </div>
-
-          <!-- <div class="full assignment">
-            <h1 id="assignment-5">5 &ndash; Behavior</h1>
-            <h2>$ Lender Money $</h2>
-            <p>Modeling agents of the system.</p>
-          </div> -->
+<div class="windows-container">
+    <div class="window half about">
+        <div class="title-bar">
+            <div class="title-bar-text">About: Peripheral transmissions (WIP)</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body text-content">
+            <p>A geographic radio receiver.</p>
+            <p>This application enables a user to survey an audio landscape constructed by scraped internet radio &quot;transmissions&quot; tethered to the geographic coordinates of their host stations.</p>
+            <p>The interpolated spaces between these discrete coordinates create alternative boundary regions constructed by radio and its attendant cultural affinities rather than the (often violently drawn) lines found on a political map.</p>
+            <p>Pictured: Baja California to the Gulf of Mexico</p>
 
         </div>
-      </div>
-
-
-
-
-    <!-- <div class="content-below">
-
-      <p>lorem gypsum blah blah blah</p> -->
-
-      <footer></footer>
+        <div class="status-bar">
+        <p class="status-bar-field">Analog Infrastructure</p>
+        <p class="status-bar-field">Sonic Visualization + Visual Sonification</p>
+        <p class="status-bar-field">Space + Sight + Sound</p>
+        </div>
     </div>
-  </main>
+
+    <div class="window" id="WFH_DJ">
+        <div class="title-bar">
+            <div class="title-bar-text">Peripheral transmissions (WIP)</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="">
+                <img src="assets/gifs/peripheralTransmissions.gif"></img>
+            </div>
+        </div>
+        <div class="status-bar">
+        <p class="status-bar-field">Analog Infrastructure</p>
+        <p class="status-bar-field">Sonic Visualization + Visual Sonification</p>
+        <p class="status-bar-field">Space + Sight + Sound</p>
+        </div>
+    </div>
+</div>
+
+<div class="windows-container half" style="flex-wrap: wrap;" style="justify-content: center;">
+    <div class="window half">
+        <div class="title-bar">
+            <div class="title-bar-text">Spotify API</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="">
+                <img src="assets/images/spotify-1.png"></img>
+            </div>
+        </div>
+        <div class="status-bar">
+        <p class="status-bar-field">Digital Infrastructure</p>
+        <p class="status-bar-field">Data Collection</p>
+        <p class="status-bar-field">Sound + Services</p>
+        </div>
+    </div>
+    <div class="window half about" style="right: 40%;">
+        <div class="title-bar">
+            <div class="title-bar-text">About: Spotify API</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body text-content">
+            <div class="">
+                <p>Spotify for Developers (not to be confused with Spotify for Artists, their insecurity-exploiting analytics branch) 
+                    opens the hood up a little on their metadata scheme.</p>
+                <p>New music reaches listeners by way of a web of audio analysis and prediction algorithms, ostensibly irrespective of geography.</p>
+            </div>
+        </div>
+        <div class="status-bar">
+        <p class="status-bar-field">Digital Infrastructure</p>
+        <p class="status-bar-field">Data Collection</p>
+        <p class="status-bar-field">Sound + Services</p>
+        </div>
+    </div>
+    <div class="window half" style="width: 35%;">
+        <div class="title-bar">
+            <div class="title-bar-text">Spotify API (1)</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="">
+                <img src="assets/images/spotify-2.png"></img>
+            </div>
+        </div>
+        <div class="status-bar">
+        <p class="status-bar-field">Digital Infrastructure</p>
+        <p class="status-bar-field">Data Collection</p>
+        <p class="status-bar-field">Sound + Services</p>
+        </div>
+    </div>
+    <div class="window half" style="width: 35%;">
+        <div class="title-bar">
+            <div class="title-bar-text">Spotify API (2)</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="">
+                <img src="assets/images/spotify-3.png"></img>
+            </div>
+        </div>
+        <div class="status-bar">
+        <p class="status-bar-field">Digital Infrastructure</p>
+        <p class="status-bar-field">Data Collection</p>
+        <p class="status-bar-field">Sound + Services</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="windows-container">
+    <div class="window half about">
+        <div class="title-bar">
+            <div class="title-bar-text">About: WFH DJ</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body text-content"><p>This is a &quot;patch&quot; [script] written in Max/MSP, a visual coding language that is great for bridging audio inside and outside the computer.</p>
+
+            <p>The goal of this patch was to capture some of the thousands of miniature events that take place while 
+                using a computer during a typical workday and recontextualize those events into an audio piece - in this case a remix of Terry Riley&#8217;s 1968 minimalist piece &quot;In C&quot;.</p>
+
+            <p>Keypresses, mouse downs, and microphone transients trigger a count. The frequency of these events defines an environmental energy level. At certain thresholds, audio content and quality changes, sequencing the remix.</p>
+            </div>
+        <div class="status-bar">
+        <p class="status-bar-field">Digital Infrastructure</p>
+        <p class="status-bar-field">Data Sonification</p>
+        <p class="status-bar-field">Sound + Space</p>
+        </div>
+    </div>
+
+    <div class="window" id="WFH_DJ">
+        <div class="title-bar">
+            <div class="title-bar-text">WFH DJ</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <video width="1920" height="1080" autoplay muted loop>
+                <source src="assets/gifs/WFH_DJ.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>       
+        <div class="field-row audio-player">
+            <label for="range26">Volume:</label>
+            <label for="range26">Low</label>
+            <input id="range26" type="range" min="0" max="1" step="0.01" value="0.5" />
+            <label for="range26">High</label>
+            <audio id="myAudio" loop>
+                <source src="assets/audio/WFH_DJ_processed.mp3" type="audio/mpeg">
+            </audio>
+            <img id="playButton" src="assets/sprites/loudspeaker_muted-0.png" alt="Play">
+            <img id="pauseButton" src="assets/sprites/loudspeaker_rays-0.png" alt="Pause" style="display: none;">
+            <p>CLICK HERE TO LISTEN TO A SAMPLE!</p>
+        </div>
+        <div class="status-bar">
+        <p class="status-bar-field">Digital Infrastructure</p>
+        <p class="status-bar-field">Data Sonification</p>
+        <p class="status-bar-field">Sound + Space</p>
+        </div>
+    </div>
+</div>
+
+<div class="windows-container">
+    <div class="window" id="">
+        <div class="title-bar">
+            <div class="title-bar-text">Concrete poetry</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="">
+                <img src="assets/gifs/concretePoetry.gif"></img>
+            </div>
+            </div>       
+        <div class="status-bar">
+        <p class="status-bar-field">Analog Infrastructure</p>
+        <p class="status-bar-field">Sonic Visualization</p>
+        <p class="status-bar-field">Space + Sight</p>
+        </div>
+    </div>
+    <div class="window half about">
+        <div class="title-bar">
+            <div class="title-bar-text">About: Concrete poetry</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize" class="maximize-button"></button>
+                <button aria-label="Restore" class="restore-button"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body text-content">This is a platform for New Yorkers to document snapshots of a space through words they hear on the street: oddities, banalities, and everything in between.</p>
+
+            <p>Users input bits of conversation they come across on the streets of the city, as well as the approximate location it took place, then submit the form.
+                The resulting map presents the candid character of a neighborhood or borough.
+            </p>
+            <p>Each submission is also streamed into a sidebar that builds a growing poem of New York as a whole.
+            </p>
+            </div>
+        <div class="status-bar">
+        <p class="status-bar-field">Analog Infrastructure</p>
+        <p class="status-bar-field">Sonic Visualization</p>
+        <p class="status-bar-field">Space + Sight</p>
+        </div>
+    </div>
+</div>
+
+<div class="window" style="margin: 8%; width: 250px; height: 105px; left: 60%;">
+    <div class="title-bar">
+        <div class="title-bar-text">
+            That's it for now
+        </div>
+        <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+        </div>
+    </div>
+    <div class="window-body" style="bottom: 8px;">
+        <p>see you later!</p>
+        <section class="field-row" style="justify-content: center;">
+            <button id="refresh-button-2">bye</button>
+        </section>
+    </div>
+</div>
+
+
+<div class="bouncing-container"></div>
+
+<script src="js/script.js"></script>
+
 </body>
-
 </html>

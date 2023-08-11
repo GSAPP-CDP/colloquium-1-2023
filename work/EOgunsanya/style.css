@@ -1,0 +1,339 @@
+/* Global reset for margin and padding; height adjustment for scrolling */
+body, html {
+    margin: 0;
+    height: 100%;
+    background-color: #F5E9D9; 
+}
+
+/* Importing Futura font */
+@import url('https://fonts.googleapis.com/css2?family=Futura:wght@400;500;700&display=swap');
+
+
+h1 {
+  text-align: center;
+  padding: 80px
+}
+
+h1-2 {
+  text-align: center;
+  padding: 120px
+}
+
+h2 {
+  text-align: center;
+  padding: 60px
+}
+
+a {
+  color: #999966
+}
+
+/* Container for the overlapping images. */
+.scrollables {
+  position: relative;
+}
+
+.container {
+  height: 100%; /* Take up the full height of .scrollables */
+  position: relative; /* Establish stacking context */
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 4;
+  width: 100%;
+  height: 100vh;
+  /* Flexbox for centering content */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+}
+
+.sticky img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5; /* Keep it below the second scrolling image initially */
+  color: #80561F;
+  font-size: 3em;
+  padding: 30px; /* Space around the text for the translucent box */
+  font-family: 'Montserrat', sans-serif;
+  
+  /* The translucent box */
+  &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(245, 233, 217, 0.5); /* Adjust the opacity as needed */
+      z-index: -1; /* Place it behind the text */
+  }
+}
+
+.mover {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.mover img{
+  width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-bottom: 0px; /* Add some space between images }*/
+      object-fit: cover;   /* Ensures the image covers the dimensions without distortion */
+}
+
+.text-split {
+  display: flex;
+  width: 100%;
+  height: 200vh; /* Two viewports high. */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* General styles for both left and right containers. */
+.text-left, .text-right {
+  width: 50%; /* Each container will take half of the screen's width. */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  height: 100%; /* Take full height of parent which is 200vh. */
+}
+
+/* Specific color definitions for left and right sides. */
+.text-left {
+  background-color: #80561F; 
+  font-family: 'Montserrat', sans-serif;
+  color: #F5E9D9; 
+  justify-content: flex-end; /* Push content to the bottom. */
+}
+
+.text-right {
+  background-color: #F5E9D9; 
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #80561F; 
+  justify-content: space-between; /* Distribute space evenly between the two content divs. */
+}
+
+/* Define the height of content containers inside the left and right divs. */
+.sticky-content, .viewport-content {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; /* Occupy full viewport height. */
+}
+
+.split-container {
+  display: flex;
+  height: 100vh;
+}
+
+.split-container2 {
+  display: flex;
+  height: 120vh;
+}
+
+.viewport-content3 {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  height: 100%;
+}
+
+.texts {
+  padding-top: 80px;
+  padding: 10px;
+}
+
+.viewport-content3 img {
+  max-width: 100%;
+  object-fit: contain;
+  justify-content: center;
+}
+
+.left1, .right1, .left2, .right2, .left3, .right3, .left4, .right4 {
+  width: 50%;
+  padding: 80px;
+  overflow-y: auto;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  box-sizing: border-box;
+  height: 100%; /* Set this to ensure full height */
+}
+
+.right5 {
+  width: 50%;
+  padding: 80px;
+  overflow-y: auto;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  box-sizing: border-box;
+  height: 100%; /* Set this to ensure full height */
+}
+
+.left1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #80561F; 
+  /*background color is same as webpage background*/
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.right1 {
+  background-color: #80561F; 
+  font-family: 'Montserrat', sans-serif;
+  color: #F5E9D9; 
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.left2 {
+  background-color: #80561F; 
+  font-family: 'Montserrat', sans-serif;
+  color: #F5E9D9; 
+  /*background color is same as webpage background*/
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.right2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #80561F; 
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.left1 img {
+  max-width: 100%;  /* Image will not exceed its container's width */
+  object-fit: cover; /* Resize the content to cover the container */
+}
+
+.right1 img {
+  max-width: 100%;  /* Image will not exceed its container's width */
+  max-height: 75%;
+  object-fit: cover; /* Resize the content to cover the container */
+}
+
+.left2 img {
+  max-width: 100%;  /* Image will not exceed its container's width */
+  object-fit: cover; /* Resize the content to cover the container */
+  justify-content: center;
+}
+
+.right2 img {
+  max-width: 100%;  /* Image will not exceed its container's width */
+  object-fit: cover; /* Resize the content to cover the container */
+}
+
+/* Define the height of content containers inside the left and right divs. */
+.sticky-content2, .viewport-content2 {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; /* Occupy full viewport height. */
+}
+
+.left3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #80561F; 
+  /*background color is same as webpage background*/
+  flex: 1;
+  justify-content: center;
+  top: 0;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.right3 {
+  background-color: #80561F; 
+  font-family: 'Montserrat', sans-serif;
+  color: #F5E9D9; 
+  /*background color is same as webpage background*/
+  flex: 1;
+  justify-content: center;
+}
+
+.right5{
+  background-color: #80561F; 
+  font-family: 'Montserrat', sans-serif;
+  color: #F5E9D9; 
+  /*background color is same as webpage background*/
+  flex: 1;
+  justify-content: center;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.left4 {
+  background-color: #80561F; 
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #F5E9D9; 
+  flex: 1;
+  justify-content: center;
+  height: 100vh;
+  max-width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /*background-image: url(./Images/bedrooms_as_metric-01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+.right4 {
+  background-color:#F5E9D9; 
+  font-family: 'Montserrat', sans-serif;
+  color: #80561F;
+  /*background color is same as webpage background*/
+  flex: 1;
+  justify-content: center;
+  max-height: 100%;
+  overflow-y: hidden;
+}
+
+.left4 img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.right5 img {
+  max-width: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.text-overlay {
+  z-index: 4;
+  position: sticky;
+  position: -webkit-sticky;
+  font-family: 'Montserrat', sans-serif;
+  color: #80561F;
+}
+
+/* Basic margin rules for the text elements. */
+h1, h1-2, p {
+  margin: 1rem 0; /* A little spacing between text elements. */
+}
+
+h2 {
+  margin: 0.3rem 0;
+}
+
+p-1 {
+  margin: 0.3rem 0;
+}

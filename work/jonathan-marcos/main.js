@@ -1,13 +1,22 @@
-console.log("this works");
+const slidesContainer = document.querySelector('.slides');
+const slides = document.querySelectorAll('.slide');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+let currentIndex = 0;
 
-// const btn = document.querySelector(".btn");
-const btns = document.querySelectorAll(".btn");
-
-const doSomething = (event) => {
-    let element = event()
-    element.style.color = "black"
+function showSlide(index) {
+  const offset = -index * 100;
+  slidesContainer.style.transform = `translateX(${offset}%)`;
 }
 
-btns.forEach(btn => {
-    btn.addEventListener('click', doSomething);
-})
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  showSlide(currentIndex);
+});
+
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+});
+
+showSlide(currentIndex);
