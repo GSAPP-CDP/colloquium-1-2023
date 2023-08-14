@@ -29,7 +29,7 @@
 
   .text-overlay2 {
     position: absolute;
-    margin-top: 2300px;
+    margin-top: 1900px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -71,7 +71,7 @@
     min-width: 100%;
     min-height: 100%;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5;
   }
   
@@ -81,7 +81,7 @@
     min-width: 100%;
     min-height: 100%;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5;
   }
 
