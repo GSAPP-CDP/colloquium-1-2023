@@ -33,7 +33,7 @@ a {
 }
 
 .container {
-  height: 100%; /* Take up the full height of .scrollables */
+  height: 100vh;
   position: relative; /* Establish stacking context */
   overflow-y: scroll;
 }
