@@ -61,6 +61,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("**/*.obj");
   eleventyConfig.addPassthroughCopy("**/*.csv");
+  eleventyConfig.addPassthroughCopy("**/*.geojson");
 
   return {
     dir: {
