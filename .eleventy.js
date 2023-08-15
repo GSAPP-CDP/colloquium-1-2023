@@ -45,7 +45,12 @@ module.exports = function (eleventyConfig) {
   });
 
   // Copy media from their source folders to their respective published folders.
-  eleventyConfig.addPassthroughCopy("**/*.html");
+  
+  // Copy all HTML files that aren't index.html.
+  // index.html files needing to be rendered should all have frontmatter so they 
+  // are indeed rendered, but they're excluded here so the rendered file isn't
+  // overwritten by the passthrough copy operation.
+  eleventyConfig.addPassthroughCopy("**/!(index).html");
 
   eleventyConfig.addPassthroughCopy("**/*.png");
   eleventyConfig.addPassthroughCopy("**/*.jpg");
