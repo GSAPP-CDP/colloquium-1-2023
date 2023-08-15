@@ -1,13 +1,12 @@
+/* Importing Futura font */
+@import url('https://fonts.googleapis.com/css2?family=Futura:wght@400;500;700&display=swap');
+
 /* Global reset for margin and padding; height adjustment for scrolling */
 body, html {
     margin: 0;
     height: 100%;
     background-color: #F5E9D9; 
 }
-
-/* Importing Futura font */
-@import url('https://fonts.googleapis.com/css2?family=Futura:wght@400;500;700&display=swap');
-
 
 h1 {
   text-align: center;
@@ -36,6 +35,7 @@ a {
 .container {
   height: 100%; /* Take up the full height of .scrollables */
   position: relative; /* Establish stacking context */
+  overflow-y: scroll;
 }
 
 .sticky {
@@ -66,18 +66,18 @@ a {
   font-size: 3em;
   padding: 30px; /* Space around the text for the translucent box */
   font-family: 'Montserrat', sans-serif;
-  
-  /* The translucent box */
-  &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(245, 233, 217, 0.5); /* Adjust the opacity as needed */
-      z-index: -1; /* Place it behind the text */
-  }
+}
+
+/* The translucent box */
+.overlay-text::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(245, 233, 217, 0.6); /* Adjust the opacity as needed */
+    z-index: -1; /* Place it behind the text */
 }
 
 .mover {
