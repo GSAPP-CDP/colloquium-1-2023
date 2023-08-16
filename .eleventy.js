@@ -68,6 +68,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("**/*.obj");
   eleventyConfig.addPassthroughCopy("**/*.csv");
   eleventyConfig.addPassthroughCopy("**/*.geojson");
+  
+  eleventyConfig.addPassthroughCopy("**/*.eot");
+  eleventyConfig.addPassthroughCopy("**/*.ttf");
+  eleventyConfig.addPassthroughCopy("**/*.woff");
+  eleventyConfig.addPassthroughCopy("**/*.woff2");
 
   return {
     dir: {

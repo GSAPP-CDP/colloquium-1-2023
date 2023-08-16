@@ -144,7 +144,7 @@ var images = [
   'assets/sprites/help_question_mark-0.png',
 ];
 
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     var sections = document.querySelectorAll('.window');
     var floatingContainer = document.querySelector('.floating-container');
     var bouncingContainers = document.getElementsByClassName('bouncing-container'); // Get elements by class name
@@ -231,8 +231,6 @@ var images = [
     // Initialize audio volume to slider value
     audio.volume = volumeSlider.value;
 
-  
-
     // Adjust window widths randomly
     // windows.forEach(function(windowElement) {
     //     var currentWidth = windowElement.offsetWidth;
@@ -244,55 +242,63 @@ var images = [
 
     // Code for attaching event listeners to window buttons
     windows.forEach(windowElement => {
-      const windowBody = windowElement.querySelector('.window-body');
-      const maximizeButton = windowElement.querySelector('.maximize-button');
-      const restoreButton = windowElement.querySelector('.restore-button');
-      const closeButton = windowElement.querySelector('[aria-label="Close"]');
-      const minimizeButton = windowElement.querySelector('[aria-label="Minimize"]');
-
       // Hide the Restore button on page load
-      restoreButton.style.display = 'none';
-
-      maximizeButton.addEventListener('click', () => {
-        if (windowElement.style.position !== 'fixed') {
-            // Save the original position, dimensions, and z-index
-            windowElement.dataset.originalPosition = windowElement.style.position;
-            windowElement.dataset.originalWidth = windowElement.style.width;
-            windowElement.dataset.originalHeight = windowElement.style.height;
-            windowElement.dataset.originalZIndex = windowElement.style.zIndex;
-            
-            // Set the element to fixed position
-            windowElement.style.position = 'fixed';
-            windowElement.style.width = '100vw';
-            windowElement.style.height = '100vh';
-            windowElement.style.top = '0';
-            windowElement.style.left = '0';
-            windowElement.style.zIndex = '9999'; // Set a high z-index
-            maximizeButton.style.display = 'none'; // Hide the Maximize button
-            restoreButton.style.display = 'block'; // Show the Restore button
-        }
-    });
-
-    restoreButton.addEventListener('click', () => {
-        if (windowElement.style.position === 'fixed') {
-            // Restore the original position, dimensions, and z-index
-            windowElement.style.position = windowElement.dataset.originalPosition;
-            windowElement.style.width = windowElement.dataset.originalWidth;
-            windowElement.style.height = windowElement.dataset.originalHeight;
-            windowElement.style.zIndex = windowElement.dataset.originalZIndex;
-            maximizeButton.style.display = 'block'; // Show the Maximize button
-            restoreButton.style.display = 'none'; // Hide the Restore button
-        }
-    });
-
-        closeButton.addEventListener('click', () => {
-            windowElement.remove();
+      const restoreButton = windowElement.querySelector('.restore-button');
+      if (restoreButton) {
+        restoreButton.style.display = 'none';
+        restoreButton.addEventListener('click', () => {
+            if (windowElement.style.position === 'fixed') {
+                // Restore the original position, dimensions, and z-index
+                windowElement.style.position = windowElement.dataset.originalPosition;
+                windowElement.style.width = windowElement.dataset.originalWidth;
+                windowElement.style.height = windowElement.dataset.originalHeight;
+                windowElement.style.zIndex = windowElement.dataset.originalZIndex;
+                maximizeButton.style.display = 'block'; // Show the Maximize button
+                restoreButton.style.display = 'none'; // Hide the Restore button
+            }
         });
+      }
 
-        minimizeButton.addEventListener('click', () => {
-            windowBody.classList.toggle('hidden');
-        });
-    });
+      const maximizeButton = windowElement.querySelector('.maximize-button');
+      if (maximizeButton) {
+        maximizeButton.addEventListener('click', () => {
+          if (windowElement.style.position !== 'fixed') {
+              // Save the original position, dimensions, and z-index
+              windowElement.dataset.originalPosition = windowElement.style.position;
+              windowElement.dataset.originalWidth = windowElement.style.width;
+              windowElement.dataset.originalHeight = windowElement.style.height;
+              windowElement.dataset.originalZIndex = windowElement.style.zIndex;
+              
+              // Set the element to fixed position
+              windowElement.style.position = 'fixed';
+              windowElement.style.width = '100vw';
+              windowElement.style.height = '100vh';
+              windowElement.style.top = '0';
+              windowElement.style.left = '0';
+              windowElement.style.zIndex = '9999'; // Set a high z-index
+              maximizeButton.style.display = 'none'; // Hide the Maximize button
+              restoreButton.style.display = 'block'; // Show the Restore button
+          }
+      });
+    }
+    
+    const closeButton = windowElement.querySelector('[aria-label="Close"]');
+    if (closeButton) {
+      closeButton.addEventListener('click', () => {
+          windowElement.remove();
+      });
+    }
+
+    const minimizeButton = windowElement.querySelector('[aria-label="Minimize"]');
+    if (minimizeButton) {
+      minimizeButton.addEventListener('click', () => {
+        const windowBody = windowElement.querySelector('.window-body');
+        if (windowBody) {
+          windowBody.classList.toggle('hidden');
+        }
+      });
+    }
+  }); // end windows.forEach loop
 
   // Get a reference to the container element
   // const contentContainer = document.getElementById('content-container');
@@ -342,10 +348,10 @@ function animateDiv(div, x, y, vx, vy, containerHeight) {
   
   // URLs of the GIFs
 const gifUrls = [
-    '../assets/gif/processed_imagery_area.gif',
-    '../assets/gif/processed_imagery_point.gif',
-    '../assets/gif/processed_imagery_polyline.gif',
-    '../assets/gif/combined.gif',
+    'assets/gifs/processed_imagery_area.gif',
+    'assets/gifs/processed_imagery_point.gif',
+    'assets/gifs/processed_imagery_polyline.gif',
+    'assets/gifs/combined.gif',
   ];
   
   // Preload the GIFs and attach load event listeners
@@ -477,34 +483,33 @@ const backgroundImages = [
     'assets/wallpapers/wind.jpg',
     'assets/wallpapers/clouds.jpg',
     'assets/wallpapers/diet_bliss.jpg',
-  ];
-  
-  // Function to select a random image URL from the array
-  function getRandomBackgroundImage() {
-    const randomIndex = Math.floor(Math.random() * backgroundImages.length);
-    return backgroundImages[randomIndex];
-  }
-  
-  // Function to set the background image
-  function setBackgroundImage(imageUrl) {
-    document.body.style.backgroundImage = `url('${imageUrl}')`;
-  }
-  
-  // Function to be called on page load
-  function onPageLoad() {
-    const randomImageUrl = getRandomBackgroundImage();
-    setBackgroundImage(randomImageUrl);
-  }
-  
-  // Call the onPageLoad function when the page has finished loading
-  window.addEventListener('load', onPageLoad);
-  
+];
+
+// Function to select a random image URL from the array
+function getRandomBackgroundImage() {
+  const randomIndex = Math.floor(Math.random() * backgroundImages.length);
+  return backgroundImages[randomIndex];
+}
+
+// Function to set the background image
+function setBackgroundImage(imageUrl) {
+  document.body.style.backgroundImage = `url('${imageUrl}')`;
+}
+
+// Function to be called on page load
+function onPageLoad() {
+  const randomImageUrl = getRandomBackgroundImage();
+  setBackgroundImage(randomImageUrl);
+}
+
+// Call the onPageLoad function when the page has finished loading
+window.addEventListener('load', onPageLoad);
 
 //////////
 function updateBouncingContainerSize() {
   const bouncingContainer = document.querySelector('.bouncing-container');
   bouncingContainer.style.width = window.innerWidth + 'px';
-  bouncingContainer.style.height = fullBodyHeight + 'px'; // Set height to full body height
+  bouncingContainer.style.height = window.innerHeight + 'px'; // Set height to full body height
 }
 
 // Call the function initially and whenever the window is resized

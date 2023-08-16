@@ -14,7 +14,7 @@ body {
   height: 100%;
   cursor: url('../assets/cursors/arrow.cur'), auto;
   /* background: #3a6ea5; */
-  background-image: url('../assets/index/Wind.jpg');
+  background-image: url('../assets/wallpapers/wind.jpg');
   background-size: cover;
   background-position: center;
   background-repeat:repeat;
@@ -193,7 +193,7 @@ button {
   padding-right: 5%;
   display: inline-block;
   z-index: 2;
-  cursor: url('assets/cursors/cursor_15.cur'), auto;
+  cursor: url('../assets/cursors/cursor_15.cur'), auto;
   /* visibility: hidden; */
 }
 
@@ -219,7 +219,7 @@ button {
   height: 40px;
   /* border-radius: 50%; To make it circular */
   opacity: 0.7;
-  cursor: url('assets/cursors/cursor_15.cur'), auto;
+  cursor: url('../assets/cursors/cursor_15.cur'), auto;
 }
 
 .monochrome {
