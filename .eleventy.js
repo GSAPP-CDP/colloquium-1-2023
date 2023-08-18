@@ -50,29 +50,29 @@ module.exports = function (eleventyConfig) {
   // index.html files needing to be rendered should all have frontmatter so they 
   // are indeed rendered, but they're excluded here so the rendered file isn't
   // overwritten by the passthrough copy operation.
-  eleventyConfig.addPassthroughCopy("**/!(index).html");
+  eleventyConfig.addPassthroughCopy("work/**/!(index).html");
 
-  eleventyConfig.addPassthroughCopy("**/*.png");
-  eleventyConfig.addPassthroughCopy("**/*.jpg");
-  eleventyConfig.addPassthroughCopy("**/*.jpeg");
-  eleventyConfig.addPassthroughCopy("**/*.gif");
-  eleventyConfig.addPassthroughCopy("**/*.cur");
+  eleventyConfig.addPassthroughCopy("work/**/*.png");
+  eleventyConfig.addPassthroughCopy("work/**/*.jpg");
+  eleventyConfig.addPassthroughCopy("work/**/*.jpeg");
+  eleventyConfig.addPassthroughCopy("work/**/*.gif");
+  eleventyConfig.addPassthroughCopy("work/**/*.cur");
   
-  eleventyConfig.addPassthroughCopy("**/*.mov");
-  eleventyConfig.addPassthroughCopy("**/*.mp3");
-  eleventyConfig.addPassthroughCopy("**/*.mp4");
+  eleventyConfig.addPassthroughCopy("work/**/*.mov");
+  eleventyConfig.addPassthroughCopy("work/**/*.mp3");
+  eleventyConfig.addPassthroughCopy("work/**/*.mp4");
 
-  eleventyConfig.addPassthroughCopy("**/*.js");
-  eleventyConfig.addPassthroughCopy("**/*.css");
+  eleventyConfig.addPassthroughCopy("work/**/*.js");
+  eleventyConfig.addPassthroughCopy("work/**/*.css");
 
-  eleventyConfig.addPassthroughCopy("**/*.obj");
-  eleventyConfig.addPassthroughCopy("**/*.csv");
-  eleventyConfig.addPassthroughCopy("**/*.geojson");
+  eleventyConfig.addPassthroughCopy("work/**/*.obj");
+  eleventyConfig.addPassthroughCopy("work/**/*.csv");
+  eleventyConfig.addPassthroughCopy("work/**/*.geojson");
   
-  eleventyConfig.addPassthroughCopy("**/*.eot");
-  eleventyConfig.addPassthroughCopy("**/*.ttf");
-  eleventyConfig.addPassthroughCopy("**/*.woff");
-  eleventyConfig.addPassthroughCopy("**/*.woff2");
+  eleventyConfig.addPassthroughCopy("work/**/*.eot");
+  eleventyConfig.addPassthroughCopy("work/**/*.ttf");
+  eleventyConfig.addPassthroughCopy("work/**/*.woff");
+  eleventyConfig.addPassthroughCopy("work/**/*.woff2");
 
   return {
     dir: {
