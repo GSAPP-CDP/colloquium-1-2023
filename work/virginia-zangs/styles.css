@@ -1,17 +1,13 @@
-body, html {
-    font-family: 'Helvetica', sans-serif;
-    color: white;
-    background-color: black;
-    overflow-y: scroll;
-    text-shadow: 0 0 px rgb(255, 0, 0); /* There seems to be an error with the shadow value. It should have a value other than 0 for the shadow to be visible. */
-    height: 100%;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    background-color: black;
+    color: white;
 }
 
 #landing {
     position: relative;
-    width: 100%; /* Changed from 'relative' to '100%' */
+    width: 100%;
     height: 100vh;
 }
 
@@ -23,259 +19,65 @@ body, html {
     height: 100%;
 }
 
-.full-screen-image, .half-screen-image {
-    display: block;
-    width: 50%;
-    object-fit: cover;
-    margin-bottom: 1px;
-    align-items: center;
-    padding-top: 50px
-}
 
-.full-screen-image {
-    height: relative;
-    width: relative;
-}
-
-.half-screen-image {
-    background-color: white;
-    height: 50vh;
-}
-
-.full-screen-quote {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1em;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 1); /* Corrected the background-color value */
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.full-screen-quote {
-    padding-top: 10px; /* Adjust the value as needed */
-}
-
-.chapter-link {
-    background-color: black;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-    text-align: center;
-    position: sticky;
-    z-index: 10;
-    font-size: 20px;
-}
-
-.chapter-link.chapter1 {
-    top: 0;
-}
-
-.chapter-link.chapter2 {
-    top: 20px;
-}
-
-.chapter-link.chapter3 {
-    top: 40px;
-}
-
-.navigation {
-    position: fixed;
-    top: -50px;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Corrected the background-color value */
-    padding: 10px;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: top 0.3s ease;
-}
-
-.navigation.show {
-    top: 0;
-}
-
-.chapter-link:hover {
-    background-color: rgba(0, 0, 0, 1);
-}
-
-.chapter {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-    color: black;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    height: 1200px;
-}
-
-.grid-item, .hover-container {
+.content {
     position: relative;
-    height: 100%;
-    overflow: hidden;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
-.text-field {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
 
-.grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
-.hover-text {
+.text-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s;
+    font-size: 50px;
+    margin: 100px; /* Added 'px' unit */
 }
 
-.hover-container:hover .hover-text {
-    opacity: 1;
+.text-overlay:hover {
+    color: blue;
 }
 
-.bigger-image {
-    transform: scale(1.5);
+.text-overlay p {
+    margin-bottom: 100px;  /* Adjust as needed */
 }
+
+canvas {
+    display: block;
+    margin: auto;
+}
+
 
 iframe {
-    width: 100%;
+    width: 150px;  /* Match the image width */
+    height: auto;  /* Let the height adjust automatically */
     border: none;
 }
 
 .iframe-container {
     position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* This is for a 16:9 aspect ratio. Adjust as needed. */
-    height: 0;
+    width: 150px;  /* Match the image width */
+    height: auto;  /* Let the height adjust automatically */
 }
 
 .fullscreen-map {
     position: absolute;
     top: 0;
     left: 0;
-    width: relative;
-    height: 100%;
-    z-index: 10;
+    width: 100%;  /* Take the full width of its container */
+    height: 100%;  /* Take the full height of its container */
+    z-index: 1;
 }
+
 .map-overlay {
-    position: relative;
+    position: absolute;  /* Changed from relative to absolute */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 9;  /* Adjusted z-index */
+    z-index: 2;
     background: rgba(0, 0, 0, 0.5);
-}
-
-
-.text1 {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.chapter h1, .chapter h2 {
-    font-weight: bold;
-}
-
-.chapter h1 {
-    font-size: 6em;
-}
-
-.chapter h2 {
-    font-size: 2em;
-}
-
-#chapter1, #chapter2, #chapter3 {
-    background-color: black;
-    color: white;
-}
-
-
-.grid-container3 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    width: 100%;
-}
-
-.grid-container3 .hover-container:nth-child(-n+4) {
-    grid-column: span 2;
-}
-
-.grid-container3 .hover-container:nth-child(n+5):nth-child(-n+8) {
-    grid-column: span 1;
-}
-
-.grid-container3 .text-field {
-    grid-column: span 1;
-}
-
-#chapter3 .hover-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-}
-
-.grid-container2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.grid-container2 .hover-container {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.grid-container2 .text-field {
-    grid-column: 3;
-    grid-row: span 2;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* Scrollbar styles */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: black;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(255, 255, 255);
-    border-radius: 1%;
-    height: 10px;
 }
